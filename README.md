@@ -1,4 +1,4 @@
-WORKSHOP_TITLE
+Teaching Data Science Masterclass
 ================
 
 ### posit::conf 2023

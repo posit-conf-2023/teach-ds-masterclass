@@ -1,0 +1,51 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "Teaching Data Science Masterclass"
+  description: "Homepage for posit::conf(2023) workshop"
+  site-url: "https://posit-conf-2023.github.io/teach-ds-masterclass/"
+  
+  repo-url: https://github.com/posit-conf-2023/teach-ds-masterclass
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  page-footer:
+    left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    right: "&copy; Copyright 2023, Mine Çetinkaya-Rundel"
+    background: "#2e3846"
+
+  sidebar:
+    background: "#2e3846"
+    logo: "images/logo.gif"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/posit-conf-2023/teach-ds-masterclass
+        text: GitHub
+      - icon: cloud-fill
+        href: https://posit.cloud/spaces/397257
+        text: Posit Cloud
+    style: docked
+    contents:
+     - href: index.qmd
+       text: Home
+     - href: schedule.qmd
+     - href: resources.qmd
+     - href: license.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/theme.scss]
+      dark: [cosmo, style/theme-dark.scss]
+    toc: true
+    code-copy: true
+    code-overflow: scroll
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y
+
+editor: visual

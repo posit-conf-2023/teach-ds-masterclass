@@ -13,7 +13,7 @@ by Mine Çetinkaya-Rundel
 
 ------------------------------------------------------------------------
 
-This repository contains materials for the "Teaching Data Science Masterclass" workshop at posit::conf(2023). See [https://pos.it/teach-ds-masterclass](rstd.io/teach-ds-masterclass) for rendered workshop materials.
+This repository contains materials for the "Teaching Data Science Masterclass" workshop at posit::conf(2023). See [pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) for rendered workshop materials.
 
 ------------------------------------------------------------------------
 

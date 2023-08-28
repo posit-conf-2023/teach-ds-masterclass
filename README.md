@@ -8,7 +8,7 @@ by Mine Çetinkaya-Rundel
 
 :spiral_calendar: September 18, 2023\
 :alarm_clock: 09:00 - 17:00\
-:hotel: TBA
+:hotel: TBA  
 :writing_hand: [pos.it/conf](http://pos.it/conf)
 
 ------------------------------------------------------------------------

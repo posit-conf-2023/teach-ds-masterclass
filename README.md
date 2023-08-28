@@ -1,6 +1,6 @@
 # Teaching Data Science Masterclass
 
-### posit::conf 2023
+### posit::conf(2023)
 
 by Mine Çetinkaya-Rundel
 

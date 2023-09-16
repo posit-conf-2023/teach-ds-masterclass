@@ -39,7 +39,6 @@ library(maps)
 
 ::: columns
 ::: {.column width="50%"}
-
 ![](images/mine.png){fig-alt="Dr. Mine Cetinkaya-Rundel" fig-align="center" width="200"}
 
 ::: {style="text-align: center;"}
@@ -52,7 +51,6 @@ Developer Educator, Posit
 :::
 
 ::: {.column width="50%"}
-
 ![](images/tracy-michele-george.png){fig-alt="Tracy Teal, Michele Peruzzi, and George Stagg" fig-align="center" width="801"}
 
 ::: {style="text-align: center;"}
@@ -155,7 +153,7 @@ This is a great place to ask questions, share responses to exercises, post resou
 
 ## Posit Cloud
 
-You can use the following link to join the workshops RStudio cloud space,
+You can use the following link to join the workshops Posit Cloud space,
 
 <br>
 
@@ -656,7 +654,7 @@ robotstxt::paths_allowed("https://www.gov.scot")
 
 -   Counter-proposition: teach *all* (or multiple) syntaxes at once -- trying to teach two (or more!) syntaxes at once will slow the pace of the course, introduce unnecessary syntactic confusion, and make it harder for students to complete their work.
 
--   \"Disciplined in what we teach, liberal in what we accept\"
+-   "Disciplined in what we teach, liberal in what we accept"
 
 ::: aside
 Postel, J. (1980). DoD standard internet protocol. ACM SIGCOMM Computer Communication Review, 10(4), 12-51. [datatracker.ietf.org/doc/html/rfc760](https://datatracker.ietf.org/doc/html/rfc760)
@@ -685,7 +683,7 @@ Do you teach with the tidyverse?
 
 -   If yes, what are some highlights of your teaching experience and what are some challenges?
 
--   If no, what is your approach and, if you\'ve considered the tidyverse but decided against it, why?
+-   If no, what is your approach and, if you've considered the tidyverse but decided against it, why?
 
 Any other discussion points of interest?
 
@@ -716,7 +714,7 @@ Session at Joint Statistical Meetings, 2023
 
 <br>
 
-> The share their experiences teaching Quarto to students in a wide range of courses that span from first-year introductory data science to Master\'s level statistical computing courses. The talks also touch on multiple languages and tools as these courses teach R and Python using both RStudio and Jupyter Notebooks.
+> The share their experiences teaching Quarto to students in a wide range of courses that span from first-year introductory data science to Master's level statistical computing courses. The talks also touch on multiple languages and tools as these courses teach R and Python using both RStudio and Jupyter Notebooks.
 
 ## Photo credits
 

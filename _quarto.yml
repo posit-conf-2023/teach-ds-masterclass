@@ -33,7 +33,7 @@ website:
     contents:
      - href: index.qmd
        text: Home
-     - href: schedule.qmd
+     - href: about.qmd
      - href: resources.qmd
      - href: license.qmd
 

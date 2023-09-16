@@ -1,0 +1,134 @@
+---
+title: "Ex 1.2: Fisheries of the world"
+editor: visual
+---
+
+# Introduction
+
+Fisheries and Aquaculture Department of the Food and Agriculture Organization of the United Nations collects data on fisheries production of countries. The (not-so-great) visualization below shows the distribution of fishery harvest of countries for 2016, by capture and aquaculture.
+
+![](images/fisheries-ugly-charts.png){fig-align="center"}
+
+-   Countries whose total harvest was less than 100,000 tons are not included in the visualization.
+-   Source: [Fishing industry by country](https://en.wikipedia.org/wiki/Fishing_industry_by_country)
+
+## Exercise 1
+
+What are some ways you would improve the visualization above?
+
+> Add your response here.
+
+## Packages
+
+We will use the **tidyverse** and **scales** packages for data wrangling and visualization.
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(scales)
+```
+
+## Data
+
+Let's load the data:
+
+```{r}
+#| label: read-fisheries
+
+fisheries <- read_csv("data/fisheries.csv")
+```
+
+And inspect it:
+
+```{r}
+#| label: glimpse-fisheries
+
+glimpse(fisheries)
+```
+
+## Data prep
+
+Filter out countries whose total harvest was less than 100,000 tons since they are not included in the visualization:
+
+```{r}
+#| label: filter-total
+
+fisheries <- fisheries |>
+  filter(total > 100000)
+```
+
+Then, we will join this with the continent data.
+
+```{r}
+#| label: read-continents
+
+continents <- read_csv("data/continents.csv")
+```
+
+# Data joins
+
+## Exercise 2
+
+We want to keep all rows and columns from `fisheries` and add a column for corresponding continents. Which join function should we use? Explain your reasoning.
+
+> Add your response here.
+
+## Exercise 3
+
+Join the two data frames with `fisheries <- *_join(fisheries, continents)` using the join function you decided on in the previous question. How does this function know to join the two data frames by `country`?
+
+Hint: Take a look at the variables in the two datasets you're joining.
+
+> Add response here.
+
+```{r}
+#| label: join
+
+# add code here
+```
+
+## Exercise 4
+
+Do all countries in `fisheries` have a `continent` assigned? If not, which countries are missing `continent`s (`NA`s)?
+
+> Add your response here
+
+```{r}
+#| label: identify-missing
+
+# add code here
+```
+
+## Exercise 5
+
+Fill in the missing continents for these countries and justify your decisions. Then check to make sure all countries now have continents assigned.
+
+```{r}
+#| label: fill-missing-continents
+
+# add code here
+```
+
+## Exercise 6
+
+Calculate the percentage of aquaculture harvest for each country, record these values in a new variable called `aquaculture_perc`.
+
+```{r}
+#| label: aquaculture-perc
+
+# add code here
+```
+
+## Exercise 7
+
+Calculate minimum, mean, and maximum aquaculture percentage for each continent and visualize these values as a bar plot.
+
+```{r}
+#| label: continent-mean-bar
+#| fig-height: 7
+#| fig-asp: 0.618
+
+# add code here
+```

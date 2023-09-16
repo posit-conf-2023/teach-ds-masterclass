@@ -1,0 +1,727 @@
+---
+title: "Teaching data science with the tidyverse and Quarto"
+subtitle: "posit::conf(2023) <br> Teaching Data Science Masterclass"
+author: "Mine Çetinkaya-Rundel"
+footer: "[🔗 pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) / Module 1"
+logo: "../images/logo.png"
+format: 
+  revealjs:
+    theme: ../slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: c
+    incremental: false 
+    chalkboard: true
+execute:
+  freeze: auto
+  echo: true
+knitr:
+  opts_chunk: 
+    R.options:
+      width: 200
+---
+
+# Welcome
+
+```{r}
+#| include: false
+
+library(unvotes)
+library(tidyverse)
+library(openintro)
+library(countdown)
+library(infer)
+library(scales)
+library(maps)
+```
+
+## Introductions {.smaller .center}
+
+::: columns
+::: {.column width="50%"}
+
+![](images/mine.png){fig-alt="Dr. Mine Cetinkaya-Rundel" fig-align="center" width="200"}
+
+::: {style="text-align: center;"}
+Dr. Mine Çetinkaya-Rundel <br>
+
+Profeesor, Statistical Science, Duke University <br>
+
+Developer Educator, Posit
+:::
+:::
+
+::: {.column width="50%"}
+
+![](images/tracy-michele-george.png){fig-alt="Tracy Teal, Michele Peruzzi, and George Stagg" fig-align="center" width="801"}
+
+::: {style="text-align: center;"}
+Tracy Teal,<br>Open Source Program Director, Posit <br><br> Michele Peruzzi,<br>Assistant Professor, Biostatistics, University of Michigan <br><br> George Stagg,<br>Software Engineer, Posit
+:::
+:::
+:::
+
+## Workshop materials {.nostretch}
+
+![](images/‎logo.png){fig-alt="Hex logo for workshop" fig-align="center" width="350"}
+
+::: {style="text-align: center;"}
+One link for all materials
+
+🔗 <https://rstd.io/teach-ds-conf23>
+:::
+
+## Schedule {.smaller}
+
+| Time          | Activity                                                |
+|:--------------|:--------------------------------------------------------|
+| 09:00 - 10:30 | Teaching data science with the tidyverse and Quarto     |
+| 10:30 - 11:00 | *Coffee break*                                          |
+| 11:00 - 12:30 | Teaching data science with Git and GitHub               |
+| 12:30 - 13:30 | *Lunch break*                                           |
+| 13:30 - 15:00 | Computing infrastructure for teaching data science      |
+| 15:00 - 15:30 | *Coffee break*                                          |
+| 15:30 - 17:00 | Organizing, publishing, and sharing of course materials |
+
+## WiFi
+
+::: larger
+Username: **Conf 2023**
+
+Password: **conf2023**
+:::
+
+<br><br>
+
+::: aside
+If you have any difficulty with your connection please let us (myself and or the TAs) know so we can escalate issues if needed.
+:::
+
+## Code of Conduct
+
+-   The Code of Conduct and COVID policies can be found at <https://posit.co/code-of-conduct>.
+
+-   Please review them carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.
+
+## Other useful info
+
+-   There are **gender-neutral bathrooms** located are among the Grand Suite Bathrooms.
+
+-   There are two **meditation/prayer rooms**: Grand Suite 2A and Grand Suite 2B. Open Sunday - Tuesday 7:30 a.m. - 7:00 p.m., Wednesday 8:00 a.m. - 6:00 p.m.
+
+-   The **lactation room** is located in Grand Suite 1. Open Sunday - Tuesday 7:30 a.m. - 7:00 p.m., Wednesday 8:00 a.m. - 6:00 p.m.
+
+-   Participants who do not wish to be photographed have **red lanyards**; please note everyone's lanyard colors before taking a photo and respect their choices.
+
+## Asking for help (Stickies)
+
+::: r-hstack
+::: {style="text-align: center;"}
+::: {data-id="box1" style="background: #FFA500; width: 200px; height: 200px; margin: 25px;"}
+:::
+
+I'm stuck
+:::
+
+::: {style="text-align: center;"}
+::: {data-id="box3" style="background: #BF40BF; width: 200px; height: 200px; margin: 25px;"}
+:::
+
+I'm done
+:::
+:::
+
+::: r-hstack
+::: {style="text-align: center;"}
+![](images/hand.png){fig-align="center" width="20%"} <br/>I have a general question
+:::
+:::
+
+## Discord
+
+You should have received an email with an invitation and instructions for joining the conference's discord server.
+
+This workshop has a private channel under Workshops:
+
+::: {.large style="text-align: center"}
+```         
+#teaching-data-science-masterclass
+```
+:::
+
+This is a great place to ask questions, share responses to exercises, post resources, memes, or most anything else before, during, and after the workshop.
+
+# Computational Environment
+
+## Posit Cloud
+
+You can use the following link to join the workshops RStudio cloud space,
+
+<br>
+
+::: {style="text-align: center;"}
+[pos.it/teach-ds-conf23-cloud](https://pos.it/teach-ds-conf23-cloud)
+:::
+
+<br>
+
+Once you have joined, navigate to Projects on the top menu.
+
+## Using your own system
+
+If you'd like to use your own system, please see [posit-conf-2023.github.io/teach-ds-masterclass/#install](https://posit-conf-2023.github.io/teach-ds-masterclass/#install)
+
+# Introductory data science curriculum design
+
+## [Doing]{style="font-family: Brusher; color: #E273A8"} data science
+
+![](images/data-science-cycle.png){fig-alt="Data science cycle" fig-align="center"}
+
+::: aside
+Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [*R for Data Science, 2nd Edition*](https://r4ds.hadley.nz/)*.*
+:::
+
+## [Teaching]{style="font-family: Brusher; color: #E273A8"} data science
+
+![](images/intro-curriculum.png){fig-align="center"}
+
+## Day one {background-image="images/welcome-to-class.png" background-size="contain"}
+
+## Day one
+
+::: columns
+::: {.column width="50%"}
+-   Go to Posit Cloud and start the project titled UN Votes
+:::
+
+::: {.column width="50%"}
+![](images/unvotes-1.png){fig-align="right"}
+:::
+:::
+
+## Day one
+
+::: columns
+::: {.column width="50%"}
+-   Go to Posit Cloud and start the project titled UN Votes
+
+-   Open the Quarto document called `unvotes.qmd`
+:::
+
+::: {.column width="50%"}
+![](images/unvotes-2.png){fig-align="right"}
+:::
+:::
+
+## Day one
+
+::: columns
+::: {.column width="50%"}
+-   Go to Posit Cloud and start the project titled UN Votes
+
+-   Open the Quarto document called `unvotes.qmd`
+
+-   Render the document
+:::
+
+::: {.column width="50%"}
+![](images/unvotes-3.png){fig-align="right"}
+:::
+:::
+
+## Day one
+
+::: columns
+::: {.column width="50%"}
+-   Go to Posit Cloud and start the project titled UN Votes
+
+-   Open the Quarto document called `unvotes.qmd`
+
+-   Render the document
+
+-   Review the data visualization you just produced
+:::
+
+::: {.column width="50%"}
+![](images/unvotes-4.png){fig-align="right"}
+:::
+:::
+
+## Your turn!
+
+::: cloud
+{{< fa cloud >}} [**UN Votes**](https://pos.it/teach-ds-conf23-cloud)
+
+------------------------------------------------------------------------
+
+-   Change `Turkey` to a different country and render the document again
+
+-   Review how the voting patterns of the country you picked compare to the United States and the United Kingdom
+
+-   Then, introduce yourself to your neighbor and discuss why you chose your country and what, if anything, surprising or expected you saw in the visualization you produced
+
+-   In the remaining time, continue the introduction:
+
+    -   Affiliation and/or where you're joining from (geographically)
+    -   Where you are in your teaching (or learning) journey
+    -   Your favorite thing to teach
+:::
+
+## Rest of semester {background-image="images/rest-of-semester.png" background-size="contain"}
+
+## Components
+
+1.  Content [in three examples]{.fragment style="font-family: Brusher;"}
+2.  Pedagogy
+3.  Tooling
+
+# Fisheries of the world {background-image="images/paul-einerhand-eysa6RORvl0-unsplash.jpg" background-size="cover"}
+
+## Starting point
+
+![](images/fisheries-ugly-charts.png){fig-align="center"}
+
+## Data
+
+```{r}
+fisheries <- read_csv("data/fisheries.csv")
+continents <- read_csv("data/continents.csv")
+```
+
+## Your turn!
+
+::: cloud
+{{< fa cloud >}} [Fisheries of the world](https://pos.it/teach-ds-conf23-cloud)
+
+------------------------------------------------------------------------
+
+Open the Posit Cloud project titled Fisheries of the world and work through the exercises that guide you through visualizing percentage of aquaculture across continents. Render the document after each exercise.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+## Concepts {.smaller}
+
+::: columns
+::: {.column width="35%"}
+```{r}
+fisheries |>
+  select(country)
+```
+:::
+
+::: {.column width="35%"}
+```{r}
+continents
+```
+:::
+
+::: {.column width="30%"}
+-   **data joins**
+:::
+:::
+
+```{r}
+#| label: join
+
+fisheries <- left_join(fisheries, continents)
+```
+
+## Concepts {.smaller}
+
+```{r}
+#| label: filter-total
+#| include: false
+
+fisheries <- fisheries |>
+  filter(total > 100000)
+```
+
+::: columns
+::: {.column width="70%"}
+```{r}
+fisheries |>
+  filter(is.na(continent))
+
+fisheries <- fisheries |>
+  mutate(
+    continent = case_when(
+      country == "Democratic Republic of the Congo" ~ "Africa",
+      country == "Hong Kong"                        ~ "Asia",
+      country == "Myanmar"                          ~ "Asia",
+      .default = continent
+    )
+  )
+```
+:::
+
+::: {.column width="30%"}
+-   data joins
+-   **data science ethics**
+:::
+:::
+
+## Concepts
+
+::: columns
+::: {.column width="70%"}
+```{r}
+#| echo: false
+
+fisheries <- fisheries |>
+  mutate(aquaculture_perc = aquaculture / total)
+
+fisheries_summary <- fisheries |>
+  group_by(continent) |>
+  summarise(
+    min_ap  = min(aquaculture_perc),
+    mean_ap = mean(aquaculture_perc),
+    max_ap  = max(aquaculture_perc)
+  ) 
+
+ggplot(
+  fisheries_summary, 
+  aes(x = reorder(continent, mean_ap), y = mean_ap)
+  ) +
+  geom_col() +
+  coord_flip() +
+  scale_y_continuous(labels = label_percent(accuracy = 1)) +
+  labs(
+    x = "", y = "",
+    title = "Average share of aquaculture by continent",
+    subtitle = "out of total fisheries harvest, 2016",
+  ) +
+  theme_minimal()
+```
+:::
+
+::: {.column width="30%"}
+-   data joins
+-   data science ethics
+-   **critique**
+-   **improving data visualizations**
+:::
+:::
+
+## Concepts
+
+::: columns
+::: {.column width="70%"}
+```{r}
+#| echo: false
+
+world_map <- map_data("world") |>
+  mutate(region = case_when(
+    region == "UK" ~ "United Kingdom",
+    region == "USA" ~ "United States",
+    subregion == "Hong Kong" ~ "Hong Kong",
+    TRUE ~ region
+  ))
+
+fisheries_map <- left_join(
+  fisheries,
+  world_map,
+  by = c("country" = "region")
+)
+
+ggplot() +
+  geom_polygon(world_map,
+    mapping = aes(x = long, y = lat, group = group),
+    fill = "lightgray"
+  ) +
+  geom_polygon(fisheries_map,
+    mapping = aes(
+      x = long, y = lat, group = group,
+      fill = aquaculture_perc
+    )
+  ) +
+  scale_fill_viridis_c(labels = percent_format(accuracy = 1)) +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    legend.box = "vertical"
+  ) +
+  labs(
+    title = "Share of aquaculture by country",
+    subtitle = "out of total fisheries harvest, 2016",
+    x = NULL, y = NULL,
+    fill = "Aquaculture %"
+  ) +
+  coord_quickmap() +
+  theme(legend.key.width = unit(2, "cm"))
+```
+:::
+
+::: {.column width="30%"}
+-   data joins
+-   data science ethics
+-   critique
+-   improving data visualizations
+-   **mapping**
+:::
+:::
+
+## Student work {background-color="#B0D4E6"}
+
+::: project
+**Project:** Regional differences in average GPA and SAT
+
+**Question:** Exploring the regional differences in average GPA and SAT score across the US and the factors that could potentially explain them.
+
+**Team:** Mine's Minions
+
+![](images/project-gpa-sat.png){fig-align="center"}
+:::
+
+# Scottish COVID briefings {background-image="images/jim-divine-qpQ7NQ2CXA4-unsplash.jpg" background-size="cover"}
+
+## Data
+
+![](images/fm-speeches.png){fig-align="center"}
+
+## Concepts
+
+::: columns
+::: {.column width="60%"}
+![](images/fm-speech-oct-26-annotated.png){fig-align="center"}
+:::
+
+::: {.column width="40%"}
+-   **web scraping**
+-   **text parsing**
+-   **data types**
+-   **regular expressions**
+:::
+:::
+
+## Concepts
+
+::: columns
+::: {.column width="60%"}
+![](images/fm-speeches-links.png){fig-align="center"}
+:::
+
+::: {.column width="40%"}
+-   web scraping
+-   text parsing
+-   data types
+-   regular expressions
+-   **functions**
+-   **iteration**
+:::
+:::
+
+## Concepts {.nostretch}
+
+::: columns
+::: {.column width="60%"}
+![](images/length-of-speech-over-time-1.png){fig-align="center" width="400"} ![](images/soc-phys-plot-1.png){fig-align="center" width="400"}
+:::
+
+::: {.column width="40%"}
+-   web scraping
+-   text parsing
+-   data types
+-   regular expressions
+-   functions
+-   iteration
+-   **data visualization**
+-   **interpretation**
+:::
+:::
+
+## Concepts
+
+::: columns
+::: {.column width="60%"}
+![](images/fm-text-analysis.png){fig-align="center"}
+:::
+
+::: {.column width="40%"}
+-   web scraping
+-   text parsing
+-   data types
+-   regular expressions
+-   functions
+-   iteration
+-   data visualization
+-   interpretation
+-   **text analysis**
+:::
+:::
+
+## Concepts {.smaller}
+
+::: columns
+::: {.column width="60%"}
+```{r}
+robotstxt::paths_allowed("https://www.gov.scot")
+```
+:::
+
+::: {.column width="40%"}
+-   web scraping
+-   text parsing
+-   data types
+-   regular expressions
+-   functions
+-   iteration
+-   data visualization
+-   interpretation
+-   text analysis
+-   **data science ethics**
+:::
+:::
+
+## Student work {.smaller background-color="#B0D4E6"}
+
+::: project
+**Project:** Factors Most Important to University Ranking
+
+**Question:** Explore how various metrics (e.g., SAT/ACT scores, admission rate, region, Carnegie classification) predict rankings on the Niche College Ranking List.
+
+**Team:** 2cool4school
+
+![](images/project-universities.png){fig-align="center"}
+:::
+
+# Spam mail {background-image="images/alexander-grey-tn57JI3CewI-unsplash.jpg" background-size="cover"}
+
+## Concepts
+
+::: columns
+::: {.column width="70%"}
+![](images/spam.png){fig-align="center"}
+:::
+
+::: {.column width="30%"}
+-   **logistic regression**
+
+-   **prediction**
+:::
+:::
+
+## Concepts
+
+::: columns
+::: {.column width="70%"}
+|                         | Email is spam                 | Email is not spam             |
+|---------------------|--------------------------|--------------------------|
+| Email labelled spam     | True positive                 | False positive (Type 1 error) |
+| Email labelled not spam | False negative (Type 2 error) | True negative                 |
+:::
+
+::: {.column width="30%"}
+-   logistic regression
+
+-   prediction
+
+-   **decision errors**
+
+-   **sensitivity / specificity**
+
+-   **intuition around loss functions**
+:::
+:::
+
+## Student work {background-color="#B0D4E6"}
+
+::: project
+**Project:** Predicting League of Legends success
+
+**Question:** Is a gold or experienced lead a better predictor of which team wins after 10 minutes into the game?
+
+**Team:** Blue Squirrels
+
+![](images/project-league-of-legends.png){fig-align="center"}
+:::
+
+# Teaching with the tidyverse
+
+## Building a curriculum
+
+-   Start with `library(tidyverse)`
+
+-   Teach by learning goals, not packages
+
+![](images/data-science-packages.png){fig-align="center" width="800"}
+
+## Teaching consistently
+
+-   Challenge: Google and Stack Overflow can be less useful -- demo problem solving
+
+-   Counter-proposition: teach *all* (or multiple) syntaxes at once -- trying to teach two (or more!) syntaxes at once will slow the pace of the course, introduce unnecessary syntactic confusion, and make it harder for students to complete their work.
+
+-   \"Disciplined in what we teach, liberal in what we accept\"
+
+::: aside
+Postel, J. (1980). DoD standard internet protocol. ACM SIGCOMM Computer Communication Review, 10(4), 12-51. [datatracker.ietf.org/doc/html/rfc760](https://datatracker.ietf.org/doc/html/rfc760)
+:::
+
+## Keeping up with the tidyverse {.nostretch}
+
+-   Blog posts highlight updates, along with the reasoning behind them and worked examples
+
+-   [Teaching the tidyverse](https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/) blog post series provides a roughly annual review
+
+-   [Lifecycle stages](https://lifecycle.r-lib.org/articles/stages.html) and badges
+
+![](images/lifecycle.png){fig-align="center" width="699"}
+
+## Community
+
+-   The encouraging and inclusive tidyverse community is one of the benefits of the paradigm
+
+-   Each package comes with a website, each of these websites are similarly laid out, and results of example code are displayed, and extensive vignettes describe how to use various functions from the package together
+
+## Discussion
+
+::: question
+Do you teach with the tidyverse?
+
+-   If yes, what are some highlights of your teaching experience and what are some challenges?
+
+-   If no, what is your approach and, if you\'ve considered the tidyverse but decided against it, why?
+
+Any other discussion points of interest?
+
+------------------------------------------------------------------------
+
+{{< fa users >}} Discuss with your partner for a few minutes first, before sharing with the big group.
+:::
+
+# More resources
+
+## {{< fa file >}} An educator's perspective of the tidyverse {.smaller}
+
+<br>
+
+Çetinkaya-Rundel, M., Hardin, J., Baumer, B., McNamara, A., Horton, N., & Rundel, C. (2022). An educator's perspective of the tidyverse. Technology Innovations in Statistics Education, 14(1). <http://dx.doi.org/10.5070/T514154352>.
+
+<br>
+
+> We are all converts to the tidyverse and have made a conscious choice to use it in our research and our teaching. We each learned R without the tidyverse and have all spent quite a few years teaching without it at a variety of levels from undergraduate introductory statistics courses to graduate statistical computing courses. This paper is a synthesis of the reasons supporting our tidyverse choice, along with benefits and challenges associated with teaching statistics with the tidyverse.
+
+## {{< fa microphone >}} **Teaching (with) Quarto**
+
+<br>
+
+Session at Joint Statistical Meetings, 2023
+
+<https://mine-cetinkaya-rundel.github.io/teach-with-quarto>
+
+<br>
+
+> The share their experiences teaching Quarto to students in a wide range of courses that span from first-year introductory data science to Master\'s level statistical computing courses. The talks also touch on multiple languages and tools as these courses teach R and Python using both RStudio and Jupyter Notebooks.
+
+## Photo credits
+
+-   Fisheries of the world: Photo by [Paul Einerhand](https://unsplash.com/@pauleinerhand) on [Unsplash](https://unsplash.com/photos/eysa6RORvl0)
+
+-   Scottish COVID briefings: Photo by [jim Divine](https://unsplash.com/@jimdivine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/qpQ7NQ2CXA4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+-   Spam mail: Photo by [Alexander Grey](https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tn57JI3CewI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

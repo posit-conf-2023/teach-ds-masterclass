@@ -1,14 +1,16 @@
 /*-- scss:defaults --*/
 
 // fonts
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/brusher');
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
-$presentation-heading-color: #7090A5;
+$presentation-heading-color: #000000;
 $presentation-title-slide-text-align: "left";
 $presentation-font-size-root: 36px;
 $code-block-font-size: 0.7em;
-$link-color: #7090A5;
+$link-color: #7b94a1;
 
 /*-- scss:rules --*/
 
@@ -32,30 +34,34 @@ details>summary {
   font-size: 3em;
 }
 
+.reveal h1 {
+  background-color: #F8D863;
+  padding-right: 15px;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  background-color: #F8D863;
+  padding-left: 15px;
+}
+
 .reveal .slide .question {
-  border-left: 3px solid #7090A5;
+  border-left: 3px solid #7b94a1;
   padding-left: 0.5em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  background: #A9BCC9;
+  background: #B0D4E6;
 }
 
 .reveal .slide .poll {
-  border-left: 3px solid #FFD166;
+  border-left: 3px solid #fcefc0;
   padding-left: 0.5em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  background: #FFEDC2;
-}
-
-.reveal .slide .appex {
-  border-left: 3px solid #003559;
-  padding: 0.25em;
-  background: #EBF7FF;
+  background: #F8D863;
 }
 
 .reveal .slide .cloud {
-  border-left: 3px solid #8DB6DB;
+  border-left: 3px solid #B0D4E6;
   margin-top: 0.5em;
   padding: 0.25em;
   background: #F3F7FB;
@@ -80,14 +86,13 @@ details>summary {
   font-size: 0.6em;
 }
 
-
 .reveal .slide .goal {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   padding-left: 1em;
-  background: #ccddeb;
+  background: #B0D4E6;
 }
 
 .reveal countdown {
@@ -100,6 +105,14 @@ details>summary {
   padding-left: 12px;
   padding-right: 12px;
   user-select: none;
+}
+
+.reveal .slide .project {
+  padding: 10px;
+  background-color: #FFFFFF; 
+  border-style: solid;
+  border-color: #F8D863;
+  border-width: 5px;
 }
 
 .reveal pre {

@@ -81,7 +81,7 @@
     "href": "materials/tidyverse-quarto/index.html#posit-cloud",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Posit Cloud",
-    "text": "Posit Cloud\nYou can use the following link to join the workshops RStudio cloud space,\n\n\npos.it/teach-ds-conf23-cloud\n\n\nOnce you have joined, navigate to Projects on the top menu."
+    "text": "Posit Cloud\nYou can use the following link to join the workshops Posit Cloud space,\n\n\npos.it/teach-ds-conf23-cloud\n\n\nOnce you have joined, navigate to Projects on the top menu."
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#using-your-own-system",
@@ -298,7 +298,7 @@
     "href": "materials/tidyverse-quarto/index.html#teaching-consistently",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Teaching consistently",
-    "text": "Teaching consistently\n\nChallenge: Google and Stack Overflow can be less useful – demo problem solving\nCounter-proposition: teach all (or multiple) syntaxes at once – trying to teach two (or more!) syntaxes at once will slow the pace of the course, introduce unnecessary syntactic confusion, and make it harder for students to complete their work.\n\"Disciplined in what we teach, liberal in what we accept\"\n\n\n\nPostel, J. (1980). DoD standard internet protocol. ACM SIGCOMM Computer Communication Review, 10(4), 12-51. datatracker.ietf.org/doc/html/rfc760"
+    "text": "Teaching consistently\n\nChallenge: Google and Stack Overflow can be less useful – demo problem solving\nCounter-proposition: teach all (or multiple) syntaxes at once – trying to teach two (or more!) syntaxes at once will slow the pace of the course, introduce unnecessary syntactic confusion, and make it harder for students to complete their work.\n“Disciplined in what we teach, liberal in what we accept”\n\n\n\nPostel, J. (1980). DoD standard internet protocol. ACM SIGCOMM Computer Communication Review, 10(4), 12-51. datatracker.ietf.org/doc/html/rfc760"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#keeping-up-with-the-tidyverse",
@@ -319,7 +319,7 @@
     "href": "materials/tidyverse-quarto/index.html#discussion",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Discussion",
-    "text": "Discussion\n\nDo you teach with the tidyverse?\n\nIf yes, what are some highlights of your teaching experience and what are some challenges?\nIf no, what is your approach and, if you've considered the tidyverse but decided against it, why?\n\nAny other discussion points of interest?\n\n Discuss with your partner for a few minutes first, before sharing with the big group."
+    "text": "Discussion\n\nDo you teach with the tidyverse?\n\nIf yes, what are some highlights of your teaching experience and what are some challenges?\nIf no, what is your approach and, if you’ve considered the tidyverse but decided against it, why?\n\nAny other discussion points of interest?\n\n Discuss with your partner for a few minutes first, before sharing with the big group."
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#fa-file-an-educators-perspective-of-the-tidyverse",
@@ -333,7 +333,7 @@
     "href": "materials/tidyverse-quarto/index.html#fa-microphone-teaching-with-quarto",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": " Teaching (with) Quarto",
-    "text": "Teaching (with) Quarto\n\nSession at Joint Statistical Meetings, 2023\nhttps://mine-cetinkaya-rundel.github.io/teach-with-quarto\n\n\nThe share their experiences teaching Quarto to students in a wide range of courses that span from first-year introductory data science to Master's level statistical computing courses. The talks also touch on multiple languages and tools as these courses teach R and Python using both RStudio and Jupyter Notebooks."
+    "text": "Teaching (with) Quarto\n\nSession at Joint Statistical Meetings, 2023\nhttps://mine-cetinkaya-rundel.github.io/teach-with-quarto\n\n\nThe share their experiences teaching Quarto to students in a wide range of courses that span from first-year introductory data science to Master’s level statistical computing courses. The talks also touch on multiple languages and tools as these courses teach R and Python using both RStudio and Jupyter Notebooks."
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#photo-credits",

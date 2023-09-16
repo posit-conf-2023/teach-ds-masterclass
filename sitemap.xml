@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/LICENSE.html</loc>
-    <lastmod>2023-09-08T14:36:36.280Z</lastmod>
+    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/materials/tidyverse-quarto/unvotes.html</loc>
+    <lastmod>2023-09-16T04:55:36.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/materials/tidyverse-quarto/index.html</loc>
+    <lastmod>2023-09-16T04:55:23.405Z</lastmod>
   </url>
   <url>
     <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/resources.html</loc>
-    <lastmod>2023-09-08T14:36:35.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/schedule.html</loc>
-    <lastmod>2023-09-08T14:36:31.356Z</lastmod>
+    <lastmod>2023-09-16T04:55:20.757Z</lastmod>
   </url>
   <url>
     <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/index.html</loc>
-    <lastmod>2023-09-08T14:36:34.632Z</lastmod>
+    <lastmod>2023-09-16T04:55:16.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/about.html</loc>
+    <lastmod>2023-09-16T04:55:20.333Z</lastmod>
   </url>
   <url>
     <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/license.html</loc>
-    <lastmod>2023-09-08T14:36:35.412Z</lastmod>
+    <lastmod>2023-09-16T04:55:21.105Z</lastmod>
+  </url>
+  <url>
+    <loc>https://posit-conf-2023.github.io/teach-ds-masterclass/materials/tidyverse-quarto/fisheries.html</loc>
+    <lastmod>2023-09-16T04:55:28.949Z</lastmod>
   </url>
 </urlset>

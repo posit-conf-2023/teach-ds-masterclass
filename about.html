@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching Data Science Masterclass - Schedule</title>
+<title>Teaching Data Science Masterclass - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -64,9 +98,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Teaching Data Science Masterclass - Schedule">
+<meta property="og:title" content="Teaching Data Science Masterclass - About">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://posit-conf-2023.github.io/teach-ds-masterclass/images/mine.png">
 <meta property="og:site-name" content="Teaching Data Science Masterclass">
+<meta property="og:image:height" content="300">
+<meta property="og:image:width" content="300">
 </head>
 
 <body class="nav-sidebar docked">
@@ -78,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./schedule.html">Schedule</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -116,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Schedule</span></a>
+  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">About</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -138,14 +175,31 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#is-this-course-for-me" id="toc-is-this-course-for-me" class="nav-link" data-scroll-target="#is-this-course-for-me">Is this course for me?</a></li>
+  <li><a href="#prework" id="toc-prework" class="nav-link" data-scroll-target="#prework">Prework</a>
+  <ul class="collapse">
+  <li><a href="#watch" id="toc-watch" class="nav-link" data-scroll-target="#watch">Watch</a></li>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set up</a></li>
+  <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install">Install</a></li>
+  </ul></li>
+  <li><a href="#posit-cloud" id="toc-posit-cloud" class="nav-link" data-scroll-target="#posit-cloud">Posit Cloud</a></li>
+  </ul></li>
+  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/posit-conf-2023/teach-ds-masterclass/edit/main/about.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/posit-conf-2023/teach-ds-masterclass/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">About</h1>
 </div>
 
 
@@ -160,53 +214,98 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>More detauls to be posted!</p>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 79%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>09:00 - 10:30</td>
-<td>Teaching data science with the tidyverse and Quarto</td>
-</tr>
-<tr class="even">
-<td>10:30 - 11:00</td>
-<td><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td>11:00 - 12:30</td>
-<td>Teaching data science with Git and GitHub</td>
-</tr>
-<tr class="even">
-<td>12:30 - 13:30</td>
-<td><em>Lunch break</em></td>
-</tr>
-<tr class="odd">
-<td>13:30 - 15:00</td>
-<td>Computing infrastructure for teaching data science</td>
-</tr>
-<tr class="even">
-<td>15:00 - 15:30</td>
-<td><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td>15:30 - 17:00</td>
-<td>Organizing, publishing, and sharing of course materials</td>
-</tr>
-</tbody>
-</table>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5TVd_whxUus?si=KOqFhOEGJt9fA-KC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p><br></p>
+<p>There has been significant innovation in introductory statistics and data science courses to equip students with the statistical, computing, and communication skills needed for modern data analysis. Success in data science and statistics is dependent on the development of both analytical and computational skills, and the demand for educators who are proficient at teaching both these skills is growing. The goal of this masterclass is to equip educators with concrete information on content, workflows, and infrastructure for painlessly introducing modern computation with R and RStudio within a data science curriculum. In a nutshell, the day you’ll spend in this workshop will save you endless hours of solo work designing and setting up your course.</p>
+<p>Topics will cover teaching the tidyverse in 2023, highlighting updates to R for Data Science (2nd ed) and Data Science in a Box as well as present tooling options and workflows for reproducible authoring, computing infrastructure, version control, and collaboration.</p>
+<p>The workshop will be comprised of four modules:</p>
+<ul>
+<li><p>Teaching data science with the tidyverse and Quarto</p></li>
+<li><p>Teaching data science with Git and GitHub</p></li>
+<li><p>Organizing, publishing, and sharing of course materials</p></li>
+<li><p>Computing infrastructure for teaching data science</p></li>
+</ul>
+<p>Throughout each module we’ll shift between the student perspective and the instructor perspective. The activities and demos will be hands-on; attendees will also have the opportunity to exchange ideas and ask questions throughout the session.</p>
+<p>In addition to gaining technical knowledge, participants will engage in discussion around the decisions that go into developing a data science curriculum and choosing workflows and infrastructure that best support the curriculum and allow for scalability. We will also discuss best practices for configuring and deploying classroom infrastructures to support these tools.</p>
+<section id="is-this-course-for-me" class="level2">
+<h2 class="anchored" data-anchor-id="is-this-course-for-me">Is this course for me?</h2>
+<p>This masterclass is aimed primarily at participants teaching data science in an academic setting in semester-long courses, however much of the information and tooling we introduce is applicable for shorter teaching experiences like workshops and bootcamps as well. Basic knowledge of R is assumed and familiarity with the tidyverse and Git is preferred.</p>
+<p>This course is for you if you:</p>
+<ul>
+<li><p>you want to learn / discuss curriculum, pedagogy, and computing infrastructure design for teaching data science with R and RStudio using the tidyverse and Quarto</p></li>
+<li><p>you are interested in setting up your class in Posit Cloud</p></li>
+<li><p>you want to integrate version control with git into your teaching and learn about tools and best practices for running your course on GitHub</p></li>
+</ul>
+</section>
+<section id="prework" class="level2">
+<h2 class="anchored" data-anchor-id="prework">Prework</h2>
+<p>In this workshop you will wear two hats: the educator and the learner. At times we will be demoing workflows for instructors (whom I assume are familiar with R, RStudio, and the tidyverse and have taught with or are interested in teaching with Posit Cloud, Git, and GitHub) and at other times you will be working through the student view (on Posit Cloud, assuming you’re not using your local setup).</p>
+<section id="watch" class="level3">
+<h3 class="anchored" data-anchor-id="watch">Watch</h3>
+<p>For the latter, you can mostly assume that you’re a student in an intro data science course and this is the first day of class (i.e.&nbsp;there’s no expectation of prep). However we’d also like to give you a taste of how the remainder of the semester goes, which often entails students watching background videos to prepare. To prepare for the first module, please watch the following video.</p>
+<div style="text-align: center;">
+<iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/fQ4t7p6ZXDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div style="align: center;">
+<p>🖥️ <a href="https://bit.ly/let-eat-cake-cc">Slides</a></p>
+</div>
+</div>
+</section>
+<section id="set-up" class="level3">
+<h3 class="anchored" data-anchor-id="set-up">Set up</h3>
+<p>For the former, you’ll might need to prepare a bit more. If you already are a Git and GitHub user, have a personal token saved, and can push to and pull from GitHub without having to type your password in each time, you’re good to go. If not, please complete the following steps before the workshop<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. If you need help with any of the steps, please ask on <a href="https://github.com/rstudio-conf-2022/teach-ds/discussions">GitHub Discussions</a>.</p>
+<ul>
+<li><a href="https://happygitwithr.com/github-acct.html#github-acct">Register a free GitHub account</a></li>
+<li><a href="https://happygitwithr.com/install-r-rstudio.html#install-r-rstudio">Install or update R and RStudio</a></li>
+<li><a href="https://happygitwithr.com/install-git.html#install-git">Install Git</a></li>
+<li><a href="https://happygitwithr.com/hello-git.html#hello-git">Introduce yourself to Git</a></li>
+<li><a href="https://happygitwithr.com/https-pat.html">Personal access token for HTTPS</a></li>
+<li><a href="https://happygitwithr.com/push-pull-github.html">Connect to GitHub</a></li>
+<li><a href="https://happygitwithr.com/rstudio-git-github.html">Connect RStudio to Git and GitHub</a></li>
+<li><a href="https://happygitwithr.com/rstudio-see-git.html">Detect Git from RStudio</a></li>
+</ul>
+</section>
+<section id="install" class="level3">
+<h3 class="anchored" data-anchor-id="install">Install</h3>
+<p>If you choose to use your local R and RStudio install for the workshop, you should also install the following packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"DT"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"fivethirtyeight"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"gapminder"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ghclass"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"nycflights13"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"openintro"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rvest"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"shiny"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggthemes"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidymodels"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"unvotes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="posit-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="posit-cloud">Posit Cloud</h2>
+<p>You can join the Posit Cloud workspace for this workshop at <a href="https://pos.it/teach-ds-conf23-cloud">pos.it/teach-ds-conf23-cloud</a>.</p>
+</section>
+</section>
+<section id="instructor" class="level1">
+<h1>Instructor</h1>
+<p><img src="images/mine.png" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Dr. Mine Çetinkaya-Rundel" width="200"></p>
+<p><a href="http://mine-cr.com/"><strong>Dr.&nbsp;Mine Çetinkaya-Rundel</strong></a> (she/her) is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on integrating computation into the undergraduate statistics curriculum, using reproducible research methodologies and analysis of real and complex datasets. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks. She is also the creator and maintainer of datasciencebox.org, co-author of R for Data Science, and she teaches the popular Statistics with R MOOC on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.</p>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>These steps will direct you to relevant chapters from <a href="https://happygitwithr.com/"><em>Happy Git with R</em></a> by Jenny Bryan et. al.&nbsp;It’s such a great and comprehensive resource that I have not felt the need to replicate the information elsewhere.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -573,7 +672,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/posit-conf-2023/teach-ds-masterclass/edit/main/schedule.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/posit-conf-2023/teach-ds-masterclass/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">© Copyright 2023, Mine Çetinkaya-Rundel</div>
   </div>
 </footer>

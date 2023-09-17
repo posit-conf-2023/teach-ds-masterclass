@@ -312,7 +312,7 @@
     "href": "materials/git-github/index.html#prepare-your-starter-repo",
     "title": "Teaching data science with Git and GitHub",
     "section": "Prepare your starter repo",
-    "text": "Prepare your starter repo\n\n Demo:\n\nClone it locally\nAdd any necessary files\nCommit and push"
+    "text": "Prepare your starter repo\n\n Demo:\n\nCreate a new repo: hw-1\nClone it locally\nAdd any necessary files\nCommit and push"
   },
   {
     "objectID": "materials/git-github/index.html#create-assignments",
@@ -347,7 +347,7 @@
     "href": "materials/git-github/index.html#create-team-assignments",
     "title": "Teaching data science with Git and GitHub",
     "section": "Create team assignments",
-    "text": "Create team assignments\n\n Demo:\n\nCreate a copy of the starter repo for each team, appending the their team_name to the repo name\nGive write access to each student in a team for their own team repo\n\n\n\nassignment &lt;- \"lab-3\"\n\norg_create_assignment(\n  org = org,\n  repo = paste0(\"lab-3\", \"-\", roster$team_name),\n  user = roster$github_name,\n  team = roster$team_name,\n  source_repo = paste0(org, \"/\", assignment)\n)"
+    "text": "Create team assignments\n\n Demo:\n\nCreate a copy of the starter repo for each team, appending the their team_name to the repo name\nGive write access to each student in a team for their own team repo\n\n\n\nassignment &lt;- \"lab-1\"\n\norg_create_assignment(\n  org = org,\n  repo = paste0(\"lab-1\", \"-\", roster$team_name),\n  user = roster$github_name,\n  team = roster$team_name,\n  source_repo = paste0(org, \"/\", assignment)\n)"
   },
   {
     "objectID": "materials/git-github/index.html#your-turn-2",
@@ -375,7 +375,7 @@
     "href": "materials/git-github/index.html#other-ghclass-functionality",
     "title": "Teaching data science with Git and GitHub",
     "section": "Other ghclass functionality",
-    "text": "Other ghclass functionality\n\n Demo:\nClone student repos to review their work locally\n\nhw01_repos &lt;- org_repos(org, \"hw-01-\")\nlocal_repo_clone(\n  hw01_repos, \n  local_path = \"hw1-submissions\"\n)\n\n\nGet big picture statistics for an assignment\n\norg_repo_stats(org, filter = \"hw-1\")"
+    "text": "Other ghclass functionality\n\n Demo:\nClone student repos to review their work locally\n\nhw1_repos &lt;- org_repos(org, \"hw-1\")\nlocal_repo_clone(\n  hw01_repos, \n  local_path = \"hw1-submissions\"\n)\n\n\nGet big picture statistics for an assignment\n\norg_repo_stats(org, filter = \"hw-1\")"
   },
   {
     "objectID": "materials/git-github/index.html#git-github-lessons-learned",

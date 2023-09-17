@@ -317,6 +317,7 @@ It's recommended that all students accept their invite before you start creating
 ::: demo
 {{< fa keyboard >}} **Demo:**
 
+-   Create a new repo: `hw-1`
 -   Clone it locally
 -   Add any necessary files
 -   Commit and push
@@ -404,11 +405,11 @@ countdown(minutes = 15, font_size = "1.5em")
 ```{r}
 #| eval: false
 
-assignment <- "lab-3"
+assignment <- "lab-1"
 
 org_create_assignment(
   org = org,
-  repo = paste0("lab-3", "-", roster$team_name),
+  repo = paste0("lab-1", "-", roster$team_name),
   user = roster$github_name,
   team = roster$team_name,
   source_repo = paste0(org, "/", assignment)
@@ -485,7 +486,7 @@ countdown(minutes = 10, font_size = "1.5em")
 ```{r}
 #| eval: false
 
-hw01_repos <- org_repos(org, "hw-01-")
+hw1_repos <- org_repos(org, "hw-1")
 local_repo_clone(
   hw01_repos, 
   local_path = "hw1-submissions"

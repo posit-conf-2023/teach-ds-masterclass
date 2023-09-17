@@ -645,6 +645,55 @@
       ],
       "Hash": "85846544c596e71f8f46483ab165da33"
     },
+    "gh": {
+      "Package": "gh",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "cli",
+        "gitcreds",
+        "httr2",
+        "ini",
+        "jsonlite",
+        "rlang"
+      ],
+      "Hash": "03533b1c875028233598f848fda44c4c"
+    },
+    "ghclass": {
+      "Package": "ghclass",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "base64enc",
+        "cli",
+        "dplyr",
+        "fs",
+        "gh",
+        "glue",
+        "httr",
+        "lubridate",
+        "purrr",
+        "rlang",
+        "tibble",
+        "whisker",
+        "withr"
+      ],
+      "Hash": "2103409b2086dd3cac15c0cd0b30a45e"
+    },
+    "gitcreds": {
+      "Package": "gitcreds",
+      "Version": "0.1.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "ab08ac61f3e1be454ae21911eb8bc2fe"
+    },
     "globals": {
       "Package": "globals",
       "Version": "0.16.2",
@@ -843,6 +892,25 @@
       ],
       "Hash": "ac107251d9d9fd72f0ca8049988f1d7f"
     },
+    "httr2": {
+      "Package": "httr2",
+      "Version": "0.2.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "curl",
+        "glue",
+        "magrittr",
+        "openssl",
+        "rappdirs",
+        "rlang",
+        "withr"
+      ],
+      "Hash": "193bb297368afbbb42dc85784a46b36e"
+    },
     "ids": {
       "Package": "ids",
       "Version": "1.0.1",
@@ -877,6 +945,13 @@
         "vctrs"
       ],
       "Hash": "d4e1d781a855d40ebb9ae3aa92daa68d"
+    },
+    "ini": {
+      "Package": "ini",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "6154ec2223172bce8162d4153cda21f7"
     },
     "isoband": {
       "Package": "isoband",

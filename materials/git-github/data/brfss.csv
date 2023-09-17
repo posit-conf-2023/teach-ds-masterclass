@@ -1,0 +1,2001 @@
+state,general_health,smoke_freq,sleep
+NA,Fair,Not at all,6
+CO,Good,Some days,7
+MN,Very good,Every day,6
+VA,Excellent,Not at all,8
+UT,Very good,Not at all,7
+KS,Good,Some days,10
+UT,Good,Not at all,7
+TX,Fair,Not at all,6
+OR,Fair,Some days,8
+OH,Poor,Not at all,8
+VA,Very good,Not at all,8
+IN,Very good,Some days,6
+CO,Very good,Not at all,9
+VA,Very good,Every day,8
+DE,Very good,Not at all,7
+CO,Very good,Every day,7
+NE,Excellent,Not at all,8
+UT,Very good,Not at all,6
+IA,Good,Every day,8
+GA,Good,Not at all,7
+TN,Very good,Not at all,12
+NV,Very good,Not at all,8
+MA,Very good,Not at all,8
+NM,Good,Every day,4
+AR,Very good,Every day,8
+VA,Fair,Not at all,5
+WI,Very good,Some days,8
+ME,Very good,Not at all,10
+OR,Good,Not at all,8
+NY,Fair,Every day,4
+AR,Good,Not at all,7
+WA,Good,Some days,8
+OK,Very good,Every day,6
+VA,Very good,Not at all,7
+IN,Fair,Not at all,6
+ME,Good,Not at all,16
+MT,Good,Every day,8
+WA,Good,Not at all,7
+MS,Poor,Not at all,4
+CT,Excellent,Not at all,6
+MO,Good,Some days,8
+MN,Good,Some days,5
+HI,Good,Every day,10
+WY,Good,Not at all,7
+CT,Good,Every day,8
+AR,Very good,Not at all,6
+UT,Very good,Not at all,7
+FL,Poor,Every day,8
+KS,Fair,Every day,7
+IN,Good,Every day,7
+NA,Good,Every day,8
+WA,Good,Not at all,7
+TN,Excellent,Some days,4
+DE,Very good,Every day,7
+MT,Very good,Not at all,8
+NH,Good,Not at all,7
+MS,Excellent,Not at all,7
+MN,Very good,Not at all,8
+MT,Good,Not at all,7
+MD,Excellent,Every day,8
+MN,Excellent,Not at all,7
+HI,Good,Every day,10
+OH,Very good,Every day,7
+FL,Good,Not at all,8
+MO,Excellent,Every day,6
+MO,Good,Every day,8
+AZ,Fair,Not at all,4
+IL,Poor,Not at all,6
+RI,Very good,Not at all,7
+NC,Good,Every day,7
+OH,Good,Not at all,7
+AZ,Very good,Not at all,8
+CT,Very good,Some days,8
+OH,Good,Every day,6
+MS,Fair,Some days,6
+MO,Very good,Not at all,9
+ND,Fair,Not at all,7
+MN,Good,Not at all,7
+MD,Good,Not at all,8
+VT,Very good,Every day,7
+MN,Very good,Not at all,7
+TX,Good,Some days,7
+MN,Good,Not at all,8
+CT,Excellent,Every day,6
+IL,Fair,Some days,6
+LA,Very good,Not at all,6
+HI,Good,Every day,8
+NH,Good,Every day,8
+WV,Very good,Not at all,6
+SD,Excellent,Every day,6
+OH,Very good,Not at all,3
+WI,Very good,Some days,7
+AZ,Very good,Every day,7
+NY,Good,Every day,7
+MI,Very good,Not at all,8
+CT,Good,Not at all,6
+NY,Poor,Not at all,10
+HI,Very good,Not at all,6
+MA,Excellent,Not at all,7
+IL,Excellent,Every day,5
+NE,Good,Every day,5
+PA,Very good,Not at all,8
+MO,Good,Every day,6
+NJ,Good,Every day,8
+WA,Good,Not at all,3
+NY,Very good,Not at all,6
+FL,Excellent,Some days,4
+WY,Very good,Not at all,7
+NE,Excellent,Not at all,7
+IN,Very good,Not at all,6
+MA,Fair,Not at all,7
+CO,Good,Some days,6
+NH,Good,Every day,7
+NV,Very good,Not at all,4
+LA,Good,Not at all,7
+OR,Very good,Not at all,5
+NE,Very good,Not at all,6
+CO,Good,Every day,6
+CT,Very good,Every day,7
+SC,Good,Not at all,8
+OH,Excellent,Not at all,8
+NY,Very good,Not at all,8
+KS,Good,Not at all,8
+NJ,Excellent,Not at all,7
+NE,Very good,Not at all,7
+UT,Poor,Not at all,5
+NA,Very good,Not at all,8
+FL,Good,Not at all,6
+VA,Excellent,Every day,8
+NY,Good,Every day,5
+NJ,Good,Not at all,5
+KS,Good,Not at all,8
+FL,Very good,Some days,6
+IL,Good,Some days,5
+HI,Very good,Not at all,8
+OR,Excellent,Not at all,8
+IA,Excellent,Not at all,6
+MD,Good,Not at all,7
+GA,Very good,Every day,2
+SD,Fair,Not at all,8
+NJ,Good,Not at all,7
+VA,Fair,Not at all,6
+NY,Good,Not at all,7
+CA,Good,Not at all,6
+ND,Very good,Not at all,9
+KY,Good,Not at all,6
+WA,Excellent,Every day,6
+AK,Good,Not at all,8
+AZ,Very good,Not at all,8
+AR,Very good,Every day,10
+PA,Good,Every day,3
+OH,Very good,Not at all,7
+GA,Fair,Not at all,8
+OK,Good,Not at all,6
+KS,Very good,Not at all,6
+AR,Very good,Some days,8
+WI,Poor,Every day,8
+AL,Fair,Every day,9
+WY,Excellent,Not at all,9
+KS,Very good,Every day,8
+NY,Good,Not at all,8
+ME,Good,Not at all,8
+MD,Very good,Every day,8
+NH,Fair,Every day,7
+CA,Very good,Not at all,7
+SD,Excellent,Some days,6
+AL,Good,Every day,7
+FL,Fair,Every day,8
+CA,Fair,Some days,8
+KS,Excellent,Not at all,7
+DC,Excellent,Some days,8
+NC,Excellent,Not at all,9
+OK,Very good,Some days,6
+OH,Good,Not at all,6
+OH,Good,Not at all,7
+IA,Good,Not at all,8
+IN,Fair,Some days,8
+IA,Very good,Every day,8
+AK,Poor,Not at all,7
+OH,Good,Not at all,7
+MN,Excellent,Some days,9
+AZ,Very good,Not at all,6
+MS,Excellent,Not at all,8
+AZ,Fair,Not at all,10
+IA,Poor,Every day,4
+IA,Very good,Not at all,7
+AZ,Fair,Not at all,6
+MI,Excellent,Not at all,7
+IN,Very good,Not at all,7
+RI,Very good,Not at all,6
+KS,Good,Every day,6
+ID,Good,Not at all,8
+NE,Fair,Not at all,8
+NE,Good,Every day,9
+MD,Excellent,Not at all,4
+NE,Good,Not at all,7
+MT,Excellent,Not at all,7
+NY,Very good,Not at all,10
+LA,Fair,Some days,8
+OH,Fair,Not at all,6
+AZ,Good,Not at all,7
+TX,Excellent,Some days,8
+KS,Excellent,Every day,5
+MO,Fair,Not at all,7
+AZ,Fair,Not at all,5
+NY,Very good,Not at all,7
+NM,Excellent,Not at all,8
+MD,Good,Not at all,7
+MD,Very good,Not at all,8
+NY,Very good,Not at all,8
+NE,Very good,Not at all,6
+NE,Excellent,Not at all,7
+UT,Very good,Not at all,6
+ME,Very good,Not at all,6
+GA,Very good,Some days,4
+MA,Very good,Not at all,7
+CT,Excellent,Not at all,7
+RI,Fair,Every day,5
+IA,Poor,Every day,3
+KS,Very good,Not at all,6
+ID,Good,Every day,9
+NE,Fair,Not at all,10
+MT,Good,Every day,7
+TN,Fair,Not at all,9
+UT,Excellent,Not at all,6
+KS,Poor,Not at all,6
+NM,Excellent,Not at all,8
+IN,Very good,Not at all,6
+AL,Good,Every day,8
+HI,Fair,Not at all,5
+WA,Good,Not at all,10
+NH,Good,Not at all,8
+OK,Very good,Not at all,6
+VT,Very good,Some days,6
+KS,Very good,Not at all,6
+NY,Very good,Not at all,9
+IN,Fair,Every day,5
+NJ,Good,Not at all,7
+OH,Excellent,Not at all,8
+UT,Good,Not at all,7
+MN,Poor,Some days,12
+LA,Good,Not at all,6
+NJ,Very good,Every day,8
+OH,Good,Not at all,6
+OK,Very good,Every day,8
+SD,Poor,Some days,8
+KS,Good,Some days,6
+MO,Very good,Every day,4
+HI,Very good,Not at all,6
+IL,Very good,Not at all,7
+AR,Good,Not at all,8
+RI,Good,Every day,6
+MD,Good,Not at all,8
+FL,Fair,Some days,6
+NM,Very good,Not at all,8
+WV,Very good,Some days,6
+SC,Good,Some days,9
+CO,Very good,Not at all,7
+FL,Excellent,Every day,6
+KY,Very good,Not at all,8
+MS,Very good,Not at all,7
+NE,Very good,Not at all,8
+UT,Fair,Some days,5
+FL,Fair,Every day,7
+NM,Good,Not at all,8
+MT,Good,Every day,7
+FL,Fair,Not at all,6
+AL,Very good,Not at all,7
+AL,Very good,Some days,7
+FL,Very good,Not at all,5
+MN,Very good,Not at all,8
+OH,Good,Every day,9
+KS,Good,Every day,6
+VA,Very good,Not at all,5
+NA,Excellent,Not at all,7
+NY,Very good,Not at all,7
+MN,Very good,Not at all,7
+CO,Good,Every day,8
+CA,Very good,Not at all,6
+OH,Fair,Every day,8
+AK,Excellent,Every day,6
+FL,Good,Every day,8
+SD,Very good,Not at all,10
+IL,Good,Some days,7
+NY,Very good,Every day,5
+CO,Excellent,Not at all,8
+AZ,Very good,Not at all,7
+NV,Very good,Not at all,8
+WV,Fair,Every day,7
+ME,Very good,Not at all,8
+VT,Excellent,Not at all,8
+NJ,Good,Not at all,9
+OH,Fair,Not at all,9
+WA,Very good,Not at all,5
+OH,Very good,Every day,7
+IA,Excellent,Not at all,8
+CO,Excellent,Not at all,7
+KS,Fair,Not at all,6
+NY,Very good,Not at all,8
+OH,Excellent,Not at all,7
+AR,Good,Every day,8
+NM,Good,Not at all,6
+WA,Good,Not at all,7
+PA,Very good,Not at all,7
+MO,Excellent,Not at all,8
+FL,Good,Every day,8
+RI,Excellent,Every day,6
+MS,Good,Not at all,8
+AZ,Very good,Every day,6
+NJ,Excellent,Not at all,6
+IA,Excellent,Not at all,7
+TX,Very good,Not at all,10
+VA,Very good,Not at all,8
+WA,Good,Not at all,8
+WA,Good,Not at all,8
+GA,Excellent,Not at all,8
+TN,Very good,Not at all,8
+MA,Very good,Not at all,8
+MN,Good,Every day,7
+IN,Poor,Every day,9
+MT,Poor,Not at all,10
+SC,Very good,Some days,6
+IN,Good,Not at all,6
+NA,Very good,Every day,6
+NY,Very good,Not at all,7
+MN,Fair,Every day,6
+AK,Very good,Not at all,7
+WI,Good,Some days,4
+ID,Very good,Every day,7
+DE,Good,Every day,7
+ME,Very good,Some days,8
+WA,Excellent,Not at all,8
+GA,Fair,Not at all,5
+WY,Very good,Not at all,7
+AR,Poor,Not at all,4
+AL,Very good,Not at all,6
+RI,Very good,Not at all,6
+MO,Good,Every day,8
+WY,Poor,Every day,8
+WI,Good,Not at all,7
+NV,Good,Not at all,7
+OH,Fair,Not at all,7
+CO,Good,Every day,6
+HI,Good,Every day,7
+NH,Excellent,Not at all,6
+UT,Good,Every day,8
+TN,Good,Every day,8
+AZ,Good,Not at all,8
+AZ,Fair,Every day,1
+SC,Very good,Every day,8
+VA,Good,Not at all,6
+NE,Fair,Not at all,5
+MN,Good,Every day,3
+ME,Good,Every day,6
+RI,Fair,Every day,8
+OR,Good,Not at all,8
+MN,Poor,Every day,2
+NM,Excellent,Some days,7
+HI,Fair,Not at all,6
+KS,Good,Not at all,16
+LA,Excellent,Not at all,6
+VA,Good,Not at all,6
+KY,Good,Every day,8
+AK,Good,Some days,7
+OK,Very good,Not at all,7
+KS,Good,Not at all,9
+MO,Very good,Not at all,7
+IL,Very good,Not at all,6
+MN,Good,Not at all,8
+TX,Very good,Not at all,8
+CO,Good,Every day,8
+NJ,Good,Every day,7
+NJ,Good,Not at all,6
+MN,Good,Not at all,8
+WI,Good,Some days,4
+VT,Excellent,Not at all,8
+OK,Very good,Not at all,7
+MO,Fair,Every day,7
+AZ,Very good,Not at all,8
+FL,Good,Not at all,8
+NY,Good,Not at all,6
+AZ,Very good,Every day,5
+WA,Very good,Every day,5
+ID,Good,Not at all,7
+CO,Very good,Some days,6
+NE,Very good,Every day,7
+IN,Very good,Every day,6
+CT,Fair,Not at all,8
+MS,Very good,Every day,6
+KS,Fair,Some days,7
+NE,Good,Every day,6
+SD,Poor,Not at all,4
+MN,Very good,Every day,7
+VA,Excellent,Every day,6
+KY,Good,Not at all,3
+MN,Good,Some days,7
+ME,Very good,Not at all,7
+NE,Good,Some days,5
+FL,Poor,Every day,3
+AK,Excellent,Not at all,7
+HI,Very good,Not at all,7
+OH,Very good,Some days,8
+NA,Very good,Every day,8
+MA,Good,Every day,7
+KY,Good,Not at all,6
+WY,Excellent,Not at all,8
+NA,Poor,Every day,5
+WI,Excellent,Not at all,8
+IA,Good,Every day,6
+IA,Good,Not at all,10
+NE,Good,Not at all,7
+NE,Fair,Not at all,6
+NE,Good,Every day,6
+RI,Very good,Some days,6
+KS,Fair,Not at all,8
+OH,Good,Not at all,8
+IN,Very good,Not at all,7
+MN,Fair,Every day,8
+KY,Excellent,Not at all,8
+NA,Fair,Not at all,6
+NJ,Very good,Not at all,7
+IN,Excellent,Every day,6
+KS,Very good,Every day,6
+MT,Fair,Not at all,7
+TX,Good,Not at all,8
+MT,Fair,Not at all,6
+MA,Excellent,Not at all,6
+MA,Excellent,Not at all,7
+HI,Excellent,Every day,8
+ME,Very good,Not at all,4
+WA,Very good,Not at all,9
+OH,Poor,Every day,7
+IN,Very good,Not at all,8
+CO,Excellent,Not at all,6
+NH,Very good,Some days,6
+NC,Good,Not at all,6
+VA,Fair,Not at all,8
+NE,Good,Every day,8
+CO,Good,Some days,4
+CO,Good,Not at all,7
+OH,Good,Not at all,8
+CO,Excellent,Not at all,7
+NM,Very good,Not at all,7
+LA,Fair,Not at all,8
+AK,Poor,Not at all,4
+MN,Good,Not at all,7
+PA,Fair,Every day,5
+VT,Very good,Not at all,7
+NE,Fair,Every day,8
+GA,Good,Every day,7
+FL,Very good,Not at all,8
+NH,Very good,Every day,6
+OK,Very good,Every day,7
+NH,Very good,Not at all,5
+ME,Very good,Not at all,9
+NV,Good,Not at all,8
+WA,Excellent,Not at all,7
+NA,Good,Not at all,6
+MO,Very good,Not at all,6
+AR,Excellent,Not at all,8
+WY,Good,Some days,7
+ME,Good,Not at all,6
+TX,Good,Not at all,8
+CT,Good,Not at all,8
+FL,Good,Every day,7
+NE,Good,Not at all,7
+HI,Very good,Not at all,8
+TX,Very good,Not at all,4
+SC,Excellent,Some days,8
+NE,Very good,Not at all,7
+MA,Very good,Not at all,7
+GA,Good,Every day,7
+FL,Poor,Not at all,9
+NA,Good,Not at all,8
+NY,Very good,Not at all,6
+WI,Very good,Not at all,9
+VA,Good,Not at all,6
+KS,Good,Every day,6
+IA,Very good,Every day,6
+IA,Good,Not at all,7
+IA,Very good,Every day,6
+NY,Good,Not at all,8
+AZ,Good,Every day,8
+HI,Very good,Not at all,7
+HI,Excellent,Every day,7
+UT,Very good,Not at all,6
+IN,Very good,Some days,8
+WA,Good,Every day,6
+MN,Very good,Some days,10
+NJ,Very good,Some days,6
+SD,Fair,Not at all,10
+NE,Poor,Not at all,8
+IA,Good,Every day,5
+MA,Very good,Not at all,10
+CO,Poor,Every day,6
+OH,Good,Not at all,8
+ID,Good,Not at all,7
+RI,Very good,Not at all,7
+OR,Very good,Not at all,6
+OK,Good,Not at all,3
+IN,Excellent,Every day,10
+WV,Excellent,Not at all,7
+NH,Very good,Not at all,6
+ME,Good,Every day,6
+FL,Fair,Not at all,5
+TX,Fair,Not at all,6
+WV,Poor,Every day,6
+ME,Fair,Some days,7
+NJ,Very good,Not at all,7
+PA,Fair,Every day,5
+FL,Fair,Every day,6
+MD,Good,Not at all,8
+MD,Excellent,Not at all,8
+NH,Poor,Not at all,9
+CO,Good,Not at all,8
+AZ,Very good,Not at all,8
+MT,Fair,Every day,7
+NJ,Good,Not at all,8
+OH,Very good,Not at all,10
+NA,Poor,Not at all,7
+CT,Poor,Every day,5
+MD,Good,Every day,8
+WI,Excellent,Not at all,9
+GA,Good,Not at all,8
+WA,Very good,Not at all,7
+MN,Good,Every day,7
+WY,Good,Every day,6
+SD,Excellent,Not at all,7
+MT,Good,Not at all,8
+MS,Good,Not at all,8
+NY,Very good,Not at all,7
+ND,Very good,Not at all,8
+MD,Fair,Not at all,8
+KS,Very good,Some days,9
+WV,Fair,Not at all,10
+ME,Good,Every day,4
+NE,Very good,Not at all,9
+MA,Excellent,Not at all,6
+IN,Fair,Not at all,8
+FL,Excellent,Every day,6
+TX,Good,Not at all,6
+MI,Good,Every day,6
+MD,Good,Not at all,8
+NC,Very good,Not at all,6
+MO,Good,Not at all,16
+GA,Excellent,Not at all,8
+OH,Very good,Some days,6
+AK,Good,Every day,7
+MN,Fair,Not at all,6
+NY,Excellent,Not at all,6
+NJ,Good,Not at all,7
+MO,Good,Not at all,7
+KS,Fair,Not at all,5
+TN,Fair,Not at all,3
+OR,Very good,Some days,8
+MI,Very good,Some days,9
+OH,Excellent,Every day,7
+MO,Very good,Not at all,8
+MO,Very good,Not at all,8
+OR,Very good,Not at all,6
+VA,Excellent,Every day,8
+MO,Very good,Not at all,8
+VA,Excellent,Not at all,8
+MS,Good,Not at all,7
+MD,Poor,Every day,6
+WV,Fair,Not at all,6
+CO,Good,Some days,8
+OR,Good,Every day,7
+NC,Very good,Not at all,7
+DC,Excellent,Every day,6
+NH,Good,Every day,6
+NE,Very good,Not at all,8
+AL,Very good,Not at all,6
+MI,Fair,Every day,9
+MS,Good,Every day,6
+FL,Fair,Not at all,7
+IA,Very good,Not at all,8
+NY,Very good,Not at all,16
+OR,Very good,Not at all,8
+IA,Good,Not at all,10
+NA,Good,Not at all,8
+UT,Excellent,Not at all,9
+MT,Fair,Not at all,6
+GA,Good,Every day,6
+NJ,Good,Some days,6
+AZ,Very good,Not at all,8
+KS,Very good,Not at all,7
+NY,Very good,Not at all,8
+MN,Excellent,Every day,8
+MS,Very good,Every day,8
+NY,Good,Not at all,7
+NJ,Very good,Not at all,7
+MT,Good,Some days,10
+CT,Very good,Not at all,8
+SD,Very good,Every day,9
+WY,Good,Not at all,7
+WA,Fair,Not at all,7
+OH,Good,Not at all,7
+HI,Good,Every day,6
+PA,Very good,Every day,7
+FL,Very good,Not at all,7
+OH,Very good,Every day,8
+IL,Very good,Not at all,7
+CT,Good,Not at all,6
+LA,Good,Every day,8
+CT,Good,Some days,5
+FL,Good,Not at all,7
+CT,Good,Not at all,7
+OR,Very good,Every day,5
+NA,Fair,Every day,5
+HI,Good,Not at all,7
+MN,Very good,Not at all,7
+WY,Very good,Every day,8
+NY,Good,Every day,6
+RI,Excellent,Not at all,7
+DE,Good,Not at all,8
+IA,Good,Not at all,8
+MD,Excellent,Every day,7
+IA,Very good,Some days,6
+WV,Good,Every day,6
+TX,Very good,Every day,8
+UT,Very good,Not at all,6
+NJ,Good,Not at all,5
+NH,Excellent,Not at all,8
+UT,Good,Some days,8
+SD,Good,Some days,7
+FL,Fair,Not at all,6
+MO,Very good,Not at all,6
+NA,Very good,Every day,8
+AZ,Excellent,Not at all,7
+OH,Good,Every day,6
+SC,Very good,Not at all,8
+MI,Excellent,Not at all,7
+MT,Very good,Not at all,7
+MD,Fair,Not at all,6
+NM,Very good,Not at all,6
+ID,Good,Every day,8
+MD,Poor,Every day,6
+NJ,Good,Not at all,5
+NE,Good,Not at all,7
+WI,Very good,Some days,8
+FL,Good,Some days,8
+AR,Very good,Not at all,8
+WV,Excellent,Every day,8
+OR,Good,Not at all,3
+NV,Good,Every day,6
+MI,Excellent,Not at all,5
+SD,Fair,Not at all,7
+RI,Excellent,Not at all,7
+WY,Very good,Not at all,8
+AZ,Very good,Not at all,8
+MO,Very good,Not at all,8
+NJ,Good,Not at all,8
+TX,Very good,Not at all,8
+AL,Very good,Every day,6
+OK,Good,Every day,8
+NV,Poor,Not at all,9
+IA,Very good,Not at all,9
+MD,Good,Not at all,9
+CA,Good,Every day,8
+MD,Very good,Not at all,6
+GA,Very good,Some days,6
+NE,Good,Not at all,7
+NJ,Very good,Not at all,7
+MO,Poor,Not at all,4
+WA,Very good,Some days,4
+AZ,Very good,Not at all,5
+ND,Excellent,Every day,8
+ME,Good,Not at all,7
+AZ,Fair,Some days,6
+FL,Fair,Every day,7
+KY,Good,Not at all,7
+MN,Poor,Every day,20
+KS,Very good,Not at all,5
+LA,Good,Every day,6
+WA,Very good,Not at all,8
+VT,Very good,Some days,7
+VT,Excellent,Every day,6
+ND,Poor,Every day,6
+MD,Very good,Every day,6
+ME,Good,Every day,7
+NH,Fair,Some days,5
+MD,Good,Some days,5
+MI,Very good,Some days,8
+MS,Good,Every day,8
+WI,Fair,Not at all,7
+ID,Very good,Not at all,7
+NY,Very good,Every day,6
+RI,Good,Not at all,7
+AZ,Very good,Not at all,7
+OH,Good,Not at all,7
+MI,Excellent,Not at all,8
+CO,Good,Not at all,6
+MD,Good,Not at all,7
+OH,Very good,Not at all,6
+AL,Poor,Not at all,8
+WA,Good,Every day,7
+NA,Excellent,Every day,6
+WI,Fair,Not at all,14
+AZ,Good,Not at all,6
+TX,Very good,Not at all,6
+NE,Excellent,Some days,6
+NY,Excellent,Not at all,12
+AR,Fair,Not at all,10
+AR,Excellent,Some days,9
+OH,Poor,Every day,5
+ME,Fair,Not at all,8
+HI,Good,Not at all,6
+KS,Excellent,Not at all,9
+MA,Excellent,Not at all,8
+KS,Excellent,Not at all,9
+AR,Excellent,Not at all,8
+IL,Good,Not at all,6
+HI,Very good,Not at all,7
+NH,Good,Not at all,8
+ME,Poor,Every day,6
+NC,Good,Every day,8
+NJ,Fair,Some days,5
+IN,Very good,Every day,6
+SC,Very good,Some days,8
+MO,Good,Not at all,7
+GA,Very good,Not at all,7
+FL,Very good,Not at all,5
+CT,Good,Some days,7
+MI,Good,Every day,5
+MO,Fair,Every day,9
+CO,Very good,Not at all,6
+RI,Good,Not at all,8
+NH,Good,Some days,7
+NV,Poor,Not at all,4
+CO,Very good,Not at all,6
+KS,Excellent,Every day,7
+MA,Good,Every day,8
+ME,Very good,Not at all,6
+WA,Good,Every day,6
+ID,Good,Some days,8
+OK,Excellent,Not at all,8
+VT,Excellent,Not at all,6
+IN,Very good,Not at all,9
+NM,Good,Some days,7
+VT,Excellent,Not at all,8
+CT,Fair,Not at all,6
+UT,Good,Not at all,9
+AK,Very good,Every day,8
+VT,Good,Not at all,8
+OK,Very good,Every day,7
+MI,Very good,Every day,8
+MN,Excellent,Not at all,7
+AL,Fair,Not at all,5
+CA,Good,Some days,4
+AZ,Good,Every day,4
+WA,Good,Not at all,7
+OR,Good,Not at all,8
+ME,Fair,Not at all,8
+NE,Good,Not at all,8
+TX,Good,Not at all,7
+NY,Good,Every day,2
+VA,Very good,Not at all,1
+PA,Very good,Not at all,12
+AR,Excellent,Some days,8
+LA,Excellent,Not at all,9
+MT,Very good,Not at all,6
+OH,Excellent,Not at all,8
+AR,Very good,Not at all,7
+NE,Fair,Some days,6
+CT,Fair,Not at all,7
+NY,Poor,Not at all,8
+MA,Good,Not at all,6
+AZ,Very good,Some days,8
+MA,Good,Not at all,6
+ND,Very good,Every day,7
+OH,Excellent,Every day,4
+NY,Very good,Not at all,6
+DE,Fair,Every day,4
+OH,Fair,Not at all,7
+NE,Fair,Every day,8
+CT,Very good,Not at all,7
+HI,Poor,Every day,9
+AL,Good,Some days,8
+IN,Excellent,Not at all,8
+KS,Fair,Every day,8
+NY,Good,Every day,2
+WA,Very good,Not at all,8
+ME,Very good,Not at all,8
+TN,Very good,Not at all,7
+NH,Very good,Some days,6
+MN,Excellent,Not at all,7
+NE,Good,Not at all,8
+MD,Excellent,Every day,8
+CO,Good,Not at all,8
+TX,Fair,Every day,8
+OH,Fair,Some days,3
+NJ,Fair,Some days,6
+NE,Good,Every day,6
+TX,Poor,Some days,4
+CT,Good,Every day,6
+CT,Very good,Every day,6
+HI,Excellent,Not at all,8
+IN,Fair,Not at all,9
+HI,Excellent,Not at all,7
+NM,Fair,Every day,10
+ND,Very good,Not at all,7
+DC,Good,Not at all,4
+NM,Good,Some days,8
+FL,Fair,Not at all,8
+KS,Very good,Not at all,9
+TN,Good,Not at all,9
+UT,Fair,Not at all,6
+NH,Very good,Not at all,8
+MD,Fair,Not at all,6
+CO,Very good,Every day,6
+CO,Fair,Some days,7
+NE,Very good,Every day,5
+MA,Excellent,Not at all,7
+TX,Very good,Not at all,8
+OR,Very good,Every day,9
+OK,Poor,Every day,5
+WA,Fair,Every day,8
+ID,Very good,Not at all,6
+NJ,Fair,Not at all,3
+NJ,Good,Every day,8
+FL,Very good,Every day,6
+MO,Poor,Not at all,8
+CA,Poor,Not at all,8
+NH,Good,Not at all,5
+AR,Fair,Not at all,4
+MI,Very good,Not at all,7
+SC,Good,Not at all,7
+NY,Good,Not at all,8
+ME,Good,Not at all,5
+NC,Good,Every day,5
+TN,Fair,Every day,5
+KY,Very good,Not at all,6
+MO,Good,Every day,10
+MN,Poor,Not at all,3
+IN,Good,Every day,7
+VA,Poor,Not at all,8
+NC,Very good,Not at all,7
+AL,Fair,Not at all,8
+TX,Excellent,Not at all,9
+OK,Good,Not at all,7
+MI,Excellent,Every day,6
+WI,Very good,Every day,5
+VA,Good,Not at all,8
+NE,Good,Some days,7
+IA,Very good,Not at all,9
+NE,Fair,Not at all,8
+MD,Good,Not at all,6
+CA,Fair,Every day,7
+CA,Fair,Some days,6
+ID,Very good,Not at all,8
+KS,Very good,Not at all,7
+MN,Very good,Every day,8
+AZ,Fair,Not at all,7
+NY,Fair,Every day,6
+MD,Fair,Not at all,7
+NY,Very good,Not at all,8
+ME,Good,Not at all,5
+NY,Excellent,Not at all,8
+WA,Good,Not at all,7
+WI,Very good,Not at all,6
+FL,Good,Every day,5
+WA,Fair,Not at all,7
+NE,Excellent,Not at all,7
+IN,Very good,Not at all,7
+IL,Good,Not at all,7
+MN,Very good,Not at all,6
+CA,Very good,Not at all,8
+CO,Good,Every day,8
+NV,Fair,Not at all,9
+LA,Excellent,Some days,6
+NM,Excellent,Not at all,6
+ID,Excellent,Every day,6
+MN,Very good,Not at all,7
+NE,Good,Every day,7
+NC,Good,Not at all,7
+NE,Very good,Every day,7
+SD,Good,Every day,8
+NC,Very good,Not at all,8
+NJ,Excellent,Some days,7
+IA,Very good,Not at all,6
+IA,Fair,Not at all,8
+AK,Very good,Not at all,7
+ME,Very good,Not at all,7
+VA,Very good,Not at all,6
+OH,Fair,Every day,8
+AR,Good,Not at all,8
+WI,Very good,Not at all,7
+WA,Fair,Not at all,8
+NY,Very good,Not at all,7
+WA,Very good,Every day,6
+NM,Very good,Every day,8
+RI,Good,Not at all,9
+FL,Very good,Every day,6
+MI,Excellent,Not at all,6
+RI,Very good,Not at all,6
+LA,Poor,Not at all,12
+OK,Fair,Every day,7
+NE,Very good,Not at all,7
+AL,Fair,Every day,5
+KS,Good,Every day,8
+MO,Very good,Every day,6
+LA,Good,Not at all,8
+DC,Good,Some days,10
+WA,Very good,Some days,7
+WY,Good,Not at all,9
+OK,Fair,Not at all,7
+LA,Fair,Not at all,7
+VA,Good,Not at all,10
+ND,Fair,Not at all,5
+IA,Good,Every day,5
+ME,Very good,Not at all,7
+OH,Good,Not at all,8
+OH,Excellent,Every day,11
+VA,Very good,Not at all,4
+TX,Good,Not at all,7
+UT,Fair,Not at all,6
+WV,Very good,Every day,10
+WA,Good,Not at all,6
+IN,Very good,Not at all,6
+OH,Very good,Every day,4
+AR,Poor,Not at all,6
+OH,Excellent,Not at all,4
+CO,Excellent,Not at all,7
+WV,Very good,Not at all,10
+ME,Very good,Not at all,7
+AR,Good,Not at all,7
+VA,Very good,Not at all,7
+MO,Very good,Not at all,6
+NM,Fair,Not at all,8
+CA,Very good,Some days,7
+OR,Fair,Not at all,9
+NM,Good,Not at all,6
+IN,Good,Not at all,8
+NY,Good,Not at all,8
+GA,Good,Not at all,8
+KS,Very good,Not at all,6
+WA,Good,Not at all,6
+IN,Excellent,Not at all,8
+MO,Good,Every day,5
+NJ,Good,Every day,8
+NY,Good,Not at all,7
+AK,Very good,Not at all,7
+VT,Very good,Every day,7
+NJ,Excellent,Not at all,8
+WA,Excellent,Not at all,8
+ME,Very good,Not at all,7
+AK,Excellent,Not at all,7
+IA,Good,Not at all,7
+GA,Very good,Every day,6
+ME,Very good,Every day,5
+GA,Good,Not at all,8
+DE,Good,Not at all,7
+KY,Good,Some days,8
+NH,Fair,Some days,5
+CT,Fair,Not at all,7
+CO,Good,Not at all,6
+ME,Good,Not at all,6
+OH,Fair,Not at all,5
+MN,Very good,Not at all,6
+NH,Very good,Every day,8
+NC,Very good,Not at all,7
+ND,Very good,Not at all,4
+WA,Fair,Every day,6
+CT,Good,Not at all,7
+MD,Excellent,Some days,6
+WA,Fair,Not at all,7
+MN,Very good,Not at all,6
+WA,Poor,Every day,4
+IN,Very good,Some days,7
+HI,Very good,Not at all,8
+OR,Fair,Every day,8
+NY,Very good,Not at all,8
+PA,Very good,Not at all,6
+MI,Very good,Not at all,8
+NY,Good,Not at all,8
+MO,Excellent,Not at all,7
+GA,Fair,Not at all,5
+SC,Excellent,Not at all,7
+CO,Good,Not at all,7
+NH,Very good,Some days,6
+AR,Fair,Every day,6
+CA,Excellent,Not at all,8
+OH,Very good,Every day,8
+NM,Excellent,Not at all,7
+ID,Good,Not at all,6
+MS,Good,Not at all,7
+IA,Very good,Not at all,9
+GA,Very good,Every day,6
+NY,Excellent,Not at all,8
+MD,Very good,Every day,8
+WA,Very good,Not at all,7
+ME,Very good,Every day,7
+MS,Fair,Not at all,6
+NY,Very good,Not at all,7
+SC,Excellent,Every day,8
+HI,Very good,Not at all,8
+MD,Fair,Not at all,8
+IN,Very good,Not at all,6
+MN,Good,Every day,7
+FL,Good,Not at all,7
+NY,Good,Some days,5
+MA,Excellent,Not at all,8
+MA,Excellent,Every day,5
+VA,Good,Not at all,6
+ND,Excellent,Not at all,6
+MA,Very good,Not at all,7
+AZ,Fair,Some days,6
+IN,Poor,Every day,8
+MI,Good,Not at all,7
+FL,Good,Not at all,7
+WV,Very good,Not at all,7
+VT,Very good,Not at all,6
+VA,Very good,Not at all,6
+ME,Very good,Not at all,8
+VA,Excellent,Not at all,7
+SD,Very good,Not at all,7
+IA,Very good,Not at all,8
+LA,Fair,Every day,7
+MA,Very good,Not at all,6
+NM,Good,Not at all,7
+NE,Excellent,Not at all,7
+KS,Excellent,Not at all,8
+NY,Excellent,Not at all,7
+SD,Good,Not at all,5
+ME,Fair,Not at all,8
+MD,Very good,Not at all,8
+OH,Good,Every day,5
+CT,Good,Some days,8
+MN,Good,Some days,8
+NJ,Very good,Not at all,7
+NE,Good,Not at all,10
+MD,Good,Not at all,6
+NC,Fair,Every day,5
+MI,Good,Some days,6
+DE,Good,Not at all,8
+IN,Good,Not at all,7
+WA,Very good,Not at all,8
+CO,Good,Every day,7
+NE,Very good,Not at all,7
+ID,Excellent,Not at all,7
+NJ,Excellent,Not at all,9
+LA,Very good,Not at all,7
+WY,Fair,Not at all,10
+IA,Very good,Every day,6
+IA,Good,Not at all,7
+NA,Good,Not at all,8
+WA,Poor,Every day,6
+OH,Good,Not at all,7
+MA,Very good,Not at all,6
+AK,Fair,Every day,8
+IL,Very good,Not at all,7
+MA,Very good,Some days,7
+MN,Excellent,Not at all,8
+GA,Very good,Every day,8
+MA,Very good,Some days,8
+AR,Very good,Not at all,7
+ID,Very good,Not at all,6
+ME,Very good,Every day,7
+MT,Good,Not at all,7
+UT,Fair,Every day,6
+IA,Very good,Not at all,8
+IN,Good,Not at all,8
+NE,Good,Every day,7
+MA,Good,Not at all,10
+PA,Very good,Not at all,7
+IL,Very good,Not at all,7
+WI,Very good,Every day,8
+NE,Good,Not at all,8
+CT,Good,Not at all,8
+VT,Fair,Not at all,8
+MN,Very good,Not at all,6
+IL,Poor,Some days,5
+UT,Good,Not at all,8
+CO,Very good,Not at all,7
+WA,Poor,Not at all,6
+KY,Good,Not at all,6
+MO,Poor,Every day,5
+VA,Very good,Not at all,7
+MN,Excellent,Not at all,8
+ME,Very good,Not at all,6
+WI,Poor,Not at all,5
+IL,Very good,Every day,5
+NM,Very good,Not at all,8
+WA,Good,Not at all,6
+NH,Fair,Not at all,8
+WV,Fair,Every day,7
+MT,Very good,Not at all,5
+NM,Fair,Not at all,9
+NM,Fair,Not at all,8
+MN,Good,Not at all,7
+NY,Very good,Not at all,6
+IN,Very good,Not at all,7
+HI,Fair,Not at all,6
+IN,Fair,Every day,6
+WA,Good,Every day,5
+MN,Very good,Every day,5
+MO,Good,Not at all,6
+OK,Fair,Some days,4
+AL,Good,Every day,2
+TX,Good,Not at all,14
+VT,Very good,Not at all,7
+NY,Excellent,Not at all,7
+ID,Good,Not at all,8
+LA,Excellent,Not at all,7
+MN,Good,Not at all,7
+WY,Good,Not at all,8
+OH,Good,Every day,6
+IA,Very good,Every day,4
+CO,Very good,Not at all,7
+NE,Fair,Not at all,7
+PA,Good,Every day,6
+OH,Good,Every day,8
+UT,Fair,Some days,8
+NY,Good,Not at all,8
+OH,Very good,Not at all,7
+WV,Poor,Every day,4
+VA,Good,Not at all,7
+SD,Good,Not at all,7
+NC,Very good,Not at all,10
+MI,Good,Not at all,8
+OH,Good,Not at all,6
+FL,Good,Not at all,10
+SD,Very good,Not at all,8
+MD,Poor,Not at all,6
+MD,Very good,Every day,8
+KY,Fair,Not at all,5
+IN,Poor,Not at all,10
+NM,Very good,Not at all,15
+MI,Good,Not at all,6
+OH,Excellent,Not at all,10
+AZ,Fair,Some days,10
+IL,Good,Not at all,8
+VA,Good,Some days,8
+KS,Very good,Not at all,6
+IN,Very good,Every day,7
+OH,Very good,Every day,8
+WA,Very good,Not at all,6
+NY,Excellent,Not at all,9
+IA,Excellent,Not at all,5
+IA,Fair,Not at all,10
+IL,Good,Not at all,8
+SD,Good,Not at all,6
+MD,Good,Some days,7
+AL,Fair,Not at all,6
+MN,Good,Every day,5
+IA,Good,Not at all,7
+CA,Good,Not at all,7
+IL,Very good,Not at all,6
+WY,Good,Some days,8
+MO,Good,Every day,7
+WI,Excellent,Every day,8
+MN,Very good,Not at all,6
+VT,Fair,Not at all,7
+LA,Good,Not at all,7
+KS,Excellent,Not at all,8
+ME,Excellent,Not at all,7
+NE,Fair,Not at all,12
+GA,Good,Not at all,10
+ND,Good,Not at all,6
+NY,Fair,Some days,8
+TX,Good,Not at all,7
+KS,Very good,Every day,6
+MN,Very good,Not at all,8
+RI,Excellent,Not at all,7
+IL,Fair,Not at all,9
+SD,Good,Not at all,8
+MT,Fair,Not at all,6
+NC,Good,Some days,8
+FL,Very good,Not at all,10
+ME,Excellent,Every day,7
+OK,Very good,Not at all,7
+IN,Fair,Not at all,6
+RI,Good,Some days,9
+AZ,Excellent,Not at all,8
+TX,Good,Not at all,8
+NE,Very good,Not at all,7
+ND,Very good,Every day,5
+AZ,Very good,Not at all,6
+DE,Fair,Not at all,6
+AZ,Very good,Not at all,6
+NJ,Excellent,Every day,9
+IN,Very good,Every day,5
+SC,Excellent,Not at all,8
+CO,Very good,Not at all,8
+MI,Very good,Not at all,10
+NY,Good,Every day,13
+AL,Good,Not at all,5
+IN,Good,Not at all,7
+CO,Very good,Not at all,9
+WA,Excellent,Not at all,8
+FL,Very good,Not at all,6
+GA,Very good,Not at all,8
+ID,Fair,Not at all,9
+NH,Very good,Not at all,7
+NY,Fair,Not at all,5
+NH,Fair,Every day,5
+OK,Good,Every day,9
+AL,Good,Every day,6
+VA,Very good,Not at all,10
+NM,Poor,Every day,8
+VA,Excellent,Every day,7
+GA,Excellent,Not at all,7
+PA,Fair,Not at all,9
+GA,Good,Every day,10
+IN,Very good,Not at all,7
+MD,Very good,Not at all,6
+GA,Excellent,Every day,8
+TX,Very good,Not at all,7
+DC,Good,Not at all,8
+NH,Very good,Not at all,7
+NE,Very good,Some days,6
+SD,Very good,Not at all,1
+CT,Very good,Some days,4
+KS,Excellent,Not at all,7
+AZ,Excellent,Not at all,6
+NC,Excellent,Not at all,7
+MD,Good,Every day,8
+NM,Good,Every day,7
+ME,Very good,Not at all,7
+KS,Excellent,Not at all,8
+MA,Very good,Not at all,8
+NE,Good,Some days,7
+WA,Very good,Not at all,7
+MI,Very good,Some days,6
+OH,Fair,Not at all,4
+CO,Good,Not at all,7
+MO,Excellent,Not at all,7
+PA,Good,Not at all,5
+WI,Very good,Not at all,7
+NY,Good,Not at all,8
+PA,Very good,Some days,6
+MO,Excellent,Not at all,8
+OK,Poor,Not at all,5
+NM,Good,Not at all,9
+KS,Good,Not at all,6
+RI,Excellent,Some days,8
+NA,Good,Not at all,6
+MO,Good,Not at all,7
+GA,Very good,Not at all,6
+NY,Good,Every day,6
+KS,Poor,Not at all,6
+TX,Good,Every day,8
+FL,Good,Not at all,8
+AL,Very good,Not at all,8
+OR,Excellent,Not at all,9
+WY,Good,Every day,4
+OH,Fair,Every day,5
+CT,Good,Not at all,9
+OR,Poor,Every day,5
+NH,Very good,Not at all,6
+MO,Poor,Not at all,5
+OH,Fair,Not at all,7
+ME,Good,Not at all,7
+ME,Excellent,Not at all,8
+WY,Very good,Not at all,4
+WA,Excellent,Not at all,7
+IL,Good,Not at all,10
+MN,Good,Not at all,12
+OH,Good,Not at all,8
+MD,Very good,Not at all,5
+NY,Excellent,Not at all,8
+VT,Poor,Every day,6
+MD,Very good,Not at all,4
+OH,Fair,Not at all,7
+OH,Excellent,Not at all,4
+WA,Fair,Not at all,9
+OH,Fair,Not at all,6
+NE,Excellent,Not at all,6
+LA,Fair,Not at all,6
+AR,Fair,Not at all,7
+MD,Excellent,Not at all,7
+NV,Good,Not at all,5
+MS,Good,Not at all,3
+TX,Fair,Every day,7
+MA,Good,Not at all,6
+IN,Fair,Not at all,7
+PA,Good,Not at all,7
+MO,Good,Not at all,8
+TN,Fair,Every day,5
+ND,Poor,Not at all,9
+NY,Fair,Some days,7
+VA,Good,Every day,8
+AZ,Good,Not at all,6
+OH,Very good,Every day,6
+WV,Fair,Not at all,12
+WV,Very good,Some days,6
+CT,Very good,Some days,7
+MS,Good,Not at all,6
+KS,Very good,Not at all,8
+AR,Very good,Not at all,8
+RI,Very good,Not at all,7
+WY,Fair,Some days,8
+FL,Good,Not at all,8
+ME,Very good,Not at all,8
+ID,Excellent,Not at all,6
+KY,Poor,Not at all,4
+NH,Good,Not at all,5
+ME,Good,Not at all,8
+TX,Good,Not at all,6
+LA,Good,Every day,5
+AL,Very good,Not at all,8
+SC,Very good,Every day,8
+NE,Excellent,Some days,7
+TN,Fair,Not at all,8
+NY,Very good,Every day,5
+WV,Good,Some days,8
+KS,Fair,Not at all,8
+KS,Very good,Not at all,7
+PA,Good,Not at all,5
+OK,Good,Not at all,8
+MI,Very good,Not at all,8
+RI,Good,Not at all,7
+ID,Poor,Not at all,12
+MS,Very good,Not at all,8
+NE,Poor,Every day,16
+GA,Fair,Not at all,5
+TX,Poor,Some days,8
+KS,Fair,Not at all,6
+WV,Good,Not at all,6
+AL,Very good,Every day,7
+NM,Good,Not at all,6
+IN,Good,Not at all,9
+WA,Good,Not at all,6
+IA,Fair,Not at all,7
+OH,Very good,Not at all,7
+NE,Excellent,Not at all,9
+SD,Good,Not at all,7
+CA,Fair,Not at all,6
+ME,Very good,Not at all,7
+AL,Very good,Every day,6
+IA,Good,Not at all,8
+KS,Fair,Not at all,5
+FL,Very good,Every day,8
+IA,Good,Every day,7
+SD,Poor,Some days,1
+AZ,Excellent,Not at all,8
+GA,Very good,Not at all,7
+DE,Very good,Every day,6
+IA,Good,Not at all,6
+CA,Very good,Not at all,8
+MO,Fair,Every day,8
+KS,Good,Some days,6
+AZ,Poor,Not at all,12
+VA,Excellent,Not at all,7
+ME,Good,Every day,6
+NE,Very good,Not at all,9
+NY,Very good,Not at all,7
+OR,Excellent,Not at all,8
+KY,Fair,Every day,7
+NM,Good,Not at all,7
+ME,Good,Not at all,9
+CO,Poor,Not at all,5
+IN,Excellent,Not at all,4
+NM,Fair,Not at all,8
+IA,Excellent,Every day,9
+NE,Good,Not at all,7
+NY,Poor,Every day,5
+MI,Good,Not at all,9
+OH,Very good,Some days,7
+IN,Fair,Not at all,7
+NH,Fair,Every day,7
+NJ,Excellent,Not at all,6
+IA,Very good,Not at all,7
+NJ,Good,Not at all,9
+AR,Good,Not at all,8
+VA,Very good,Every day,6
+NV,Very good,Not at all,6
+WA,Good,Every day,6
+RI,Good,Not at all,6
+NM,Poor,Every day,8
+NM,Poor,Not at all,10
+CA,Excellent,Some days,8
+ME,Good,Not at all,7
+HI,Very good,Some days,8
+MN,Good,Not at all,7
+WA,Very good,Not at all,5
+AZ,Good,Not at all,8
+MA,Excellent,Not at all,7
+CT,Excellent,Not at all,7
+VA,Good,Not at all,7
+WA,Very good,Not at all,8
+ND,Fair,Not at all,8
+ID,Good,Some days,4
+MT,Very good,Not at all,8
+TX,Good,Every day,7
+MA,Excellent,Not at all,8
+WA,Excellent,Every day,6
+OH,Good,Not at all,8
+NE,Good,Not at all,7
+NJ,Good,Not at all,7
+DE,Good,Some days,7
+ME,Good,Not at all,8
+NC,Fair,Not at all,6
+TN,Very good,Every day,7
+NJ,Good,Every day,4
+NJ,Good,Not at all,8
+WA,Good,Not at all,7
+CT,Very good,Every day,5
+NA,Good,Not at all,10
+WA,Excellent,Some days,8
+WA,Very good,Not at all,8
+KS,Good,Not at all,7
+NE,Excellent,Not at all,8
+NY,Very good,Every day,8
+CT,Very good,Not at all,6
+MD,Good,Not at all,6
+MT,Fair,Some days,7
+VT,Very good,Not at all,6
+TX,Very good,Not at all,6
+OR,Excellent,Not at all,6
+MA,Very good,Not at all,5
+AL,Good,Every day,8
+IN,Very good,Not at all,6
+TX,Good,Not at all,5
+GA,Excellent,Not at all,6
+AR,Very good,Not at all,7
+ID,Fair,Not at all,3
+ME,Good,Not at all,9
+MS,Poor,Not at all,6
+MN,Good,Not at all,8
+SD,Fair,Every day,9
+WY,Fair,Not at all,7
+MI,Good,Not at all,7
+SC,Good,Every day,8
+CO,Good,Every day,8
+NH,Fair,Not at all,8
+DC,Excellent,Not at all,6
+OH,Very good,Not at all,7
+FL,Excellent,Not at all,6
+VA,Poor,Some days,12
+MO,Excellent,Not at all,6
+OH,Very good,Every day,8
+ME,Very good,Some days,6
+MN,Very good,Every day,7
+AR,Very good,Some days,6
+MI,Very good,Not at all,9
+IN,Excellent,Not at all,6
+NM,Good,Not at all,8
+NE,Good,Not at all,6
+CT,Very good,Not at all,6
+ME,Very good,Not at all,8
+ID,Very good,Not at all,8
+NA,Excellent,Not at all,8
+TX,Very good,Some days,8
+NJ,Good,Every day,8
+AZ,Poor,Every day,6
+MI,Very good,Some days,6
+OH,Good,Every day,6
+MI,Very good,Not at all,7
+MA,Good,Not at all,7
+WV,Very good,Not at all,6
+OH,Very good,Every day,7
+AZ,Excellent,Not at all,6
+ME,Very good,Not at all,8
+KS,Good,Not at all,4
+NM,Good,Every day,7
+MI,Very good,Every day,7
+MS,Good,Not at all,8
+OH,Very good,Every day,8
+GA,Very good,Not at all,7
+WA,Very good,Not at all,7
+MO,Very good,Not at all,6
+SC,Excellent,Not at all,7
+IN,Very good,Some days,8
+NC,Fair,Not at all,8
+RI,Very good,Not at all,7
+HI,Good,Not at all,6
+PA,Good,Not at all,8
+NE,Good,Not at all,10
+ME,Very good,Not at all,6
+OH,Fair,Not at all,12
+TN,Good,Every day,7
+OR,Good,Not at all,7
+CT,Excellent,Not at all,7
+CO,Very good,Not at all,4
+MT,Very good,Every day,8
+LA,Excellent,Some days,6
+RI,Fair,Every day,4
+KS,Very good,Not at all,8
+NY,Very good,Every day,7
+HI,Very good,Every day,8
+PA,Very good,Not at all,7
+OH,Fair,Not at all,6
+CT,Very good,Not at all,6
+WA,Very good,Not at all,6
+SD,Very good,Not at all,7
+CT,Good,Every day,4
+NA,Good,Every day,7
+NE,Good,Every day,5
+ME,Excellent,Not at all,7
+VT,Fair,Not at all,6
+MN,Fair,Not at all,12
+GA,Very good,Not at all,7
+AZ,Fair,Not at all,7
+WY,Excellent,Not at all,7
+RI,Very good,Every day,7
+AK,Very good,Every day,7
+VT,Good,Some days,8
+OH,Good,Not at all,8
+MI,Good,Every day,6
+FL,Fair,Not at all,8
+NJ,Good,Every day,7
+CT,Very good,Every day,5
+SD,Very good,Not at all,6
+MT,Good,Some days,4
+ME,Very good,Not at all,6
+IA,Fair,Every day,4
+NJ,Good,Not at all,8
+WV,Good,Every day,8
+MN,Excellent,Not at all,7
+MO,Excellent,Not at all,7
+KS,Very good,Some days,9
+NA,Excellent,Every day,8
+CO,Excellent,Not at all,7
+FL,Good,Not at all,7
+HI,Very good,Some days,7
+ME,Very good,Every day,8
+NJ,Fair,Every day,4
+RI,Poor,Not at all,3
+NH,Very good,Not at all,8
+TX,Fair,Every day,8
+KS,Very good,Not at all,6
+WV,Very good,Not at all,4
+DC,Fair,Not at all,6
+OK,Excellent,Not at all,5
+IN,Good,Every day,7
+FL,Fair,Not at all,8
+NE,Good,Not at all,5
+WV,Good,Every day,10
+MI,Fair,Every day,6
+NY,Good,Not at all,7
+MN,Very good,Every day,8
+SC,Poor,Some days,8
+OH,Fair,Every day,8
+IA,Good,Not at all,3
+TX,Fair,Every day,7
+OH,Fair,Not at all,8
+SC,Excellent,Not at all,8
+IN,Good,Not at all,7
+MT,Good,Not at all,7
+WV,Very good,Not at all,7
+NC,Very good,Not at all,7
+WY,Fair,Not at all,7
+OH,Good,Not at all,6
+MD,Good,Not at all,6
+WA,Very good,Every day,8
+CO,Poor,Not at all,6
+WV,Very good,Not at all,8
+RI,Good,Not at all,6
+NJ,Poor,Some days,5
+MI,Good,Not at all,6
+MO,Good,Not at all,6
+VT,Good,Not at all,8
+MD,Very good,Not at all,10
+NJ,Good,Every day,7
+WA,Good,Every day,6
+KS,Very good,Not at all,8
+NY,Very good,Not at all,6
+KS,Excellent,Some days,7
+IA,Excellent,Every day,8
+DE,Very good,Not at all,6
+ME,Good,Not at all,7
+GA,Good,Not at all,5
+CA,Good,Every day,6
+ME,Very good,Not at all,7
+MI,Good,Every day,8
+AZ,Very good,Not at all,7
+OH,Good,Some days,6
+CO,Fair,Every day,7
+MO,Very good,Not at all,7
+AZ,Excellent,Not at all,8
+AR,Excellent,Not at all,9
+NM,Fair,Every day,5
+MD,Good,Not at all,7
+SC,Good,Every day,8
+MO,Excellent,Some days,7
+WV,Good,Not at all,5
+NM,Excellent,Not at all,7
+AK,Very good,Every day,6
+CT,Very good,Not at all,7
+TX,Good,Some days,8
+OK,Fair,Every day,4
+MA,Poor,Every day,5
+NE,Excellent,Not at all,9
+OR,Very good,Not at all,6
+MI,Very good,Not at all,7
+MN,Good,Not at all,8
+OH,Excellent,Not at all,8
+IN,Very good,Not at all,8
+MN,Good,Every day,7
+NH,Good,Not at all,5
+DC,Excellent,Not at all,7
+OH,Poor,Not at all,6
+KY,Poor,Every day,7
+VT,Very good,Some days,9
+DE,Good,Every day,9
+FL,Excellent,Not at all,8
+ME,Good,Every day,7
+SD,Excellent,Not at all,9
+NM,Very good,Not at all,5
+ME,Good,Every day,7
+SD,Very good,Every day,7
+OH,Good,Not at all,8
+TN,Very good,Not at all,8
+NY,Very good,Not at all,7
+CA,Excellent,Not at all,8
+WI,Poor,Every day,5
+NE,Fair,Not at all,8
+PA,Excellent,Not at all,7
+NA,Very good,Every day,7
+KS,Good,Not at all,7
+SC,Very good,Not at all,5
+NC,Good,Every day,8
+SD,Excellent,Not at all,7
+WV,Good,Every day,10
+MS,Good,Not at all,8
+MI,Very good,Not at all,8
+ID,Good,Not at all,5
+WI,Good,Not at all,6
+AK,Excellent,Every day,7
+AZ,Very good,Not at all,7
+NE,Poor,Not at all,6
+VT,Good,Every day,8
+AR,Good,Not at all,8
+KY,Poor,Not at all,10
+DC,Good,Not at all,6
+OK,Very good,Some days,8
+CT,Good,Not at all,8
+NE,Good,Every day,8
+DC,Excellent,Not at all,9
+IN,Very good,Every day,7
+ME,Fair,Some days,8
+SD,Good,Not at all,8
+NE,Very good,Not at all,7
+DC,Very good,Not at all,5
+IN,Good,Every day,6
+OH,Very good,Not at all,7
+NE,Very good,Not at all,7
+SC,Very good,Not at all,4
+NY,Very good,Not at all,6
+AK,Good,Every day,8
+NJ,Fair,Not at all,8
+DC,Very good,Not at all,8
+CA,Excellent,Not at all,7
+SC,Good,Every day,8
+CO,Very good,Not at all,9
+IA,Very good,Every day,8
+NH,Good,Not at all,7
+VT,Good,Some days,6
+MS,Fair,Not at all,7
+MO,Good,Not at all,5
+NM,Fair,Every day,8
+NH,Fair,Not at all,8
+IN,Excellent,Not at all,7
+NV,Excellent,Not at all,7
+OH,Good,Every day,7
+MD,Very good,Not at all,5
+NM,Good,Every day,7
+TX,Good,Not at all,6
+NE,Excellent,Not at all,7
+ND,Very good,Not at all,7
+CT,Excellent,Not at all,7
+NE,Fair,Not at all,7
+DE,Very good,Some days,8
+IA,Excellent,Not at all,8
+NM,Very good,Not at all,7
+MN,Good,Every day,6
+NC,Good,Every day,6
+WV,Good,Every day,7
+NY,Good,Every day,8
+ID,Very good,Not at all,6
+OH,Very good,Every day,6
+SC,Excellent,Not at all,8
+NM,Fair,Not at all,8
+AR,Very good,Some days,8
+WI,Very good,Some days,7
+CT,Excellent,Every day,6
+NC,Poor,Not at all,3
+PA,Excellent,Not at all,8
+UT,Excellent,Not at all,7
+IN,Poor,Some days,5
+IA,Very good,Not at all,6
+NH,Very good,Not at all,8
+TX,Very good,Not at all,7
+ME,Very good,Not at all,7
+MO,Good,Not at all,6
+OR,Very good,Not at all,7
+MN,Excellent,Not at all,8
+ME,Very good,Not at all,6
+SC,Good,Not at all,8
+CT,Very good,Not at all,8
+MT,Good,Every day,6
+WI,Good,Every day,12
+NM,Fair,Every day,8
+TN,Excellent,Not at all,7
+AZ,Excellent,Some days,8
+AK,Very good,Not at all,7
+OH,Very good,Not at all,8
+MS,Poor,Some days,6
+SC,Good,Not at all,10
+MO,Very good,Not at all,7
+DE,Good,Every day,11
+GA,Good,Every day,8
+MN,Very good,Every day,6
+OK,Excellent,Not at all,12
+AR,Very good,Not at all,7
+HI,Good,Not at all,6
+KS,Very good,Every day,8
+AL,Very good,Not at all,8
+OH,Very good,Every day,8
+NA,Fair,Not at all,8
+ND,Very good,Not at all,8
+NY,Very good,Every day,8
+CA,Excellent,Not at all,6
+VA,Very good,Some days,8
+OH,Very good,Not at all,7
+CT,Very good,Every day,4
+FL,Very good,Not at all,8
+SD,Very good,Not at all,7
+IL,Excellent,Not at all,10
+NJ,Excellent,Not at all,8
+WA,Very good,Every day,6
+MI,Very good,Not at all,8
+DC,Fair,Not at all,6
+MI,Very good,Not at all,6
+NC,Very good,Some days,8
+OH,Very good,Not at all,9
+ND,Excellent,Not at all,6
+NE,Excellent,Not at all,8
+OH,Very good,Not at all,9
+MD,Fair,Not at all,8
+RI,Excellent,Not at all,10
+MA,Very good,Not at all,6
+ME,Good,Not at all,8
+MT,Good,Not at all,7
+MO,Very good,Some days,8
+FL,Very good,Some days,7
+AZ,Poor,Every day,6
+AK,Excellent,Not at all,7
+ME,Good,Not at all,1
+IN,Good,Not at all,8
+IA,Excellent,Every day,6
+OH,Good,Every day,6
+TN,Fair,Not at all,8
+IA,Very good,Not at all,6
+SC,Excellent,Not at all,7
+AR,Very good,Not at all,9
+MO,Good,Some days,5
+WV,Good,Some days,8
+OH,Fair,Not at all,2
+DC,Fair,Every day,6
+MD,Good,Not at all,6
+PA,Very good,Every day,8
+MO,Very good,Not at all,6
+WY,Good,Every day,6
+VT,Good,Not at all,8
+MD,Good,Some days,6
+ID,Good,Every day,3
+MN,Fair,Not at all,6
+ND,Very good,Not at all,7
+IA,Good,Every day,8
+MA,Good,Not at all,8
+NY,Very good,Some days,7
+NY,Very good,Not at all,6
+KS,Good,Not at all,6
+GA,Poor,Not at all,6
+WA,Very good,Not at all,8
+TX,Poor,Not at all,4
+SD,Good,Not at all,7
+NY,Very good,Not at all,7
+SD,Poor,Not at all,10
+KY,Very good,Not at all,8
+AR,Good,Every day,5
+NY,Very good,Every day,8
+VA,Excellent,Not at all,8
+ME,Excellent,Some days,7
+MS,Fair,Every day,6
+ID,Very good,Not at all,6
+UT,Very good,Not at all,6
+IA,Very good,Not at all,6
+LA,Good,Not at all,4
+NV,Fair,Every day,7
+MT,Poor,Not at all,7
+MD,Good,Not at all,8
+FL,Very good,Every day,7
+UT,Good,Some days,10
+MI,Good,Every day,8
+FL,Very good,Not at all,6
+AZ,Fair,Not at all,7
+VA,Very good,Not at all,8
+NE,Very good,Not at all,7
+OH,Fair,Every day,6
+WV,Fair,Not at all,8
+FL,Very good,Every day,6
+CT,Fair,Not at all,8
+NM,Very good,Not at all,8
+GA,Very good,Not at all,7
+OH,Excellent,Every day,6
+IA,Very good,Not at all,8
+NY,Very good,Not at all,7
+IA,Very good,Not at all,9
+NE,Fair,Every day,5
+OR,Very good,Not at all,7
+NY,Excellent,Not at all,8
+OH,Fair,Every day,5
+SD,Very good,Not at all,12
+NE,Poor,Every day,5
+WY,Excellent,Not at all,8
+WV,Very good,Not at all,7
+NJ,Fair,Not at all,6
+TX,Fair,Every day,7
+VT,Excellent,Not at all,7
+IA,Very good,Not at all,5
+MD,Fair,Not at all,6
+CT,Excellent,Not at all,5
+VT,Good,Not at all,8
+MN,Good,Not at all,3
+ND,Good,Not at all,9
+ME,Very good,Not at all,7
+MA,Good,Not at all,6
+NM,Very good,Not at all,8
+WV,Very good,Not at all,8
+WA,Good,Not at all,6
+MT,Very good,Every day,9
+FL,Excellent,Not at all,7
+OH,Good,Every day,8
+CT,Excellent,Not at all,8
+MS,Fair,Some days,9
+OR,Good,Not at all,4
+NE,Excellent,Not at all,8
+CT,Excellent,Not at all,5
+IA,Fair,Not at all,7
+NE,Very good,Not at all,7
+NV,Very good,Not at all,7
+KS,Fair,Not at all,6
+NV,Fair,Every day,5
+ND,Good,Not at all,7
+MS,Good,Not at all,6
+MD,Excellent,Every day,8
+VA,Good,Every day,8
+TX,Good,Not at all,7
+IA,Fair,Every day,10
+NY,Very good,Not at all,7
+AK,Poor,Not at all,8
+WA,Good,Not at all,6
+MN,Very good,Not at all,7
+NV,Very good,Every day,6
+CT,Very good,Not at all,6
+NC,Fair,Not at all,5
+NY,Good,Not at all,6
+NA,Good,Every day,8
+MN,Very good,Not at all,8
+OH,Good,Every day,8
+PA,Good,Not at all,8
+NA,Fair,Not at all,1
+MD,Good,Some days,7
+TX,Good,Not at all,7
+WY,Very good,Every day,7
+IL,Poor,Not at all,3
+NJ,Excellent,Not at all,7
+CA,Excellent,Not at all,7
+SD,Good,Every day,8
+ME,Very good,Every day,3
+MT,Excellent,Not at all,7
+NA,Fair,Every day,9
+NE,Good,Not at all,8
+WA,Excellent,Some days,7
+NY,Fair,Not at all,7
+WV,Good,Every day,3
+NM,Good,Not at all,8
+NM,Good,Not at all,8
+ID,Fair,Every day,8
+MA,Very good,Every day,7
+MD,Good,Not at all,7
+MA,Excellent,Not at all,7
+NY,Very good,Not at all,8
+MD,Very good,Not at all,7
+NH,Excellent,Not at all,8
+MN,Fair,Every day,8
+NY,Good,Every day,6
+MS,Fair,Not at all,4
+FL,Very good,Not at all,8
+FL,Good,Not at all,5
+KS,Very good,Not at all,7
+KY,Poor,Not at all,11
+UT,Good,Not at all,6
+KS,Very good,Not at all,8
+KY,Very good,Every day,6
+MS,Very good,Not at all,7
+AL,Good,Not at all,8
+CA,Excellent,Not at all,7
+MI,Poor,Not at all,4
+MN,Good,Some days,8
+OH,Good,Not at all,7
+WV,Poor,Every day,5
+ND,Fair,Not at all,8
+AR,Good,Every day,8
+HI,Very good,Not at all,8
+FL,Good,Every day,7
+TX,Very good,Not at all,9
+GA,Good,Not at all,8
+TX,Fair,Not at all,8
+ID,Good,Every day,7
+MN,Fair,Every day,6
+NY,Very good,Not at all,9
+AZ,Very good,Not at all,7
+NY,Fair,Not at all,6
+OH,Good,Every day,9
+MT,Very good,Not at all,10
+NC,Good,Every day,6
+AR,Very good,Not at all,5
+VA,Fair,Not at all,6
+NE,Excellent,Every day,7
+NE,Good,Not at all,7
+IA,Good,Every day,6
+VA,Fair,Every day,4
+VA,Very good,Some days,8
+AR,Good,Not at all,8
+AK,Very good,Every day,8
+IA,Good,Every day,6
+VT,Very good,Not at all,8
+NA,Poor,Not at all,9
+NA,Excellent,Not at all,7
+NH,Very good,Not at all,7
+MI,Good,Not at all,8
+CA,Good,Not at all,7
+ME,Good,Not at all,9
+CO,Excellent,Not at all,8
+WY,Very good,Not at all,6
+NY,Very good,Not at all,6
+MS,Very good,Not at all,6
+MO,Good,Not at all,5
+ID,Very good,Not at all,7
+MS,Fair,Not at all,8
+NA,Very good,Not at all,8
+MD,Good,Not at all,12
+WI,Very good,Not at all,7
+MD,Excellent,Not at all,8
+AL,Fair,Not at all,6
+WA,Very good,Not at all,8
+AR,Good,Every day,5
+SD,Good,Not at all,7
+OH,Excellent,Some days,8
+NY,Very good,Every day,6
+NH,Very good,Not at all,7
+NE,Good,Not at all,5
+ND,Good,Every day,8
+ND,Good,Every day,8
+MI,Good,Every day,8
+LA,Fair,Not at all,8
+WA,Very good,Not at all,7
+HI,Good,Not at all,9
+MO,Very good,Some days,9
+CT,Very good,Not at all,8
+MT,Good,Not at all,7
+WI,Good,Not at all,8
+NA,Fair,Not at all,8
+TX,Poor,Not at all,7
+DE,Excellent,Not at all,6
+SC,Good,Not at all,8
+ME,Very good,Not at all,6
+MI,Very good,Not at all,6
+VT,Very good,Some days,7
+CA,Excellent,Not at all,6
+CT,Good,Some days,7
+WV,Good,Every day,8
+AK,Very good,Every day,9
+DC,Very good,Not at all,9
+AZ,Excellent,Some days,8
+WA,Very good,Not at all,7
+WV,Very good,Not at all,8
+MA,Very good,Not at all,8
+TN,Very good,Not at all,6
+MA,Fair,Not at all,8
+CO,Very good,Not at all,9
+AL,Good,Every day,6
+OH,Fair,Every day,5
+WV,Very good,Not at all,6
+AZ,Very good,Every day,8
+IN,Good,Not at all,8
+FL,Good,Not at all,6
+CA,Good,Every day,9
+TN,Fair,Every day,4
+ME,Very good,Not at all,8
+TX,Poor,Not at all,6
+MO,Poor,Every day,6
+NE,Very good,Not at all,8
+MD,Excellent,Not at all,7
+NH,Excellent,Not at all,8
+GA,Good,Every day,8
+CA,Good,Not at all,7
+KY,Good,Not at all,8
+ND,Very good,Not at all,7
+MS,Fair,Not at all,5
+FL,Excellent,Not at all,7
+OH,Good,Not at all,7
+OH,Good,Every day,8
+MA,Fair,Not at all,7
+HI,Excellent,Not at all,6

@@ -1,0 +1,36 @@
+---
+title: "Lab 1 - Data visualization"
+author: "INSERT NAME"
+editor: visual
+---
+
+## Load Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+```
+
+## Exercise 1
+
+(Type your answer to Exercise 1 here. Add code chunks as needed. Don't forget to label your code chunk. Do not use spaces in code chunk labels.)
+
+{{< pagebreak >}}
+
+## Exercise 2
+
+(Type your answer to Exercise 2 here. Add code chunks as needed. Don't forget to label your code chunk. Do not use spaces in code chunk labels.)
+
+## Exercise 3
+
+(Type your answer to Exercise 3 here. Add code chunks as needed. Don't forget to label your code chunk. Do not use spaces in code chunk labels.)
+
+## Exercise 4
+
+## Exercise 5
+
+## Exercise 6
+
+## Exercise 7

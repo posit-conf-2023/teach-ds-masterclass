@@ -1,0 +1,101 @@
+---
+title: "HW 1 - Data visualization"
+author: "INSERT NAME"
+editor: visual
+---
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(openintro)
+```
+
+## Exercise 1
+
+```{r}
+#| label: price-garage
+
+duke_forest |>
+  mutate(garage = if_else(str_detect(parking, "Garage"),   "Garage", "No garage")) # |>
+  # ggplot(...)
+```
+
+Add narrative here...
+
+{{< pagebreak >}}
+
+## Exercise 2
+
+```{r}
+#| label: add-ex2-label-here
+
+# add code here
+```
+
+Add narrative here...
+
+{{< pagebreak >}}
+
+## Exercise 3
+
+```{r}
+#| label: load-data
+#| message: false
+
+brfss <- read_csv("data/brfss.csv")
+```
+
+```{r}
+#| label: add-ex3-label-here
+
+# add code here
+```
+
+Add narrative here...
+
+{{< pagebreak >}}
+
+## Exercise 4
+
+```{r}
+#| label: add-ex4-label-here
+
+# add code here
+```
+
+Add narrative here...
+
+{{< pagebreak >}}
+
+## Exercise 5
+
+```{r}
+#| label: add-ex5-label-here
+
+# add code here
+```
+
+Add narrative here...
+
+{{< pagebreak >}}
+
+## Exercise 6
+
+(a) 
+
+    -   The gg in the name of the package ggplot2 stands for \_\_\_.
+    -   If you map the same continuous variable to both `x` and `y` aesthetics in a scatterplot, you get a straight \_\_\_ line. (Choose between "vertical", "horizontal", or "diagonal".)
+
+(b) Add narrative here...
+
+```{r}
+#| label: style
+
+ggplot(data=mpg,mapping=aes(x=drv,fill=class))+geom_bar() +scale_fill_viridis_d()
+```
+
+(c) Add narrative here...

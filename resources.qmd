@@ -8,7 +8,7 @@ title: Resources
 
 ## Course websites
 
--   STA 199 at Duke: [https://sta199-fa21-003.netlify.app](https://sta199-fa21-003.netlify.app/)
+-   STA 199 at Duke: <https://sta199-f22-1.github.io/>
 -   STA 210 at Duke: <https://sta210-s22.github.io/website>
 
 ## Textbooks
@@ -35,5 +35,3 @@ title: Resources
     -   Dogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. *arXiv preprint arXiv:2202.09504*. <https://doi.org/10.48550/arXiv.2202.09504>.
 -   Teaching modern modeling:
     -   Tackett, M. (2022). Three principles for modernizing an undergraduate regression analysis course. *arXiv preprint arXiv:*2205.11026. <https://doi.org/10.48550/arXiv.2205.11026>
-
-        \

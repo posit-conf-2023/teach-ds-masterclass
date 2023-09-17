@@ -1,0 +1,189 @@
+---
+title: "HW 1 - Data visualization"
+categories: "Homework"
+editor: visual
+---
+
+::: callout-important
+This homework is due *\[some date in the future\]*.
+:::
+
+# Getting Started
+
+-   Go to the [data-sci-101](https://github.com/data-sci-101) organization on GitHub. Click on the repo with the prefix `hw-1`. It contains the starter documents you need to complete the homework assignment.
+
+-   Go to Posit Cloud and click on New Project \> New RStudio Project from Git. Make sure you've connected your Posit Cloud and GitHub accounts.
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(openintro)
+```
+
+## Guidelines + tips
+
+As we've discussed in lecture, your plots should include an informative title, axes should be labeled, and careful consideration should be given to aesthetic choices.
+
+Remember that continuing to develop a sound workflow for reproducible data analysis is important as you complete this homework and other assignments in this course. There will be periodic reminders in this assignment to remind you to knit, commit, and push your changes to GithHub. You should have **at least 3 commits with meaningful commit messages** by the end of the assignment.
+
+::: callout-note
+Note: Do not let R output answer the question for you unless the question specifically asks for just a plot. For example, if the question asks for the number of columns in the data set, please type out the number of columns. You are subject to lose points if you do not.
+:::
+
+## Workflow + formatting
+
+Make sure to
+
+-   Update author name on your document.
+-   Label all code chunks informatively and concisely.
+-   Follow the Tidyverse code style guidelines.
+-   Make at least 3 commits.
+-   Resize figures where needed, avoid tiny or huge plots.
+-   Turn in an organized, well formatted document.
+
+# Exercises
+
+## Data 1: Duke Forest houses
+
+::: callout-note
+Use this dataset for Exercises 1 and 2.
+:::
+
+For the following two exercises you will work with data on houses that were sold in the Duke Forest neighborhood of Durham, NC in November 2020. The `duke_forest` dataset comes from the **openintro** package. You can see a list of the variables on the [package website](https://openintrostat.github.io/openintro/reference/duke_forest.html) or by running `?duke_forest` in your console.
+
+## Exercise 1
+
+Suppose you're helping some family friends who are looking to buy a house in Duke Forest. As they browse Zillow listings, they realize some houses have garages and others don't, and they wonder: **Does having a garage make a difference?**
+
+Luckily, you can help them answer this question with data visualization!
+
+-   Make histograms of the prices of houses in Duke Forest based on whether they have a garage.
+    -   In order to do this, you will first need to create a new variable called `garage` (with levels `"Garage"` and `"No garage"`).
+    -   Below is the code for creating this new variable. Here, we `mutate()` the `duke_forest` data frame to add a new variable called `garage` which takes the value `"Garage"` if the text string `"Garage"` is detected in the `parking` variable and takes the test string `"No garage"` if not.
+
+```{r}
+#| eval: false
+
+duke_forest |>
+  mutate(garage = if_else(str_detect(parking, "Garage"),   "Garage", "No garage"))
+```
+
+-   Then, facet by `garage` and use different colors for the two facets.
+-   Choose an appropriate binwidth and decide whether a legend is needed, and turn it off if not.
+-   Include informative title and axis labels.
+-   Finally, include a brief (2-3 sentence) narrative comparing the distributions of prices of Duke Forest houses that do and don't have garages. Your narrative should touch on whether having a garage "makes a difference" in terms of the price of the house.
+
+::: render-commit-push
+Now is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding.
+:::
+
+## Exercise 2
+
+It's expected that within any given marker larger houses will be priced higher. It's also expected that the age of the house will have an effect on the price. However in some markets new houses might be more expensive while in others new construction might mean "no character" and hence be less expensive. So your family friends ask: "In Duke Forest, do houses that are bigger and more expensive tend to be newer ones than those that are smaller and cheaper?"
+
+Once again, data visualization skills to the rescue!
+
+-   Create a scatter plot to exploring the relationship between `price` and `area`, conditioning for `year_built`.
+-   Use `geom_smooth()` with the argument `se = FALSE` to add a smooth curve fit to the data and color the points by `year_built`.
+-   Include informative title, axis, and legend labels.
+-   Discuss each of the following claims (1-2 sentences per claim). Your discussion should touch on specific things you observe in your plot as evidence for or against the claims.
+    -   Claim 1: Larger houses are priced higher.
+    -   Claim 2: Newer houses are priced higher.
+    -   Claim 3: Bigger and more expensive houses tend to be newer ones than smaller and cheaper ones.
+
+::: render-commit-push
+Now is a good time to render, commit, and push.
+
+Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding. <br>
+:::
+
+## Data 2: BRFSS
+
+::: callout-note
+Use this dataset for Exercises 3 to 5.
+:::
+
+> The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. Established in 1984 with 15 states, BRFSS now collects data in all 50 states as well as the District of Columbia and three U.S. territories. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world.
+>
+> Source: [cdc.gov/brfss](https://www.cdc.gov/brfss/)
+
+In the following exercises we will work with data from the 2020 BRFSS survey. The originally come from [here](https://michaelminn.net/tutorials/r-brfss/), though we will work with a random sample of responses and a small number of variables from the data provided. These have already been sampled for you and the dataset you'll use can be found in the `data` folder of your repo. It's called `brfss.csv`.
+
+```{r load-data}
+#| message: false
+
+brfss <- read_csv("data/brfss.csv")
+```
+
+## Exercise 3
+
+-   How many rows are in the `brfss` dataset? What does each row represent?
+-   How many columns are in the `brfss` dataset? Indicate the type of each variable.
+-   Include the code and resulting output used to support your answer.
+
+::: render-commit-push
+Now is a good time to render, commit, and push.
+:::
+
+## Exercise 4
+
+**Do people who smoke more tend to have worse health conditions?**
+
+-   Use a segmented bar chart to visualize the relationship between smoking (`smoke_freq`) and general health (`general_health`). Decide on which variable to represent with bars and which variable to fill the color of the bars by.
+-   Pay attention to the order of the bars and, if need be, use the `fct_relevel` function to reorder the levels of the variables.
+    -   Below is sample code for releveling `general_health`. Here we first convert `general_health` to a factor (how R stores categorical data) and then order the levels from Excellent to Poor.
+
+```{r}
+#| eval: false
+
+brfss |>
+  mutate(
+    general_health = as.factor(general_health),
+    general_health = fct_relevel(general_health, "Excellent", "Very good", "Good", "Fair", "Poor")
+  )
+```
+
+-   Include informative title, axis, and legend labels.
+-   Comment on the motivating question based on evidence from the visualization: Do people who smoke more tend to have worse health conditions?
+
+::: render-commit-push
+Now is a good time to render, commit, and push.
+:::
+
+## Exercise 5
+
+**How are sleep and general health associated?**
+
+-   Create a visualization displaying the relationship between `sleep` and `general_health`.
+-   Include informative title and axis labels.
+-   Modify your plot to use a different theme than the default.
+-   Comment on the motivating question based on evidence from the visualization: How are sleep and general health associated?
+
+::: render-commit-push
+Now is a good time to render, commit, and push.
+:::
+
+## Exercise 6
+
+(a) Fill in the blanks:
+    -   The gg in the name of the package ggplot2 stands for \_\_\_.
+    -   If you map the same continuous variable to both `x` and `y` aesthetics in a scatterplot, you get a straight \_\_\_ line. (Choose between "vertical", "horizontal", or "diagonal".)
+(b) Code style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the [Tidyverse style guide](https://style.tidyverse.org/).)
+
+```{r}
+#| eval: false
+
+ggplot(data=mpg,mapping=aes(x=drv,fill=class))+geom_bar() +scale_fill_viridis_d()
+```
+
+(c) Read `?facet_wrap`. What does `nrow` do? What does `ncol` do? What other options control the layout of the individual panels? Why doesn't `facet_grid()` have `nrow` and `ncol` arguments?
+
+::: render-commit-push
+Render, commit, and push one last time.
+
+Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding.
+:::

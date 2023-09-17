@@ -217,6 +217,27 @@
     "text": "Student work\n\nProject: Regional differences in average GPA and SAT\nQuestion: Exploring the regional differences in average GPA and SAT score across the US and the factors that could potentially explain them.\nTeam: Mine’s Minions"
   },
   {
+    "objectID": "materials/tidyverse-quarto/index.html#why-quarto",
+    "href": "materials/tidyverse-quarto/index.html#why-quarto",
+    "title": "Teaching data science with the tidyverse and Quarto",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\n\nReproducibility: Train new analysts whose only workflow is a reproducible one\nPedagogy:\n\nCode + output + prose together\nSyntax highlighting FTW!\nFamiliar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax\n\nEfficiency: Consistent formatting -&gt; easier grading\nExtendability: Use with Python, and Julia, and Observable, and more"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/index.html#tips-for-starting-with-quarto",
+    "href": "materials/tidyverse-quarto/index.html#tips-for-starting-with-quarto",
+    "title": "Teaching data science with the tidyverse and Quarto",
+    "section": "Tips for starting with Quarto",
+    "text": "Tips for starting with Quarto\n\nMinimal YAML\nMinimal chunk options\nUse well scaffolded Quarto documents\nRender early and often!"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/index.html#demo-quarto-visual-editor",
+    "href": "materials/tidyverse-quarto/index.html#demo-quarto-visual-editor",
+    "title": "Teaching data science with the tidyverse and Quarto",
+    "section": "Demo: Quarto 💙 visual editor",
+    "text": "Demo: Quarto 💙 visual editor\n\n UN Votes\n\n\nDocument YAML\nCode chunks with YAML style options\nYAML completion and diagnostics"
+  },
+  {
     "objectID": "materials/tidyverse-quarto/index.html#data-1",
     "href": "materials/tidyverse-quarto/index.html#data-1",
     "title": "Teaching data science with the tidyverse and Quarto",

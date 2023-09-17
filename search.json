@@ -1,24 +1,563 @@
 [
   {
-    "objectID": "materials/tidyverse-quarto/unvotes.html",
-    "href": "materials/tidyverse-quarto/unvotes.html",
-    "title": "Ex 1.1: UN Votes",
+    "objectID": "materials/git-github/hw-1-starter.html",
+    "href": "materials/git-github/hw-1-starter.html",
+    "title": "HW 1 - Data visualization",
     "section": "",
-    "text": "How do various countries vote in the United Nations General Assembly, how have their voting patterns evolved throughout time, and how similarly or differently do they view certain issues? Answering these questions (at a high level) is the focus of this analysis.\n\n\nWe will use the tidyverse and scales packages for data wrangling and visualization, and the DT package for interactive display of tabular output, and the unvotes package for the data.\n\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(DT)\nlibrary(unvotes)\n\n\n\n\nThe data we’re using originally come from the unvotes package. In the chunk below we modify the data by joining the various data frames provided in the package to help you get started with the analysis.\n\nunvotes &lt;- un_votes |&gt;\n  inner_join(un_roll_calls, by = \"rcid\") |&gt;\n  inner_join(un_roll_call_issues, by = \"rcid\")\n\nWarning in inner_join(inner_join(un_votes, un_roll_calls, by = \"rcid\"), : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 382 of `x` matches multiple rows in `y`.\nℹ Row 3009 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning."
+    "text": "library(tidyverse)\nlibrary(openintro)"
   },
   {
-    "objectID": "materials/tidyverse-quarto/unvotes.html#packages",
-    "href": "materials/tidyverse-quarto/unvotes.html#packages",
-    "title": "Ex 1.1: UN Votes",
+    "objectID": "materials/git-github/hw-1-starter.html#packages",
+    "href": "materials/git-github/hw-1-starter.html#packages",
+    "title": "HW 1 - Data visualization",
     "section": "",
-    "text": "We will use the tidyverse and scales packages for data wrangling and visualization, and the DT package for interactive display of tabular output, and the unvotes package for the data.\n\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(DT)\nlibrary(unvotes)"
+    "text": "library(tidyverse)\nlibrary(openintro)"
   },
   {
-    "objectID": "materials/tidyverse-quarto/unvotes.html#data",
-    "href": "materials/tidyverse-quarto/unvotes.html#data",
-    "title": "Ex 1.1: UN Votes",
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-1",
+    "href": "materials/git-github/hw-1-starter.html#exercise-1",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 1",
+    "text": "Exercise 1\n\nduke_forest |&gt;\n  mutate(garage = if_else(str_detect(parking, \"Garage\"),   \"Garage\", \"No garage\")) # |&gt;\n\n# A tibble: 98 × 14\n   address      price   bed  bath  area type  year_built heating cooling parking\n   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;   &lt;fct&gt;   &lt;chr&gt;  \n 1 1 Learned … 1.52e6     3     4  6040 Sing…       1972 Other,… central 0 spac…\n 2 1616 Pinec… 1.03e6     5     4  4475 Sing…       1969 Forced… central Carpor…\n 3 2418 Wrigh… 4.20e5     2     3  1745 Sing…       1959 Forced… central Garage…\n 4 2527 Sevie… 6.80e5     4     3  2091 Sing…       1961 Heat p… central Carpor…\n 5 2218 Myers… 4.29e5     4     3  1772 Sing…       2020 Forced… central 0 spac…\n 6 2619 Vesso… 4.56e5     3     3  1950 Sing…       2014 Forced… central Off-st…\n 7 1803 Woodb… 1.27e6     5     5  3909 Sing…       1968 Forced… central Carpor…\n 8 19 Learned… 5.57e5     4     3  2841 Sing…       1973 Heat p… central Carpor…\n 9 2827 Mcdow… 6.97e5     4     5  3924 Sing…       1972 Other,… central Covered\n10 2709 Mcdow… 6.5 e5     3     2  2173 Sing…       1964 Forced… other   0 spac…\n# ℹ 88 more rows\n# ℹ 4 more variables: lot &lt;dbl&gt;, hoa &lt;chr&gt;, url &lt;chr&gt;, garage &lt;chr&gt;\n\n  # ggplot(...)\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-2",
+    "href": "materials/git-github/hw-1-starter.html#exercise-2",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 2",
+    "text": "Exercise 2\n\n# add code here\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-3",
+    "href": "materials/git-github/hw-1-starter.html#exercise-3",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 3",
+    "text": "Exercise 3\n\nbrfss &lt;- read_csv(\"data/brfss.csv\")\n\n\n# add code here\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-4",
+    "href": "materials/git-github/hw-1-starter.html#exercise-4",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 4",
+    "text": "Exercise 4\n\n# add code here\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-5",
+    "href": "materials/git-github/hw-1-starter.html#exercise-5",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 5",
+    "text": "Exercise 5\n\n# add code here\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/hw-1-starter.html#exercise-6",
+    "href": "materials/git-github/hw-1-starter.html#exercise-6",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 6",
+    "text": "Exercise 6\n\n\nThe gg in the name of the package ggplot2 stands for ___.\nIf you map the same continuous variable to both x and y aesthetics in a scatterplot, you get a straight ___ line. (Choose between “vertical”, “horizontal”, or “diagonal”.)\n\nAdd narrative here…\n\n\nggplot(data=mpg,mapping=aes(x=drv,fill=class))+geom_bar() +scale_fill_viridis_d()\n\n\n\n\n\nAdd narrative here…"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html",
+    "href": "materials/git-github/lab-1-starter.html",
+    "title": "Lab 1 - Data visualization",
     "section": "",
-    "text": "The data we’re using originally come from the unvotes package. In the chunk below we modify the data by joining the various data frames provided in the package to help you get started with the analysis.\n\nunvotes &lt;- un_votes |&gt;\n  inner_join(un_roll_calls, by = \"rcid\") |&gt;\n  inner_join(un_roll_call_issues, by = \"rcid\")\n\nWarning in inner_join(inner_join(un_votes, un_roll_calls, by = \"rcid\"), : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 382 of `x` matches multiple rows in `y`.\nℹ Row 3009 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning."
+    "text": "library(tidyverse)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#load-packages",
+    "href": "materials/git-github/lab-1-starter.html#load-packages",
+    "title": "Lab 1 - Data visualization",
+    "section": "",
+    "text": "library(tidyverse)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-1",
+    "href": "materials/git-github/lab-1-starter.html#exercise-1",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 1",
+    "text": "Exercise 1\n(Type your answer to Exercise 1 here. Add code chunks as needed. Don’t forget to label your code chunk. Do not use spaces in code chunk labels.)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-2",
+    "href": "materials/git-github/lab-1-starter.html#exercise-2",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 2",
+    "text": "Exercise 2\n(Type your answer to Exercise 2 here. Add code chunks as needed. Don’t forget to label your code chunk. Do not use spaces in code chunk labels.)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-3",
+    "href": "materials/git-github/lab-1-starter.html#exercise-3",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 3",
+    "text": "Exercise 3\n(Type your answer to Exercise 3 here. Add code chunks as needed. Don’t forget to label your code chunk. Do not use spaces in code chunk labels.)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-4",
+    "href": "materials/git-github/lab-1-starter.html#exercise-4",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 4",
+    "text": "Exercise 4"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-5",
+    "href": "materials/git-github/lab-1-starter.html#exercise-5",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 5",
+    "text": "Exercise 5"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-6",
+    "href": "materials/git-github/lab-1-starter.html#exercise-6",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 6",
+    "text": "Exercise 6"
+  },
+  {
+    "objectID": "materials/git-github/lab-1-starter.html#exercise-7",
+    "href": "materials/git-github/lab-1-starter.html#exercise-7",
+    "title": "Lab 1 - Data visualization",
+    "section": "Exercise 7",
+    "text": "Exercise 7"
+  },
+  {
+    "objectID": "materials/git-github/index.html#reproducibility-checklist",
+    "href": "materials/git-github/index.html#reproducibility-checklist",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Reproducibility checklist",
+    "text": "Reproducibility checklist\n\nAre the tables and figures reproducible from the code and data?\nDoes the code actually do what you think it does?\nIn addition to what was done, is it clear why it was done? (e.g., how were parameter settings chosen?)\nCan the code be used for other data?\nCan you extend the code to do other things?"
+  },
+  {
+    "objectID": "materials/git-github/index.html#ambitious-goal-many-other-concerns",
+    "href": "materials/git-github/index.html#ambitious-goal-many-other-concerns",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Ambitious goal + many other concerns",
+    "text": "Ambitious goal + many other concerns\nWe need an environment where\n\ndata, analysis, and results are tightly connected, or better yet, inseparable\nreproducibility is built in\n\nthe original data remains untouched\nall data manipulations and analyses are inherently documented\n\ndocumentation is human readable and syntax is minimal"
+  },
+  {
+    "objectID": "materials/git-github/index.html#roadmap",
+    "href": "materials/git-github/index.html#roadmap",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nScriptability \\(\\rightarrow\\) R - ✅\nLiterate programming (code, narrative, output in one place) \\(\\rightarrow\\) Quarto - ✅\nVersion control \\(\\rightarrow\\) Git / GitHub – this module!"
+  },
+  {
+    "objectID": "materials/git-github/index.html#why-git-github",
+    "href": "materials/git-github/index.html#why-git-github",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Why Git + GitHub?",
+    "text": "Why Git + GitHub?\n\nVersion control: Lots of mistakes along the way, need ability to revert\nCollaboration: Platform that removes barriers to well documented collaboration\nAccountability: Transparent commit history\nEarly introduction:\n\nMastery takes time, earlier start the better\nMarketability in industry"
+  },
+  {
+    "objectID": "materials/git-github/index.html#goals",
+    "href": "materials/git-github/index.html#goals",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Goals",
+    "text": "Goals\nIn addition to teaching good (and popular) data science workflows:\n\n\nCentralize the distribution (and collection) of all student assignments\nEnable students to work collaboratively\nMake Git and GitHub part of student workflow\nPut students on a smooth path to open publishing of their project outputs"
+  },
+  {
+    "objectID": "materials/git-github/index.html#basic-structure",
+    "href": "materials/git-github/index.html#basic-structure",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Basic Structure",
+    "text": "Basic Structure"
+  },
+  {
+    "objectID": "materials/git-github/index.html#setting-up-a-course",
+    "href": "materials/git-github/index.html#setting-up-a-course",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Setting up a course",
+    "text": "Setting up a course\n\nCreate a free course organization on GitHub: github.com/organizations/new\nGet verified as a teacher: https://education.github.com/discount_requests/application\nOnce verified, upgrade your organization for free: https://education.github.com/globalcampus/teacher\nSet member privileges in organization\nInvite students to organization\nCreate assignment(s)\nCollect assignments(s)**\nGrade assignment(s)**"
+  },
+  {
+    "objectID": "materials/git-github/index.html#create-course-organization",
+    "href": "materials/git-github/index.html#create-course-organization",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "1️⃣ Create course organization",
+    "text": "1️⃣ Create course organization\nSelect the option for a free course organization."
+  },
+  {
+    "objectID": "materials/git-github/index.html#get-verified-as-a-teacher",
+    "href": "materials/git-github/index.html#get-verified-as-a-teacher",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "2️⃣ Get verified as a teacher",
+    "text": "2️⃣ Get verified as a teacher"
+  },
+  {
+    "objectID": "materials/git-github/index.html#required-information",
+    "href": "materials/git-github/index.html#required-information",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Required information",
+    "text": "Required information\nYou will need to provide the following to request teacher benefits:\n\nA brief description of how you plan to use GitHub\nEstablishing connection to an academic institution by verifying with a school-issued email address + school ID or some other proof of academic affiliation\nInformation about the school - link to website, address, etc.\n\n\n\n\n\n\n\nRequest verification early\n\n\nVerification is manual and can take up to a few days, do it well before your semester begins!"
+  },
+  {
+    "objectID": "materials/git-github/index.html#upgrade-your-organization",
+    "href": "materials/git-github/index.html#upgrade-your-organization",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "3️⃣ Upgrade your organization",
+    "text": "3️⃣ Upgrade your organization"
+  },
+  {
+    "objectID": "materials/git-github/index.html#set-member-privileges",
+    "href": "materials/git-github/index.html#set-member-privileges",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "4️⃣ Set member privileges",
+    "text": "4️⃣ Set member privileges"
+  },
+  {
+    "objectID": "materials/git-github/index.html#set-member-privileges-1",
+    "href": "materials/git-github/index.html#set-member-privileges-1",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "4️⃣ Set member privileges",
+    "text": "4️⃣ Set member privileges"
+  },
+  {
+    "objectID": "materials/git-github/index.html#set-member-privileges-2",
+    "href": "materials/git-github/index.html#set-member-privileges-2",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "4️⃣ Set member privileges",
+    "text": "4️⃣ Set member privileges"
+  },
+  {
+    "objectID": "materials/git-github/index.html#invite-students",
+    "href": "materials/git-github/index.html#invite-students",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "5️⃣ Invite students",
+    "text": "5️⃣ Invite students"
+  },
+  {
+    "objectID": "materials/git-github/index.html#working-with-the-github-ui-can-get-tedious",
+    "href": "materials/git-github/index.html#working-with-the-github-ui-can-get-tedious",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Working with the GitHub UI can get tedious…",
+    "text": "Working with the GitHub UI can get tedious…\n\nOnce you’ve set up your organization, automate redundant tasks by working directly with GitHub’s immensely rich API!\nAnd do so from the comfort of your own home, i.e., using R."
+  },
+  {
+    "objectID": "materials/git-github/index.html#ghclass",
+    "href": "materials/git-github/index.html#ghclass",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "📦 ghclass",
+    "text": "📦 ghclass\nTools for managing github class organization accounts\n\nMade for instructors who use GitHub for class management, e.g., assignments distributed via GitHub repositories\nThe package assumes that you’re an R user, and you probably teach R as well, though that’s not a requirement since this package is all about setting up repositories with the right permissions, not what your students put in those repositories\n\n\n# devtools::install_github(\"rundel/ghclass\") for dev version\n\ninstall.packages(\"ghclass\") \nlibrary(ghclass)"
+  },
+  {
+    "objectID": "materials/git-github/index.html#collect-data-from-students",
+    "href": "materials/git-github/index.html#collect-data-from-students",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Collect data from students",
+    "text": "Collect data from students\n\nNeed students’ GitHub github_names at a minimum\nRecommend also collecting their emails, as students tend to make typos in their GitHub github_name\nYou can also use the user_exists() function to check for validity of usernames your students provide\n\n\nuser_exists(\"florence-nightingale\")\n\n[1] TRUE\n\nuser_exists(\"florence-nightinWale\")\n\n[1] FALSE"
+  },
+  {
+    "objectID": "materials/git-github/index.html#prior-to-collecting-data",
+    "href": "materials/git-github/index.html#prior-to-collecting-data",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Prior to collecting data…",
+    "text": "Prior to collecting data…\nYou need to instruct students to create GitHub accounts\n\nConsider data privacy rules of institution / country (e.g., you may need to enter a data protection agreement for GDPR compliance)\nGive some guidance for choosing a github_name\n\nSee “github_name Advice” on Happy Git with R: happygitwithr.com/github-acct.html\n\nCan have students choose and submit github_name as an in-class activity during the first week of classes"
+  },
+  {
+    "objectID": "materials/git-github/index.html#behind-the-scenes-github-tokens",
+    "href": "materials/git-github/index.html#behind-the-scenes-github-tokens",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Behind the scenes: GitHub tokens",
+    "text": "Behind the scenes: GitHub tokens\nghclass uses the GitHub API to interact with your course organization and repos - the API verifies your identity using a personal access token which must be created and saved in such a way that ghclass can find and use it.\n\nCreate a token\n\n\nusethis::create_github_token()\n\n\nOnce created, save the GITHUB_PAT using\n\n\ngitcreds::gitcreds_set()"
+  },
+  {
+    "objectID": "materials/git-github/index.html#behind-the-scenes-github-tokens-1",
+    "href": "materials/git-github/index.html#behind-the-scenes-github-tokens-1",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Behind the scenes: GitHub tokens",
+    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✔ Your GitHub PAT authenticated correctly.\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
+  },
+  {
+    "objectID": "materials/git-github/index.html#invite-students-1",
+    "href": "materials/git-github/index.html#invite-students-1",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Invite students",
+    "text": "Invite students\n\nThis will generate an email to students.\nInstruct students to check their email and follow the instructions.\n\n\norg &lt;- \"data-sci-101\"\n\n\n\nroster &lt;- read_csv(\"survey-responses.csv\")\norg_invite(org = org, user = roster$github_name)\n\n## ✔ Invited user 'florence-nightingale' to org 'data-sci-101'.\n## ✔ Invited user 'web-dubois' to org 'data-sci-101'."
+  },
+  {
+    "objectID": "materials/git-github/index.html#check-member-status",
+    "href": "materials/git-github/index.html#check-member-status",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Check member status",
+    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\n[1] \"mine-cetinkaya-rundel\" \"web-dubois\"           \n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n[1] \"florence-nightingale\"\n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
+  },
+  {
+    "objectID": "materials/git-github/index.html#creating-assignments---big-picture",
+    "href": "materials/git-github/index.html#creating-assignments---big-picture",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Creating assignments - big picture",
+    "text": "Creating assignments - big picture\n\nCreate a starter repo, keep it private and make it a template\nClone the repo and add any starter files (template qmd, data, instructions, etc.)\nCommit and push your changes to the repo\nUse the org_create_assignment() function to create copies of the starter repo with correct permissions for each of your students (or teams)"
+  },
+  {
+    "objectID": "materials/git-github/index.html#creating-your-starter-repo",
+    "href": "materials/git-github/index.html#creating-your-starter-repo",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Creating your starter repo",
+    "text": "Creating your starter repo"
+  },
+  {
+    "objectID": "materials/git-github/index.html#make-your-starter-repo-a-template",
+    "href": "materials/git-github/index.html#make-your-starter-repo-a-template",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Make your starter repo a template",
+    "text": "Make your starter repo a template"
+  },
+  {
+    "objectID": "materials/git-github/index.html#prepare-your-starter-repo",
+    "href": "materials/git-github/index.html#prepare-your-starter-repo",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Prepare your starter repo",
+    "text": "Prepare your starter repo\n\n Demo:\n\nClone it locally\nAdd any necessary files\nCommit and push"
+  },
+  {
+    "objectID": "materials/git-github/index.html#create-assignments",
+    "href": "materials/git-github/index.html#create-assignments",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Create assignments",
+    "text": "Create assignments\n\n Demo:\n\nCreate a copy of the starter repo for each student, appending the student’s github_name to the repo name\nGive write access to each student for their own repo\n\n\n\nassignment &lt;- \"hw-1\"\n\n# to create repos like hw-1-florence-nightingale\norg_create_assignment(\n  org = org,\n  repo = paste0(assignment, \"-\", roster$github_name),\n  user = roster$github_name,\n  source_repo = paste0(org, \"/\", assignment)\n)"
+  },
+  {
+    "objectID": "materials/git-github/index.html#no-seriously",
+    "href": "materials/git-github/index.html#no-seriously",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "No, seriously…",
+    "text": "No, seriously…\n\n\n\n\n\n\nMake your starter repo a template\n\n\nYou will regularly forget to do this, but try not to. It makes the next step A LOT faster, which is important especially for larger courses.\n\n\n\n\nIf the starter repo is not a template, org_create_assignment() first clones the repo locally, than pushes to GitHub, which is slow.\nIf the starter repo is a template, org_create_assignment(), copying happens on GitHub, which is a lot faster (and you can also use the GitHub UI to make copies on the fly)"
+  },
+  {
+    "objectID": "materials/git-github/index.html#your-turn",
+    "href": "materials/git-github/index.html#your-turn",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nYour role: Student\nSet the scene: You’re a student in my class who is about to start working on their first assignment that requires the use of Git and GitHub. In this class, you access RStudio via Posit Cloud, which means your Posit Cloud account should be able to interact with your GitHub account.\nConnect your Posit Cloud and GitHub accounts:\n\nGo to Posit Cloud and log in.\nClick on your profile avatar (top right) and then click on “Authentication”.\nUnder Login Options, check the box for “Enabled”. This will open another window where you should click on “Authorize rstudio”.\nThen, go back to the Posit Cloud authentication page, and check the box for “Private repo access also enabled”."
+  },
+  {
+    "objectID": "materials/git-github/index.html#your-turn-1",
+    "href": "materials/git-github/index.html#your-turn-1",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nYour role: Student\n\nGo to the course organization on GitHub: github.com/data-sci-101.\nLocate your HW 1, read through the Getting Started section, follow the instructions.\n\nIf there is no GitHub repo created for you for this assignment, let me know!\n\nClone the repo using HTTPS.\nThen, go through the Hello Git and Warm up sections.\nAdd your answer to Question 1, then commit and push again.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "materials/git-github/index.html#create-team-assignments",
+    "href": "materials/git-github/index.html#create-team-assignments",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Create team assignments",
+    "text": "Create team assignments\n\n Demo:\n\nCreate a copy of the starter repo for each team, appending the their team_name to the repo name\nGive write access to each student in a team for their own team repo\n\n\n\nassignment &lt;- \"lab-3\"\n\norg_create_assignment(\n  org = org,\n  repo = paste0(\"lab-3\", \"-\", roster$team_name),\n  user = roster$github_name,\n  team = roster$team_name,\n  source_repo = paste0(org, \"/\", assignment)\n)"
+  },
+  {
+    "objectID": "materials/git-github/index.html#your-turn-2",
+    "href": "materials/git-github/index.html#your-turn-2",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nYour role: Student\n\nGo to the course organization on GitHub: github.com/data-sci-101.\nLocate your Lab 1, read through the Getting Started section, follow the instructions with your team members.\n\nIf there is no GitHub repo created for you/your team for this assignment, let me know!\n\nClone the repo using HTTPS – each person in a team should do this.\nDiscuss Question 1 as a team, identify one team member as the scribe, and have them write up the answer and commit and push.\nThen, have all other team members pull that change.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/git-github/index.html#options-for-giving-feedback-on-github",
+    "href": "materials/git-github/index.html#options-for-giving-feedback-on-github",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Options for giving feedback on GitHub",
+    "text": "Options for giving feedback on GitHub\n\nUse the GitHub UI to add issues to each student’s repo\nInstructors (and TAs) can view all repositories within the course organization with their owner role in a GitHub organization\nMake sure to @ mention the student so that they are notified when an issue is opened\nConsider keeping points out of issues"
+  },
+  {
+    "objectID": "materials/git-github/index.html#your-turn-3",
+    "href": "materials/git-github/index.html#your-turn-3",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nYour role: Instructor\n\nFirst, I’ll change everyone’s permission level and make you owners. (Please don’t delete any repos!)\nGo to the GitHub organization for our “class” and observe that now you can see all repos.\nGo into the individual repo (HW 1) for your neighbor. Open an issue and add some text to the issue. In the issue @ mention their github_name. Submit your issue.\n\n\n\n\nYour role: Student\nCheck your email to confirm that you got notified of an issue being filed by your neighbor in your repo, then review the issue in on GitHub.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/git-github/index.html#other-ghclass-functionality",
+    "href": "materials/git-github/index.html#other-ghclass-functionality",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Other ghclass functionality",
+    "text": "Other ghclass functionality\n\n Demo:\nClone student repos to review their work locally\n\nhw01_repos &lt;- org_repos(org, \"hw-01-\")\nlocal_repo_clone(\n  hw01_repos, \n  local_path = \"hw1-submissions\"\n)\n\n\nGet big picture statistics for an assignment\n\norg_repo_stats(org, filter = \"hw-1\")"
+  },
+  {
+    "objectID": "materials/git-github/index.html#git-github-lessons-learned",
+    "href": "materials/git-github/index.html#git-github-lessons-learned",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Git + GitHub lessons learned",
+    "text": "Git + GitHub lessons learned\n\nIf you plan on using git in class, start on day one, don’t wait until the “right time”\nFirst few assignment should be individual, not team based, to avoid merge conflicts\nStudents need to remember to pull before starting work\nUse GitHub through the RStudio IDE, not command line to keep scope narrow\nRemind students on that future projects should go on GitHub with PI approval"
+  },
+  {
+    "objectID": "materials/git-github/index.html#leverage-the-ecosystem-even-further",
+    "href": "materials/git-github/index.html#leverage-the-ecosystem-even-further",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "Leverage the ecosystem even further",
+    "text": "Leverage the ecosystem even further\n\nTrigger a GitHub action every time a student pushes to their repo to render their document and provide high level “rendered / didn’t render” type feedback automatically\nFetch artifacts from actions to obtain (and grade) an independently, automatically rendered version of students’ work for a high fidelity check on reproducibility"
+  },
+  {
+    "objectID": "materials/git-github/index.html#fa-cube-ghclass-documentation",
+    "href": "materials/git-github/index.html#fa-cube-ghclass-documentation",
+    "title": "Teaching data science with Git and GitHub",
+    "section": " ghclass documentation",
+    "text": "ghclass documentation"
+  },
+  {
+    "objectID": "materials/git-github/index.html#fa-file-implementing-version-control-with-git-and-github-as-a-learning-objective-in-statistics-and-data-science-courses",
+    "href": "materials/git-github/index.html#fa-file-implementing-version-control-with-git-and-github-as-a-learning-objective-in-statistics-and-data-science-courses",
+    "title": "Teaching data science with Git and GitHub",
+    "section": " Implementing version control with Git and GitHub as a learning objective in statistics and data science courses",
+    "text": "Implementing version control with Git and GitHub as a learning objective in statistics and data science courses\n\nBeckman, M. D. et. al. (2021). Implementing version control with Git and GitHub as a learning objective in statistics and data science courses. Journal of Statistics and Data Science Education, 29(sup1), S132-S144. https://doi.org/10.1080/10691898.2020.1848485\n\nThe various approaches described in the article span different implementation strategies to suit student background, course type, software choices, and assessment practices. By presenting a wide range of approaches to teaching Git, the article aims to serve as a resource for statistics and data science instructors teaching courses at any level within an undergraduate or graduate curriculum.\n\n\n\n\n🔗 pos.it/teach-ds-conf23 / Module 2"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html",
+    "href": "materials/tidyverse-quarto/fisheries.html",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "",
+    "text": "Fisheries and Aquaculture Department of the Food and Agriculture Organization of the United Nations collects data on fisheries production of countries. The (not-so-great) visualization below shows the distribution of fishery harvest of countries for 2016, by capture and aquaculture.\n\n\n\n\n\n\nCountries whose total harvest was less than 100,000 tons are not included in the visualization.\nSource: Fishing industry by country\n\n\n\nWhat are some ways you would improve the visualization above?\n\nAdd your response here.\n\n\n\n\nWe will use the tidyverse and scales packages for data wrangling and visualization.\n\nlibrary(tidyverse)\nlibrary(scales)\n\n\n\n\nLet’s load the data:\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nAnd inspect it:\n\nglimpse(fisheries)\n\nRows: 216\nColumns: 4\n$ country     &lt;chr&gt; \"Afghanistan\", \"Albania\", \"Algeria\", \"American Samoa\", \"An…\n$ capture     &lt;dbl&gt; 1000, 7886, 95000, 3047, 0, 486490, 3000, 755226, 3758, 14…\n$ aquaculture &lt;dbl&gt; 1200, 950, 1361, 20, 0, 655, 10, 3673, 16381, 0, 96847, 34…\n$ total       &lt;dbl&gt; 2200, 8836, 96361, 3067, 0, 487145, 3010, 758899, 20139, 1…\n\n\n\n\n\nFilter out countries whose total harvest was less than 100,000 tons since they are not included in the visualization:\n\nfisheries &lt;- fisheries |&gt;\n  filter(total &gt; 100000)\n\nThen, we will join this with the continent data.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-1",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-1",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "",
+    "text": "What are some ways you would improve the visualization above?\n\nAdd your response here."
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#packages",
+    "href": "materials/tidyverse-quarto/fisheries.html#packages",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "",
+    "text": "We will use the tidyverse and scales packages for data wrangling and visualization.\n\nlibrary(tidyverse)\nlibrary(scales)"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#data",
+    "href": "materials/tidyverse-quarto/fisheries.html#data",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "",
+    "text": "Let’s load the data:\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nAnd inspect it:\n\nglimpse(fisheries)\n\nRows: 216\nColumns: 4\n$ country     &lt;chr&gt; \"Afghanistan\", \"Albania\", \"Algeria\", \"American Samoa\", \"An…\n$ capture     &lt;dbl&gt; 1000, 7886, 95000, 3047, 0, 486490, 3000, 755226, 3758, 14…\n$ aquaculture &lt;dbl&gt; 1200, 950, 1361, 20, 0, 655, 10, 3673, 16381, 0, 96847, 34…\n$ total       &lt;dbl&gt; 2200, 8836, 96361, 3067, 0, 487145, 3010, 758899, 20139, 1…"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#data-prep",
+    "href": "materials/tidyverse-quarto/fisheries.html#data-prep",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "",
+    "text": "Filter out countries whose total harvest was less than 100,000 tons since they are not included in the visualization:\n\nfisheries &lt;- fisheries |&gt;\n  filter(total &gt; 100000)\n\nThen, we will join this with the continent data.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-2",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-2",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nWe want to keep all rows and columns from fisheries and add a column for corresponding continents. Which join function should we use? Explain your reasoning.\n\nAdd your response here."
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-3",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-3",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 3",
+    "text": "Exercise 3\nJoin the two data frames with fisheries &lt;- *_join(fisheries, continents) using the join function you decided on in the previous question. How does this function know to join the two data frames by country?\nHint: Take a look at the variables in the two datasets you’re joining.\n\nAdd response here.\n\n\n# add code here"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-4",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-4",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 4",
+    "text": "Exercise 4\nDo all countries in fisheries have a continent assigned? If not, which countries are missing continents (NAs)?\n\nAdd your response here\n\n\n# add code here"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-5",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-5",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 5",
+    "text": "Exercise 5\nFill in the missing continents for these countries and justify your decisions. Then check to make sure all countries now have continents assigned.\n\n# add code here"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-6",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-6",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 6",
+    "text": "Exercise 6\nCalculate the percentage of aquaculture harvest for each country, record these values in a new variable called aquaculture_perc.\n\n# add code here"
+  },
+  {
+    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-7",
+    "href": "materials/tidyverse-quarto/fisheries.html#exercise-7",
+    "title": "Ex 1.2: Fisheries of the world",
+    "section": "Exercise 7",
+    "text": "Exercise 7\nCalculate minimum, mean, and maximum aquaculture percentage for each continent and visualize these values as a bar plot.\n\n# add code here"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "There has been significant innovation in introductory statistics and data science courses to equip students with the statistical, computing, and communication skills needed for modern data analysis. Success in data science and statistics is dependent on the development of both analytical and computational skills, and the demand for educators who are proficient at teaching both these skills is growing. The goal of this masterclass is to equip educators with concrete information on content, workflows, and infrastructure for painlessly introducing modern computation with R and RStudio within a data science curriculum. In a nutshell, the day you’ll spend in this workshop will save you endless hours of solo work designing and setting up your course.\nTopics will cover teaching the tidyverse in 2023, highlighting updates to R for Data Science (2nd ed) and Data Science in a Box as well as present tooling options and workflows for reproducible authoring, computing infrastructure, version control, and collaboration.\nThe workshop will be comprised of four modules:\n\nTeaching data science with the tidyverse and Quarto\nTeaching data science with Git and GitHub\nOrganizing, publishing, and sharing of course materials\nComputing infrastructure for teaching data science\n\nThroughout each module we’ll shift between the student perspective and the instructor perspective. The activities and demos will be hands-on; attendees will also have the opportunity to exchange ideas and ask questions throughout the session.\nIn addition to gaining technical knowledge, participants will engage in discussion around the decisions that go into developing a data science curriculum and choosing workflows and infrastructure that best support the curriculum and allow for scalability. We will also discuss best practices for configuring and deploying classroom infrastructures to support these tools.\n\n\nThis masterclass is aimed primarily at participants teaching data science in an academic setting in semester-long courses, however much of the information and tooling we introduce is applicable for shorter teaching experiences like workshops and bootcamps as well. Basic knowledge of R is assumed and familiarity with the tidyverse and Git is preferred.\nThis course is for you if you:\n\nyou want to learn / discuss curriculum, pedagogy, and computing infrastructure design for teaching data science with R and RStudio using the tidyverse and Quarto\nyou are interested in setting up your class in Posit Cloud\nyou want to integrate version control with git into your teaching and learn about tools and best practices for running your course on GitHub\n\n\n\n\nIn this workshop you will wear two hats: the educator and the learner. At times we will be demoing workflows for instructors (whom I assume are familiar with R, RStudio, and the tidyverse and have taught with or are interested in teaching with Posit Cloud, Git, and GitHub) and at other times you will be working through the student view (on Posit Cloud, assuming you’re not using your local setup).\n\n\nFor the latter, you can mostly assume that you’re a student in an intro data science course and this is the first day of class (i.e. there’s no expectation of prep). However we’d also like to give you a taste of how the remainder of the semester goes, which often entails students watching background videos to prepare. To prepare for the first module, please watch the following video.\n\n\n\n🖥️ Slides\n\n\n\n\n\nFor the former, you’ll might need to prepare a bit more. If you already are a Git and GitHub user, have a personal token saved, and can push to and pull from GitHub without having to type your password in each time, you’re good to go. If not, please complete the following steps before the workshop1. If you need help with any of the steps, please ask on GitHub Discussions.\n\nRegister a free GitHub account\nInstall or update R and RStudio\nInstall Git\nIntroduce yourself to Git\nPersonal access token for HTTPS\nConnect to GitHub\nConnect RStudio to Git and GitHub\nDetect Git from RStudio\n\n\n\n\nIf you choose to use your local R and RStudio install for the workshop, you should also install the following packages:\n\ninstall.packages(\"devtools\")\ninstall.packages(\"DT\")\ninstall.packages(\"fivethirtyeight\")\ninstall.packages(\"gapminder\")\ninstall.packages(\"ghclass\")\ninstall.packages(\"nycflights13\")\ninstall.packages(\"openintro\")\ninstall.packages(\"rvest\")\ninstall.packages(\"shiny\")\ninstall.packages(\"ggthemes\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"tidymodels\")\ninstall.packages(\"unvotes\")\n\n\n\n\n\nYou can join the Posit Cloud workspace for this workshop at pos.it/teach-ds-conf23-cloud."
+  },
+  {
+    "objectID": "about.html#is-this-course-for-me",
+    "href": "about.html#is-this-course-for-me",
+    "title": "About",
+    "section": "",
+    "text": "This masterclass is aimed primarily at participants teaching data science in an academic setting in semester-long courses, however much of the information and tooling we introduce is applicable for shorter teaching experiences like workshops and bootcamps as well. Basic knowledge of R is assumed and familiarity with the tidyverse and Git is preferred.\nThis course is for you if you:\n\nyou want to learn / discuss curriculum, pedagogy, and computing infrastructure design for teaching data science with R and RStudio using the tidyverse and Quarto\nyou are interested in setting up your class in Posit Cloud\nyou want to integrate version control with git into your teaching and learn about tools and best practices for running your course on GitHub"
+  },
+  {
+    "objectID": "about.html#prework",
+    "href": "about.html#prework",
+    "title": "About",
+    "section": "",
+    "text": "In this workshop you will wear two hats: the educator and the learner. At times we will be demoing workflows for instructors (whom I assume are familiar with R, RStudio, and the tidyverse and have taught with or are interested in teaching with Posit Cloud, Git, and GitHub) and at other times you will be working through the student view (on Posit Cloud, assuming you’re not using your local setup).\n\n\nFor the latter, you can mostly assume that you’re a student in an intro data science course and this is the first day of class (i.e. there’s no expectation of prep). However we’d also like to give you a taste of how the remainder of the semester goes, which often entails students watching background videos to prepare. To prepare for the first module, please watch the following video.\n\n\n\n🖥️ Slides\n\n\n\n\n\nFor the former, you’ll might need to prepare a bit more. If you already are a Git and GitHub user, have a personal token saved, and can push to and pull from GitHub without having to type your password in each time, you’re good to go. If not, please complete the following steps before the workshop1. If you need help with any of the steps, please ask on GitHub Discussions.\n\nRegister a free GitHub account\nInstall or update R and RStudio\nInstall Git\nIntroduce yourself to Git\nPersonal access token for HTTPS\nConnect to GitHub\nConnect RStudio to Git and GitHub\nDetect Git from RStudio\n\n\n\n\nIf you choose to use your local R and RStudio install for the workshop, you should also install the following packages:\n\ninstall.packages(\"devtools\")\ninstall.packages(\"DT\")\ninstall.packages(\"fivethirtyeight\")\ninstall.packages(\"gapminder\")\ninstall.packages(\"ghclass\")\ninstall.packages(\"nycflights13\")\ninstall.packages(\"openintro\")\ninstall.packages(\"rvest\")\ninstall.packages(\"shiny\")\ninstall.packages(\"ggthemes\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"tidymodels\")\ninstall.packages(\"unvotes\")"
+  },
+  {
+    "objectID": "about.html#posit-cloud",
+    "href": "about.html#posit-cloud",
+    "title": "About",
+    "section": "",
+    "text": "You can join the Posit Cloud workspace for this workshop at pos.it/teach-ds-conf23-cloud."
+  },
+  {
+    "objectID": "about.html#footnotes",
+    "href": "about.html#footnotes",
+    "title": "About",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThese steps will direct you to relevant chapters from Happy Git with R by Jenny Bryan et. al. It’s such a great and comprehensive resource that I have not felt the need to replicate the information elsewhere.↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Designing the data science classroom",
+    "section": "",
+    "text": "🗓️ September 18, 2023\n⏰ 09:00 - 17:00\n🏨 Hyatt Regency Chicago - Plaza B\n✍️ Click here to register\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:00 - 10:30\nTeaching data science with the tidyverse and Quarto\n\nEx 1.1: UN Votes\nEx 1.2: Fisheries of the world\n\n\n10:30 - 11:00\nCoffee break\n\n\n11:00 - 12:30\nTeaching data science with Git and GitHub\nEx 2.1: HW 1 - Data visualization [Starter]\nEx 2.2: Lab 1 - Trip to the midwest [Starter]\n\n\n12:30 - 13:30\nLunch break\n\n\n13:30 - 15:00\nComputing infrastructure for teaching data science\n\n\n15:00 - 15:30\nCoffee break\n\n\n15:30 - 17:00\nOrganizing, publishing, and sharing of course materials"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Data Science in a Box: datasciencebox.org"
+  },
+  {
+    "objectID": "resources.html#course-material-repositories",
+    "href": "resources.html#course-material-repositories",
+    "title": "Resources",
+    "section": "",
+    "text": "Data Science in a Box: datasciencebox.org"
+  },
+  {
+    "objectID": "resources.html#course-websites",
+    "href": "resources.html#course-websites",
+    "title": "Resources",
+    "section": "Course websites",
+    "text": "Course websites\n\nSTA 199 at Duke: https://sta199-f22-1.github.io/\nSTA 210 at Duke: https://sta210-s22.github.io/website"
+  },
+  {
+    "objectID": "resources.html#textbooks",
+    "href": "resources.html#textbooks",
+    "title": "Resources",
+    "section": "Textbooks",
+    "text": "Textbooks\n\nR for Data Science by Hadley Wickham, Mine Çetinkaya-Rundel, and Garret Grolemund\nIntroduction to Modern Statistics by Mine Çetinkaya-Rundel and Johanna Hardin\nTidy modeling with R by Max Kuhn and Julia Silge\nModern Data Science with R by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton"
+  },
+  {
+    "objectID": "resources.html#papers",
+    "href": "resources.html#papers",
+    "title": "Resources",
+    "section": "Papers",
+    "text": "Papers\n\nDesigning introductory data science curricula:\n\nÇetinkaya-Rundel, M., & Ellison, V. (2021). A fresh look at introductory data science. Journal of Statistics and Data Science Education, 29(sup1), S16-S26. https://doi.org/10.1080/10691898.2020.1804497.\nBaumer, B. (2015). A data science course for undergraduates: Thinking with data. The American Statistician, 69(4), 334-342. https://doi.org/10.1080/00031305.2015.1081105.\n\nTeaching reproducibility and version control:\n\nBeckman, M. D., Çetinkaya-Rundel, M., Horton, N. J., Rundel, C. W., Sullivan, A. J., & Tackett, M. (2021). Implementing version control with Git and GitHub as a learning objective in statistics and data science courses. Journal of Statistics and Data Science Education, 29(sup1), S132-S144. https://doi.org/10.1080/10691898.2020.1848485.\n\nTeaching with the tidyverse:\n\nÇetinkaya-Rundel, M., Hardin, J., Baumer, B., McNamara, A., Horton, N., & Rundel, C. (2022). An educator’s perspective of the tidyverse. Technology Innovations in Statistics Education, 14(1). http://dx.doi.org/10.5070/T514154352.\n\nOrganizing teaching materials:\n\nDogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. arXiv preprint arXiv:2202.09504. https://doi.org/10.48550/arXiv.2202.09504.\n\nTeaching modern modeling:\n\nTackett, M. (2022). Three principles for modernizing an undergraduate regression analysis course. arXiv preprint arXiv:2205.11026. https://doi.org/10.48550/arXiv.2205.11026"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#introductions",
@@ -172,7 +711,7 @@
     "href": "materials/tidyverse-quarto/index.html#data",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Data",
-    "text": "Data\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\ncontinents &lt;- read_csv(\"data/continents.csv\")"
+    "text": "Data\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#your-turn-1",
@@ -186,7 +725,7 @@
     "href": "materials/tidyverse-quarto/index.html#concepts",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Concepts",
-    "text": "Concepts\n\n\n\nfisheries |&gt;\n  select(country)\n\n# A tibble: 216 × 1\n   country            \n   &lt;chr&gt;              \n 1 Afghanistan        \n 2 Albania            \n 3 Algeria            \n 4 American Samoa     \n 5 Andorra            \n 6 Angola             \n 7 Antigua and Barbuda\n 8 Argentina          \n 9 Armenia            \n10 Aruba              \n# ℹ 206 more rows\n\n\n\n\ncontinents\n\n# A tibble: 245 × 2\n   country           continent\n   &lt;chr&gt;             &lt;chr&gt;    \n 1 Afghanistan       Asia     \n 2 Åland Islands     Europe   \n 3 Albania           Europe   \n 4 Algeria           Africa   \n 5 American Samoa    Oceania  \n 6 Andorra           Europe   \n 7 Angola            Africa   \n 8 Anguilla          Americas \n 9 Antigua & Barbuda Americas \n10 Argentina         Americas \n# ℹ 235 more rows\n\n\n\n\ndata joins\n\n\n\n\nfisheries &lt;- left_join(fisheries, continents)"
+    "text": "Concepts\n\n\n\nfisheries |&gt;\n  select(country)\n\n# A tibble: 216 × 1\n   country            \n   &lt;chr&gt;              \n 1 Afghanistan        \n 2 Albania            \n 3 Algeria            \n 4 American Samoa     \n 5 Andorra            \n 6 Angola             \n 7 Antigua and Barbuda\n 8 Argentina          \n 9 Armenia            \n10 Aruba              \n# ℹ 206 more rows\n\n\n\n\ncontinents\n\n# A tibble: 245 × 2\n   country           continent\n   &lt;chr&gt;             &lt;chr&gt;    \n 1 Afghanistan       Asia     \n 2 Åland Islands     Europe   \n 3 Albania           Europe   \n 4 Algeria           Africa   \n 5 American Samoa    Oceania  \n 6 Andorra           Europe   \n 7 Angola            Africa   \n 8 Anguilla          Americas \n 9 Antigua & Barbuda Americas \n10 Argentina         Americas \n# ℹ 235 more rows\n\n\n\n\ndata joins\n\n\n\n\nfisheries &lt;- left_join(fisheries, continents)\n\nJoining with `by = join_by(country)`"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#concepts-1",
@@ -277,7 +816,7 @@
     "href": "materials/tidyverse-quarto/index.html#concepts-8",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Concepts",
-    "text": "Concepts\n\n\n\nrobotstxt::paths_allowed(\"https://www.gov.scot\")\n\n[1] TRUE\n\n\n\n\nweb scraping\ntext parsing\ndata types\nregular expressions\nfunctions\niteration\ndata visualization\ninterpretation\ntext analysis\ndata science ethics"
+    "text": "Concepts\n\n\n\nrobotstxt::paths_allowed(\"https://www.gov.scot\")\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*#' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*( )*([^\\[\\] ,;&lt;&gt;()@/?=\\{\\} \\\\])+( )*:' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*$' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*#' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*( )*([^\\[\\] ,;&lt;&gt;()@/?=\\{\\} \\\\])+( )*:' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*$' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\n\n www.gov.scot                      \n\n\n[1] TRUE\n\n\n\n\nweb scraping\ntext parsing\ndata types\nregular expressions\nfunctions\niteration\ndata visualization\ninterpretation\ntext analysis\ndata science ethics"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#student-work-1",
@@ -364,164 +903,129 @@
     "text": "Photo credits\n\nFisheries of the world: Photo by Paul Einerhand on Unsplash\nScottish COVID briefings: Photo by jim Divine on Unsplash\nSpam mail: Photo by Alexander Grey on Unsplash\n\n\n\n\n🔗 pos.it/teach-ds-conf23 / Module 1"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "materials/tidyverse-quarto/unvotes.html",
+    "href": "materials/tidyverse-quarto/unvotes.html",
+    "title": "Ex 1.1: UN Votes",
     "section": "",
-    "text": "Data Science in a Box: datasciencebox.org"
+    "text": "How do various countries vote in the United Nations General Assembly, how have their voting patterns evolved throughout time, and how similarly or differently do they view certain issues? Answering these questions (at a high level) is the focus of this analysis.\n\n\nWe will use the tidyverse and scales packages for data wrangling and visualization, and the DT package for interactive display of tabular output, and the unvotes package for the data.\n\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(DT)\nlibrary(unvotes)\n\n\n\n\nThe data we’re using originally come from the unvotes package. In the chunk below we modify the data by joining the various data frames provided in the package to help you get started with the analysis.\n\nunvotes &lt;- un_votes |&gt;\n  inner_join(un_roll_calls, by = \"rcid\") |&gt;\n  inner_join(un_roll_call_issues, by = \"rcid\")\n\nWarning in inner_join(inner_join(un_votes, un_roll_calls, by = \"rcid\"), : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 382 of `x` matches multiple rows in `y`.\nℹ Row 3009 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning."
   },
   {
-    "objectID": "resources.html#course-material-repositories",
-    "href": "resources.html#course-material-repositories",
-    "title": "Resources",
+    "objectID": "materials/tidyverse-quarto/unvotes.html#packages",
+    "href": "materials/tidyverse-quarto/unvotes.html#packages",
+    "title": "Ex 1.1: UN Votes",
     "section": "",
-    "text": "Data Science in a Box: datasciencebox.org"
+    "text": "We will use the tidyverse and scales packages for data wrangling and visualization, and the DT package for interactive display of tabular output, and the unvotes package for the data.\n\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(DT)\nlibrary(unvotes)"
   },
   {
-    "objectID": "resources.html#course-websites",
-    "href": "resources.html#course-websites",
-    "title": "Resources",
-    "section": "Course websites",
-    "text": "Course websites\n\nSTA 199 at Duke: https://sta199-fa21-003.netlify.app\nSTA 210 at Duke: https://sta210-s22.github.io/website"
-  },
-  {
-    "objectID": "resources.html#textbooks",
-    "href": "resources.html#textbooks",
-    "title": "Resources",
-    "section": "Textbooks",
-    "text": "Textbooks\n\nR for Data Science by Hadley Wickham, Mine Çetinkaya-Rundel, and Garret Grolemund\nIntroduction to Modern Statistics by Mine Çetinkaya-Rundel and Johanna Hardin\nTidy modeling with R by Max Kuhn and Julia Silge\nModern Data Science with R by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton"
-  },
-  {
-    "objectID": "resources.html#papers",
-    "href": "resources.html#papers",
-    "title": "Resources",
-    "section": "Papers",
-    "text": "Papers\n\nDesigning introductory data science curricula:\n\nÇetinkaya-Rundel, M., & Ellison, V. (2021). A fresh look at introductory data science. Journal of Statistics and Data Science Education, 29(sup1), S16-S26. https://doi.org/10.1080/10691898.2020.1804497.\nBaumer, B. (2015). A data science course for undergraduates: Thinking with data. The American Statistician, 69(4), 334-342. https://doi.org/10.1080/00031305.2015.1081105.\n\nTeaching reproducibility and version control:\n\nBeckman, M. D., Çetinkaya-Rundel, M., Horton, N. J., Rundel, C. W., Sullivan, A. J., & Tackett, M. (2021). Implementing version control with Git and GitHub as a learning objective in statistics and data science courses. Journal of Statistics and Data Science Education, 29(sup1), S132-S144. https://doi.org/10.1080/10691898.2020.1848485.\n\nTeaching with the tidyverse:\n\nÇetinkaya-Rundel, M., Hardin, J., Baumer, B., McNamara, A., Horton, N., & Rundel, C. (2022). An educator’s perspective of the tidyverse. Technology Innovations in Statistics Education, 14(1). http://dx.doi.org/10.5070/T514154352.\n\nOrganizing teaching materials:\n\nDogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. arXiv preprint arXiv:2202.09504. https://doi.org/10.48550/arXiv.2202.09504.\n\nTeaching modern modeling:\n\nTackett, M. (2022). Three principles for modernizing an undergraduate regression analysis course. arXiv preprint arXiv:2205.11026. https://doi.org/10.48550/arXiv.2205.11026"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Designing the data science classroom",
+    "objectID": "materials/tidyverse-quarto/unvotes.html#data",
+    "href": "materials/tidyverse-quarto/unvotes.html#data",
+    "title": "Ex 1.1: UN Votes",
     "section": "",
-    "text": "🗓️ September 18, 2023\n⏰ 09:00 - 17:00\n🏨 Hyatt Regency Chicago - Plaza B\n✍️ Click here to register\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:00 - 10:30\nTeaching data science with the tidyverse and Quarto\n\nEx 1.1: UN Votes\nEx 1.2: Fisheries of the world\n\n\n10:30 - 11:00\nCoffee break\n\n\n11:00 - 12:30\nTeaching data science with Git and GitHub\n\n\n12:30 - 13:30\nLunch break\n\n\n13:30 - 15:00\nComputing infrastructure for teaching data science\n\n\n15:00 - 15:30\nCoffee break\n\n\n15:30 - 17:00\nOrganizing, publishing, and sharing of course materials"
+    "text": "The data we’re using originally come from the unvotes package. In the chunk below we modify the data by joining the various data frames provided in the package to help you get started with the analysis.\n\nunvotes &lt;- un_votes |&gt;\n  inner_join(un_roll_calls, by = \"rcid\") |&gt;\n  inner_join(un_roll_call_issues, by = \"rcid\")\n\nWarning in inner_join(inner_join(un_votes, un_roll_calls, by = \"rcid\"), : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 382 of `x` matches multiple rows in `y`.\nℹ Row 3009 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "materials/git-github/lab-1.html",
+    "href": "materials/git-github/lab-1.html",
+    "title": "Lab 1 - Trip to the midwest",
     "section": "",
-    "text": "There has been significant innovation in introductory statistics and data science courses to equip students with the statistical, computing, and communication skills needed for modern data analysis. Success in data science and statistics is dependent on the development of both analytical and computational skills, and the demand for educators who are proficient at teaching both these skills is growing. The goal of this masterclass is to equip educators with concrete information on content, workflows, and infrastructure for painlessly introducing modern computation with R and RStudio within a data science curriculum. In a nutshell, the day you’ll spend in this workshop will save you endless hours of solo work designing and setting up your course.\nTopics will cover teaching the tidyverse in 2023, highlighting updates to R for Data Science (2nd ed) and Data Science in a Box as well as present tooling options and workflows for reproducible authoring, computing infrastructure, version control, and collaboration.\nThe workshop will be comprised of four modules:\n\nTeaching data science with the tidyverse and Quarto\nTeaching data science with Git and GitHub\nOrganizing, publishing, and sharing of course materials\nComputing infrastructure for teaching data science\n\nThroughout each module we’ll shift between the student perspective and the instructor perspective. The activities and demos will be hands-on; attendees will also have the opportunity to exchange ideas and ask questions throughout the session.\nIn addition to gaining technical knowledge, participants will engage in discussion around the decisions that go into developing a data science curriculum and choosing workflows and infrastructure that best support the curriculum and allow for scalability. We will also discuss best practices for configuring and deploying classroom infrastructures to support these tools.\n\n\nThis masterclass is aimed primarily at participants teaching data science in an academic setting in semester-long courses, however much of the information and tooling we introduce is applicable for shorter teaching experiences like workshops and bootcamps as well. Basic knowledge of R is assumed and familiarity with the tidyverse and Git is preferred.\nThis course is for you if you:\n\nyou want to learn / discuss curriculum, pedagogy, and computing infrastructure design for teaching data science with R and RStudio using the tidyverse and Quarto\nyou are interested in setting up your class in Posit Cloud\nyou want to integrate version control with git into your teaching and learn about tools and best practices for running your course on GitHub\n\n\n\n\nIn this workshop you will wear two hats: the educator and the learner. At times we will be demoing workflows for instructors (whom I assume are familiar with R, RStudio, and the tidyverse and have taught with or are interested in teaching with Posit Cloud, Git, and GitHub) and at other times you will be working through the student view (on Posit Cloud, assuming you’re not using your local setup).\n\n\nFor the latter, you can mostly assume that you’re a student in an intro data science course and this is the first day of class (i.e. there’s no expectation of prep). However we’d also like to give you a taste of how the remainder of the semester goes, which often entails students watching background videos to prepare. To prepare for the first module, please watch the following video.\n\n\n\n🖥️ Slides\n\n\n\n\n\nFor the former, you’ll might need to prepare a bit more. If you already are a Git and GitHub user, have a personal token saved, and can push to and pull from GitHub without having to type your password in each time, you’re good to go. If not, please complete the following steps before the workshop1. If you need help with any of the steps, please ask on GitHub Discussions.\n\nRegister a free GitHub account\nInstall or update R and RStudio\nInstall Git\nIntroduce yourself to Git\nPersonal access token for HTTPS\nConnect to GitHub\nConnect RStudio to Git and GitHub\nDetect Git from RStudio\n\n\n\n\nIf you choose to use your local R and RStudio install for the workshop, you should also install the following packages:\n\ninstall.packages(\"devtools\")\ninstall.packages(\"DT\")\ninstall.packages(\"fivethirtyeight\")\ninstall.packages(\"gapminder\")\ninstall.packages(\"ghclass\")\ninstall.packages(\"nycflights13\")\ninstall.packages(\"openintro\")\ninstall.packages(\"rvest\")\ninstall.packages(\"shiny\")\ninstall.packages(\"ggthemes\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"tidymodels\")\ninstall.packages(\"unvotes\")\n\n\n\n\n\nYou can join the Posit Cloud workspace for this workshop at pos.it/teach-ds-conf23-cloud."
+    "text": "Important\n\n\n\nThis lab is due [some date in the future]."
   },
   {
-    "objectID": "about.html#is-this-course-for-me",
-    "href": "about.html#is-this-course-for-me",
-    "title": "About",
+    "objectID": "materials/git-github/lab-1.html#packages",
+    "href": "materials/git-github/lab-1.html#packages",
+    "title": "Lab 1 - Trip to the midwest",
+    "section": "Packages",
+    "text": "Packages\nWe will use the tidyverse package to create and customize plots in R.\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "materials/git-github/lab-1.html#data-lets-take-a-trip-to-the-midwest",
+    "href": "materials/git-github/lab-1.html#data-lets-take-a-trip-to-the-midwest",
+    "title": "Lab 1 - Trip to the midwest",
+    "section": "Data: Let’s take a trip to the Midwest",
+    "text": "Data: Let’s take a trip to the Midwest\nThe data in this lab is in the midwest data frame. It is part of the ggplot2 R package, so the midwest data set is automatically loaded when you load the tidyverse package.\nThe data contains demographic characteristics of counties in the Midwest region of the United States.\nBecause the data set is part of the ggplot2 package, you can read documentation for the data set, including variable definitions by typing ?midwest in the console."
+  },
+  {
+    "objectID": "materials/git-github/hw-1.html",
+    "href": "materials/git-github/hw-1.html",
+    "title": "HW 1 - Data visualization",
     "section": "",
-    "text": "This masterclass is aimed primarily at participants teaching data science in an academic setting in semester-long courses, however much of the information and tooling we introduce is applicable for shorter teaching experiences like workshops and bootcamps as well. Basic knowledge of R is assumed and familiarity with the tidyverse and Git is preferred.\nThis course is for you if you:\n\nyou want to learn / discuss curriculum, pedagogy, and computing infrastructure design for teaching data science with R and RStudio using the tidyverse and Quarto\nyou are interested in setting up your class in Posit Cloud\nyou want to integrate version control with git into your teaching and learn about tools and best practices for running your course on GitHub"
+    "text": "Important\n\n\n\nThis homework is due [some date in the future]."
   },
   {
-    "objectID": "about.html#prework",
-    "href": "about.html#prework",
-    "title": "About",
-    "section": "",
-    "text": "In this workshop you will wear two hats: the educator and the learner. At times we will be demoing workflows for instructors (whom I assume are familiar with R, RStudio, and the tidyverse and have taught with or are interested in teaching with Posit Cloud, Git, and GitHub) and at other times you will be working through the student view (on Posit Cloud, assuming you’re not using your local setup).\n\n\nFor the latter, you can mostly assume that you’re a student in an intro data science course and this is the first day of class (i.e. there’s no expectation of prep). However we’d also like to give you a taste of how the remainder of the semester goes, which often entails students watching background videos to prepare. To prepare for the first module, please watch the following video.\n\n\n\n🖥️ Slides\n\n\n\n\n\nFor the former, you’ll might need to prepare a bit more. If you already are a Git and GitHub user, have a personal token saved, and can push to and pull from GitHub without having to type your password in each time, you’re good to go. If not, please complete the following steps before the workshop1. If you need help with any of the steps, please ask on GitHub Discussions.\n\nRegister a free GitHub account\nInstall or update R and RStudio\nInstall Git\nIntroduce yourself to Git\nPersonal access token for HTTPS\nConnect to GitHub\nConnect RStudio to Git and GitHub\nDetect Git from RStudio\n\n\n\n\nIf you choose to use your local R and RStudio install for the workshop, you should also install the following packages:\n\ninstall.packages(\"devtools\")\ninstall.packages(\"DT\")\ninstall.packages(\"fivethirtyeight\")\ninstall.packages(\"gapminder\")\ninstall.packages(\"ghclass\")\ninstall.packages(\"nycflights13\")\ninstall.packages(\"openintro\")\ninstall.packages(\"rvest\")\ninstall.packages(\"shiny\")\ninstall.packages(\"ggthemes\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"tidymodels\")\ninstall.packages(\"unvotes\")"
+    "objectID": "materials/git-github/hw-1.html#packages",
+    "href": "materials/git-github/hw-1.html#packages",
+    "title": "HW 1 - Data visualization",
+    "section": "Packages",
+    "text": "Packages\n\nlibrary(tidyverse)\nlibrary(openintro)"
   },
   {
-    "objectID": "about.html#posit-cloud",
-    "href": "about.html#posit-cloud",
-    "title": "About",
-    "section": "",
-    "text": "You can join the Posit Cloud workspace for this workshop at pos.it/teach-ds-conf23-cloud."
+    "objectID": "materials/git-github/hw-1.html#guidelines-tips",
+    "href": "materials/git-github/hw-1.html#guidelines-tips",
+    "title": "HW 1 - Data visualization",
+    "section": "Guidelines + tips",
+    "text": "Guidelines + tips\nAs we’ve discussed in lecture, your plots should include an informative title, axes should be labeled, and careful consideration should be given to aesthetic choices.\nRemember that continuing to develop a sound workflow for reproducible data analysis is important as you complete this homework and other assignments in this course. There will be periodic reminders in this assignment to remind you to knit, commit, and push your changes to GithHub. You should have at least 3 commits with meaningful commit messages by the end of the assignment.\n\n\n\n\n\n\nNote\n\n\n\nNote: Do not let R output answer the question for you unless the question specifically asks for just a plot. For example, if the question asks for the number of columns in the data set, please type out the number of columns. You are subject to lose points if you do not."
   },
   {
-    "objectID": "about.html#footnotes",
-    "href": "about.html#footnotes",
-    "title": "About",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThese steps will direct you to relevant chapters from Happy Git with R by Jenny Bryan et. al. It’s such a great and comprehensive resource that I have not felt the need to replicate the information elsewhere.↩︎"
+    "objectID": "materials/git-github/hw-1.html#workflow-formatting",
+    "href": "materials/git-github/hw-1.html#workflow-formatting",
+    "title": "HW 1 - Data visualization",
+    "section": "Workflow + formatting",
+    "text": "Workflow + formatting\nMake sure to\n\nUpdate author name on your document.\nLabel all code chunks informatively and concisely.\nFollow the Tidyverse code style guidelines.\nMake at least 3 commits.\nResize figures where needed, avoid tiny or huge plots.\nTurn in an organized, well formatted document."
   },
   {
-    "objectID": "license.html",
-    "href": "license.html",
-    "title": "License",
-    "section": "",
-    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License."
+    "objectID": "materials/git-github/hw-1.html#data-1-duke-forest-houses",
+    "href": "materials/git-github/hw-1.html#data-1-duke-forest-houses",
+    "title": "HW 1 - Data visualization",
+    "section": "Data 1: Duke Forest houses",
+    "text": "Data 1: Duke Forest houses\n\n\n\n\n\n\nNote\n\n\n\nUse this dataset for Exercises 1 and 2.\n\n\nFor the following two exercises you will work with data on houses that were sold in the Duke Forest neighborhood of Durham, NC in November 2020. The duke_forest dataset comes from the openintro package. You can see a list of the variables on the package website or by running ?duke_forest in your console."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html",
-    "href": "materials/tidyverse-quarto/fisheries.html",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "",
-    "text": "Fisheries and Aquaculture Department of the Food and Agriculture Organization of the United Nations collects data on fisheries production of countries. The (not-so-great) visualization below shows the distribution of fishery harvest of countries for 2016, by capture and aquaculture.\n\n\n\n\n\n\nCountries whose total harvest was less than 100,000 tons are not included in the visualization.\nSource: Fishing industry by country\n\n\n\nWhat are some ways you would improve the visualization above?\n\nAdd your response here.\n\n\n\n\nWe will use the tidyverse and scales packages for data wrangling and visualization.\n\nlibrary(tidyverse)\nlibrary(scales)\n\n\n\n\nLet’s load the data:\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nAnd inspect it:\n\nglimpse(fisheries)\n\nRows: 216\nColumns: 4\n$ country     &lt;chr&gt; \"Afghanistan\", \"Albania\", \"Algeria\", \"American Samoa\", \"An…\n$ capture     &lt;dbl&gt; 1000, 7886, 95000, 3047, 0, 486490, 3000, 755226, 3758, 14…\n$ aquaculture &lt;dbl&gt; 1200, 950, 1361, 20, 0, 655, 10, 3673, 16381, 0, 96847, 34…\n$ total       &lt;dbl&gt; 2200, 8836, 96361, 3067, 0, 487145, 3010, 758899, 20139, 1…\n\n\n\n\n\nFilter out countries whose total harvest was less than 100,000 tons since they are not included in the visualization:\n\nfisheries &lt;- fisheries |&gt;\n  filter(total &gt; 100000)\n\nThen, we will join this with the continent data.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+    "objectID": "materials/git-github/hw-1.html#exercise-1",
+    "href": "materials/git-github/hw-1.html#exercise-1",
+    "title": "HW 1 - Data visualization",
+    "section": "Exercise 1",
+    "text": "Exercise 1\nSuppose you’re helping some family friends who are looking to buy a house in Duke Forest. As they browse Zillow listings, they realize some houses have garages and others don’t, and they wonder: Does having a garage make a difference?\nLuckily, you can help them answer this question with data visualization!\n\nMake histograms of the prices of houses in Duke Forest based on whether they have a garage.\n\nIn order to do this, you will first need to create a new variable called garage (with levels \"Garage\" and \"No garage\").\nBelow is the code for creating this new variable. Here, we mutate() the duke_forest data frame to add a new variable called garage which takes the value \"Garage\" if the text string \"Garage\" is detected in the parking variable and takes the test string \"No garage\" if not.\n\n\n\nduke_forest |&gt;\n  mutate(garage = if_else(str_detect(parking, \"Garage\"),   \"Garage\", \"No garage\"))\n\n\nThen, facet by garage and use different colors for the two facets.\nChoose an appropriate binwidth and decide whether a legend is needed, and turn it off if not.\nInclude informative title and axis labels.\nFinally, include a brief (2-3 sentence) narrative comparing the distributions of prices of Duke Forest houses that do and don’t have garages. Your narrative should touch on whether having a garage “makes a difference” in terms of the price of the house.\n\n\nNow is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-1",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-1",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "",
-    "text": "What are some ways you would improve the visualization above?\n\nAdd your response here."
-  },
-  {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#packages",
-    "href": "materials/tidyverse-quarto/fisheries.html#packages",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "",
-    "text": "We will use the tidyverse and scales packages for data wrangling and visualization.\n\nlibrary(tidyverse)\nlibrary(scales)"
-  },
-  {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#data",
-    "href": "materials/tidyverse-quarto/fisheries.html#data",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "",
-    "text": "Let’s load the data:\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nAnd inspect it:\n\nglimpse(fisheries)\n\nRows: 216\nColumns: 4\n$ country     &lt;chr&gt; \"Afghanistan\", \"Albania\", \"Algeria\", \"American Samoa\", \"An…\n$ capture     &lt;dbl&gt; 1000, 7886, 95000, 3047, 0, 486490, 3000, 755226, 3758, 14…\n$ aquaculture &lt;dbl&gt; 1200, 950, 1361, 20, 0, 655, 10, 3673, 16381, 0, 96847, 34…\n$ total       &lt;dbl&gt; 2200, 8836, 96361, 3067, 0, 487145, 3010, 758899, 20139, 1…"
-  },
-  {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#data-prep",
-    "href": "materials/tidyverse-quarto/fisheries.html#data-prep",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "",
-    "text": "Filter out countries whose total harvest was less than 100,000 tons since they are not included in the visualization:\n\nfisheries &lt;- fisheries |&gt;\n  filter(total &gt; 100000)\n\nThen, we will join this with the continent data.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
-  },
-  {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-2",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-2",
-    "title": "Ex 1.2: Fisheries of the world",
+    "objectID": "materials/git-github/hw-1.html#exercise-2",
+    "href": "materials/git-github/hw-1.html#exercise-2",
+    "title": "HW 1 - Data visualization",
     "section": "Exercise 2",
-    "text": "Exercise 2\nWe want to keep all rows and columns from fisheries and add a column for corresponding continents. Which join function should we use? Explain your reasoning.\n\nAdd your response here."
+    "text": "Exercise 2\nIt’s expected that within any given marker larger houses will be priced higher. It’s also expected that the age of the house will have an effect on the price. However in some markets new houses might be more expensive while in others new construction might mean “no character” and hence be less expensive. So your family friends ask: “In Duke Forest, do houses that are bigger and more expensive tend to be newer ones than those that are smaller and cheaper?”\nOnce again, data visualization skills to the rescue!\n\nCreate a scatter plot to exploring the relationship between price and area, conditioning for year_built.\nUse geom_smooth() with the argument se = FALSE to add a smooth curve fit to the data and color the points by year_built.\nInclude informative title, axis, and legend labels.\nDiscuss each of the following claims (1-2 sentences per claim). Your discussion should touch on specific things you observe in your plot as evidence for or against the claims.\n\nClaim 1: Larger houses are priced higher.\nClaim 2: Newer houses are priced higher.\nClaim 3: Bigger and more expensive houses tend to be newer ones than smaller and cheaper ones.\n\n\n\nNow is a good time to render, commit, and push.\nMake sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-3",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-3",
-    "title": "Ex 1.2: Fisheries of the world",
+    "objectID": "materials/git-github/hw-1.html#data-2-brfss",
+    "href": "materials/git-github/hw-1.html#data-2-brfss",
+    "title": "HW 1 - Data visualization",
+    "section": "Data 2: BRFSS",
+    "text": "Data 2: BRFSS\n\n\n\n\n\n\nNote\n\n\n\nUse this dataset for Exercises 3 to 5.\n\n\n\nThe Behavioral Risk Factor Surveillance System (BRFSS) is the nation’s premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. Established in 1984 with 15 states, BRFSS now collects data in all 50 states as well as the District of Columbia and three U.S. territories. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world.\nSource: cdc.gov/brfss\n\nIn the following exercises we will work with data from the 2020 BRFSS survey. The originally come from here, though we will work with a random sample of responses and a small number of variables from the data provided. These have already been sampled for you and the dataset you’ll use can be found in the data folder of your repo. It’s called brfss.csv.\n\nbrfss &lt;- read_csv(\"data/brfss.csv\")"
+  },
+  {
+    "objectID": "materials/git-github/hw-1.html#exercise-3",
+    "href": "materials/git-github/hw-1.html#exercise-3",
+    "title": "HW 1 - Data visualization",
     "section": "Exercise 3",
-    "text": "Exercise 3\nJoin the two data frames with fisheries &lt;- *_join(fisheries, continents) using the join function you decided on in the previous question. How does this function know to join the two data frames by country?\nHint: Take a look at the variables in the two datasets you’re joining.\n\nAdd response here.\n\n\n# add code here"
+    "text": "Exercise 3\n\nHow many rows are in the brfss dataset? What does each row represent?\nHow many columns are in the brfss dataset? Indicate the type of each variable.\nInclude the code and resulting output used to support your answer.\n\n\nNow is a good time to render, commit, and push."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-4",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-4",
-    "title": "Ex 1.2: Fisheries of the world",
+    "objectID": "materials/git-github/hw-1.html#exercise-4",
+    "href": "materials/git-github/hw-1.html#exercise-4",
+    "title": "HW 1 - Data visualization",
     "section": "Exercise 4",
-    "text": "Exercise 4\nDo all countries in fisheries have a continent assigned? If not, which countries are missing continents (NAs)?\n\nAdd your response here\n\n\n# add code here"
+    "text": "Exercise 4\nDo people who smoke more tend to have worse health conditions?\n\nUse a segmented bar chart to visualize the relationship between smoking (smoke_freq) and general health (general_health). Decide on which variable to represent with bars and which variable to fill the color of the bars by.\nPay attention to the order of the bars and, if need be, use the fct_relevel function to reorder the levels of the variables.\n\nBelow is sample code for releveling general_health. Here we first convert general_health to a factor (how R stores categorical data) and then order the levels from Excellent to Poor.\n\n\n\nbrfss |&gt;\n  mutate(\n    general_health = as.factor(general_health),\n    general_health = fct_relevel(general_health, \"Excellent\", \"Very good\", \"Good\", \"Fair\", \"Poor\")\n  )\n\n\nInclude informative title, axis, and legend labels.\nComment on the motivating question based on evidence from the visualization: Do people who smoke more tend to have worse health conditions?\n\n\nNow is a good time to render, commit, and push."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-5",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-5",
-    "title": "Ex 1.2: Fisheries of the world",
+    "objectID": "materials/git-github/hw-1.html#exercise-5",
+    "href": "materials/git-github/hw-1.html#exercise-5",
+    "title": "HW 1 - Data visualization",
     "section": "Exercise 5",
-    "text": "Exercise 5\nFill in the missing continents for these countries and justify your decisions. Then check to make sure all countries now have continents assigned.\n\n# add code here"
+    "text": "Exercise 5\nHow are sleep and general health associated?\n\nCreate a visualization displaying the relationship between sleep and general_health.\nInclude informative title and axis labels.\nModify your plot to use a different theme than the default.\nComment on the motivating question based on evidence from the visualization: How are sleep and general health associated?\n\n\nNow is a good time to render, commit, and push."
   },
   {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-6",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-6",
-    "title": "Ex 1.2: Fisheries of the world",
+    "objectID": "materials/git-github/hw-1.html#exercise-6",
+    "href": "materials/git-github/hw-1.html#exercise-6",
+    "title": "HW 1 - Data visualization",
     "section": "Exercise 6",
-    "text": "Exercise 6\nCalculate the percentage of aquaculture harvest for each country, record these values in a new variable called aquaculture_perc.\n\n# add code here"
-  },
-  {
-    "objectID": "materials/tidyverse-quarto/fisheries.html#exercise-7",
-    "href": "materials/tidyverse-quarto/fisheries.html#exercise-7",
-    "title": "Ex 1.2: Fisheries of the world",
-    "section": "Exercise 7",
-    "text": "Exercise 7\nCalculate minimum, mean, and maximum aquaculture percentage for each continent and visualize these values as a bar plot.\n\n# add code here"
+    "text": "Exercise 6\n\nFill in the blanks:\n\nThe gg in the name of the package ggplot2 stands for ___.\nIf you map the same continuous variable to both x and y aesthetics in a scatterplot, you get a straight ___ line. (Choose between “vertical”, “horizontal”, or “diagonal”.)\n\nCode style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the Tidyverse style guide.)\n\n\nggplot(data=mpg,mapping=aes(x=drv,fill=class))+geom_bar() +scale_fill_viridis_d()\n\n\nRead ?facet_wrap. What does nrow do? What does ncol do? What other options control the layout of the individual panels? Why doesn’t facet_grid() have nrow and ncol arguments?\n\n\nRender, commit, and push one last time.\nMake sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   }
 ]

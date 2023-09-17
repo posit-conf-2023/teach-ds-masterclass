@@ -373,6 +373,10 @@ You will regularly forget to do this, but try not to. It makes the next step A L
 -   Then, go back to the Posit Cloud authentication page, and check the box for "Private repo access also enabled".
 :::
 
+## Authorize Posit Cloud for your GitHub organization
+
+![](images/‎authorize-cloud.png){fig-align="center"}
+
 ## Your turn! {.smaller}
 
 ::: task

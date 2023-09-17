@@ -1,0 +1,316 @@
+---
+title: "Computing infrastructure for teaching data science"
+subtitle: "posit::conf(2023) <br> Teaching Data Science Masterclass"
+author: "Mine Çetinkaya-Rundel"
+footer: "[🔗 pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) / Module 2"
+logo: "../images/logo.png"
+format: 
+  revealjs:
+    theme: ../slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: c
+    incremental: false 
+    chalkboard: true
+execute:
+  freeze: auto
+  echo: true
+knitr:
+  opts_chunk: 
+    R.options:
+      width: 200
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+# Recap
+
+## This morning...
+
+::: incremental
+-   Module 1: Teaching data science with the tidyverse and Quarto
+-   Module 2: Teaching data science with Git and GitHub
+-   Everything we've discussed and recommended as good practice requires a ready-to-go computing environment, as opposed to one where students need to install various software before they can make their first data visualization
+:::
+
+## Why RStudio in the cloud?
+
+-   Reduce friction at first exposure to R
+-   Avoid local installation
+-   Install R and RStudio on a server and provide access to students:
+    -   Centralized RStudio server (\*)
+    -   Dockerized RStudio server (\*)
+    -   Posit Cloud
+
+::: aside
+(\*) Çetinkaya-Rundel, Mine, and Rundel, Colin. "Infrastructure and tools for teaching computing throughout the statistical curriculum." The American Statistician (2018). Part of the Practical Data Science for Stats collection.
+:::
+
+# Hello Posit Cloud!
+
+## What is Posit Cloud?
+
+::: columns
+::: {.column width="30%"}
+![](images/cloud.png)
+:::
+
+::: {.column width="70%"}
+We created **Posit Cloud** to make it easy for professionals, hobbyists, trainers, teachers, and students to do, share, teach, and learn data science using R.
+:::
+:::
+
+## An RStudio project
+
+![](images/rstudio-ide.png){fig-align="center" width="1000"}
+
+## A Posit Cloud project
+
+![](images/rstudio-cloud.png){fig-align="center" width="1000"}
+
+## Why Posit Cloud? {.small}
+
+-   Does not require IT support
+-   Features designed for instructors:
+    -   Classes can be organized in workspaces
+    -   Members can be assigned different roles: instructor, TA, student
+    -   Projects can be public or private
+    -   Projects can be made into assignments
+    -   Students can make copies of projects created by instructor
+    -   Instructor can peek into student projects
+    -   A default project template can ensure same packages in each new project created in the workspace
+    -   Git works out of the box
+
+## Contexts
+
+::: incremental
+-   Semester long courses
+    -   Intro data science / statistics: little to no background in stats, data science, programming
+    -   Upper level data science / statistics: Varied computing background and different computer setups
+-   Shorter workshops: Likely no opportunity to communicate pre-workshop instructions, varied computing background and learning goals
+:::
+
+## Your turn!
+
+::: task
+Log out of Posit Cloud and log back in.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 3, font_size = "1.5em")
+```
+
+## Workspaces
+
+-   When you create an account on Posit Cloud you get a workspace of your own
+
+-   You can add a new workspace and control its permissions
+
+-   Projects in either workspace can be public or private
+
+## Projects
+
+-   A new project in Posit Cloud
+
+-   is basically a new project in the RStudio IDE
+
+::: callout-tip
+## Say yes to projects
+
+If you use RStudio, use projects! Trust me, you won't regret it. Find out more at <https://r4ds.had.co.nz/workflow-projects.html>.
+:::
+
+## Projects from Git
+
+-   A new project from Git Repository in Posit Cloud
+-   is creating (cloning) a project from a Git repository RStudio
+
+# Teaching a short workshop
+
+## Setup in 280 characters
+
+![](images/cloud-setup-tweet.png){fig-align="center" width="1000"}
+
+## Single project, instructor view
+
+::: demo
+{{< fa keyboard >}} **Demo:**
+
+-   Create a new project in **your workspace**
+
+-   Install all required packages and add all required files
+
+-   Change permissions
+
+-   Share URL
+:::
+
+## Single project, student view
+
+::: demo
+{{< fa keyboard >}} **Demo:**
+
+-   Go to the URL shared with you
+
+-   Pick up the project where the instructor left off
+:::
+
+## Sharing an individual project {.small}
+
+::: columns
+::: {.column width="50%"}
+**Good!**
+
+-   Students land directly in a project upon login
+-   Works well for workshops where all work will be completed in a single project
+-   Also great for sharing code in general, e.g. collaboration, reprexes, etc.
+:::
+
+::: {.column width="50%"}
+**Not so good...**
+
+-   Students need to remember to make a copy of the project (which means you need to remember to remind them!)
+-   Changes you make after student launches the project won't propagate to their project
+:::
+:::
+
+## Your turn: Create a shareable project {.small}
+
+::: task
+**Your role:** Instructor
+
+-   Create a new project in **your workspace** and give it a name.
+-   Create a new Quarto document in the project -- just the new document template is fine!
+-   Change the access level of the project so others can see it as well.
+-   Grab the project URL and share it with your neighbor.
+:::
+
+<br>
+
+::: task
+**Your role:** Student
+
+Access your neighbor's project as if you're the student and they're the instructor.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10, font_size = "1.5em")
+```
+
+# Teaching a longer course
+
+## Creating a workspace, instructor view
+
+::: demo
+{{< fa keyboard >}} **Demo:**
+
+-   Create a new workspace and add a description
+
+-   Set permissions for various roles
+
+-   Set up a template, and make it the default
+
+-   Set up a new assignment
+
+-   Invite students via a sharing link
+:::
+
+## Permission levels
+
+| role        | permission                                       | course role |
+|---------------|-------------------------------------------|---------------|
+| admin       | manage users, view, edit and manage all projects | instructor  |
+| moderator   | view, edit and manage all projects               | TA          |
+| contributor | create, edit and manage their own projects       | student     |
+| viewer      | view projects shared with everyone               | auditor     |
+
+## Sharing a workspace
+
+::: columns
+::: {.column width="50%"}
+**Good!**
+
+-   Various permission levels
+-   Base projects with desired packages installed
+-   Assignments, which remove the need to remind students to make a copy of the project before starting work
+-   Ability to peek into students' projects
+:::
+
+::: {.column width="50%"}
+**Not so good...**
+
+-   Students land in the workspace, may need to provide instructions for the next steps
+-   You can update the base project throughout the course, but it will only be applied to projects created going forward
+:::
+:::
+
+# Cloud miscellania
+
+## Git integration
+
+Default project template can be used, so New Project from Git Repository also has the right packages installed!
+
+![](images/git-integration.png)
+
+## Institution accounts
+
+![](images/institution-account.png){fig-align="center"}
+
+## Dashboards
+
+Student usage / engagement metrics
+
+![](images/dashboard.png){fig-align="center" width="1000"}
+
+## Collaborative editing
+
+**TO DO:** Fill it in!
+
+## Collaborative editing
+
+**TO DO:** Fill it in!
+
+# Parting remarks
+
+## Tips
+
+-   Each project is allocated 0.5 GB of RAM by default
+    -   Test things out before assignments involving large datasets
+-   What your students see is not always what you see
+    -   Create a secondary account and add as a student
+
+## Posit Cloud and your course {.smaller}
+
+-   If teaching without Git and GitHub, sufficiently rich functionality for fully supporting your course
+
+-   If teaching with Git and GitHub, there are some rough edges (that I hope will be ironed out soon):
+
+    -   You need to set a PAT for each project, which is a setup that is not a realistic GitHub workflow and requires either that you have as many PATs as projects laying around or you have a good password manager where you can store the PAT and copy it and set it in each project. Thanks to the **usethis** package this can be done with 2 commands without going to the Terminal, which is good if that's not part of the course learning goals.
+
+    -   You need to run `git config credential.helper store` in the Terminal to make sure PAT is available in that project "forever", or until the PAT itself expires.
+
+## Discussion
+
+::: question
+What models can you envision for collecting assignments and providing feedback when teaching with Posit Cloud?
+:::
+
+```{r}
+countdown(minutes = 3, font_size = "1.5em")
+```
+
+# To be or not to be, in the IDE
+
+## Work in the IDE
+
+-   So far we've demonstrated and discussed computational infrastructure options where students are "in the IDE", where they can **do** data science
+
+-   Another approach, with the opportunity for even more immediate hands-on interaction, is running code in the browser, to quickly **experience** data science

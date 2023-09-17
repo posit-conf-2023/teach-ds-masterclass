@@ -475,6 +475,37 @@ ggplot() +
 ![](images/project-gpa-sat.png){fig-align="center"}
 :::
 
+# Teaching with Quarto
+
+## Why Quarto?
+
+-   **Reproducibility:** Train new analysts whose only workflow is a reproducible one
+-   **Pedagogy:**
+    -   Code + output + prose together
+    -   Syntax highlighting FTW!
+    -   Familiar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax
+-   **Efficiency:** Consistent formatting -\> easier grading
+-   **Extendability:** Use with Python, and Julia, and Observable, and more
+
+## Tips for starting with Quarto
+
+-   Minimal YAML
+-   Minimal chunk options
+-   Use well scaffolded Quarto documents
+-   Render early and often!
+
+## Demo: Quarto 💙 visual editor
+
+::: cloud
+{{< fa cloud >}} [**UN Votes**](https://pos.it/teach-ds-conf23-cloud)
+
+------------------------------------------------------------------------
+
+-   Document YAML
+-   Code chunks with YAML style options
+-   YAML completion and diagnostics
+:::
+
 # Scottish COVID briefings {background-image="images/jim-divine-qpQ7NQ2CXA4-unsplash.jpg" background-size="cover"}
 
 ## Data

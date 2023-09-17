@@ -639,7 +639,7 @@ robotstxt::paths_allowed("https://www.gov.scot")
 ::: columns
 ::: {.column width="70%"}
 |                         | Email is spam                 | Email is not spam             |
-|---------------------|--------------------------|--------------------------|
+|-------------------------|-------------------------------|-------------------------------|
 | Email labelled spam     | True positive                 | False positive (Type 1 error) |
 | Email labelled not spam | False negative (Type 2 error) | True negative                 |
 :::
@@ -709,7 +709,7 @@ Postel, J. (1980). DoD standard internet protocol. ACM SIGCOMM Computer Communic
 
 ## Discussion
 
-::: question
+::: task
 Do you teach with the tidyverse?
 
 -   If yes, what are some highlights of your teaching experience and what are some challenges?

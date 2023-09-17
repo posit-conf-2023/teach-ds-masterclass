@@ -119,6 +119,13 @@
     "text": "Exercise 7"
   },
   {
+    "objectID": "materials/git-github/index.html#if-you-havent-yet-done-so",
+    "href": "materials/git-github/index.html#if-you-havent-yet-done-so",
+    "title": "Teaching data science with Git and GitHub",
+    "section": "If you haven’t yet done so",
+    "text": "If you haven’t yet done so\nPlease complete the survey collecting your GitHub user names!"
+  },
+  {
     "objectID": "materials/git-github/index.html#reproducibility-checklist",
     "href": "materials/git-github/index.html#reproducibility-checklist",
     "title": "Teaching data science with Git and GitHub",
@@ -263,7 +270,7 @@
     "href": "materials/git-github/index.html#behind-the-scenes-github-tokens-1",
     "title": "Teaching data science with Git and GitHub",
     "section": "Behind the scenes: GitHub tokens",
-    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✔ Your GitHub PAT authenticated correctly.\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
+    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
   },
   {
     "objectID": "materials/git-github/index.html#invite-students-1",
@@ -277,7 +284,7 @@
     "href": "materials/git-github/index.html#check-member-status",
     "title": "Teaching data science with Git and GitHub",
     "section": "Check member status",
-    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\n[1] \"mine-cetinkaya-rundel\" \"web-dubois\"           \n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n[1] \"florence-nightingale\"\n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
+    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\ncharacter(0)\n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\ncharacter(0)\n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
   },
   {
     "objectID": "materials/git-github/index.html#creating-assignments---big-picture",

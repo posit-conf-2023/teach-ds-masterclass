@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Mine Çetinkaya-Rundel">
-  <title>Teaching Data Science Masterclass - Teaching data science with Git and GitHub</title>
+  <title>Teaching Data Science Masterclass - Computing infrastructure for teaching data science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -390,7 +390,7 @@
   </style>
   <link href="../../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../../site_libs/countdown-0.4.0/countdown.js"></script>
-<meta property="og:title" content="Teaching Data Science Masterclass - Teaching data science with Git and GitHub">
+<meta property="og:title" content="Teaching Data Science Masterclass - Computing infrastructure for teaching data science">
 <meta property="og:description" content="posit::conf(2023)  Teaching Data Science Masterclass">
 <meta property="og:site-name" content="Teaching Data Science Masterclass">
 </head>
@@ -399,7 +399,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Teaching data science with Git and GitHub</h1>
+  <h1 class="title">Computing infrastructure for teaching data science</h1>
   <p class="subtitle">posit::conf(2023) <br> Teaching Data Science Masterclass</p>
 
 <div class="quarto-title-authors">
@@ -412,560 +412,372 @@ Mine Çetinkaya-Rundel
 
 </section>
 <section>
-<section id="reproducibility-in-the-classroom" class="title-slide slide level1 center">
-<h1>Reproducibility in the classroom</h1>
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
 
 </section>
-<section id="if-you-havent-yet-done-so" class="slide level2">
-<h2>If you haven’t yet done so</h2>
-<p>Please complete the survey collecting your GitHub user names!</p>
-</section>
-<section id="reproducibility-checklist" class="slide level2">
-<h2>Reproducibility checklist</h2>
-<ul>
-<li>Are the tables and figures reproducible from the code and data?</li>
-<li>Does the code actually do what you think it does?</li>
-<li>In addition to what was done, is it clear <em>why</em> it was done? (e.g., how were parameter settings chosen?)</li>
-<li>Can the code be used for other data?</li>
-<li>Can you extend the code to do other things?</li>
-</ul>
-</section>
-<section id="ambitious-goal-many-other-concerns" class="slide level2">
-<h2>Ambitious goal + many other concerns</h2>
-<p>We need an environment where</p>
-<ul>
-<li><p>data, analysis, and results are tightly connected, or better yet, inseparable</p></li>
-<li><p>reproducibility is built in</p>
-<ul>
-<li>the original data remains untouched</li>
-<li>all data manipulations and analyses are inherently documented</li>
-</ul></li>
-<li><p>documentation is human readable and syntax is minimal</p></li>
-</ul>
-</section>
-<section id="roadmap" class="slide level2">
-<h2>Roadmap</h2>
-<ul>
-<li>Scriptability <span class="math inline">\(\rightarrow\)</span> R <span class="fragment">- ✅</span></li>
-<li>Literate programming (code, narrative, output in one place) <span class="math inline">\(\rightarrow\)</span> Quarto <span class="fragment">- ✅</span></li>
-<li>Version control <span class="math inline">\(\rightarrow\)</span> Git / GitHub <span class="fragment" style="font-family: Brusher;">– this module!</span></li>
-</ul>
-</section></section>
-<section>
-<section id="version-control-with-git-github" class="title-slide slide level1 center">
-<h1>Version control with Git + GitHub</h1>
-
-</section>
-<section id="why-git-github" class="slide level2">
-<h2>Why Git + GitHub?</h2>
-<ul>
-<li><strong>Version control:</strong> Lots of mistakes along the way, need ability to revert</li>
-<li><strong>Collaboration:</strong> Platform that removes barriers to well documented collaboration</li>
-<li><strong>Accountability:</strong> Transparent commit history</li>
-<li><strong>Early introduction:</strong>
-<ul>
-<li>Mastery takes time, earlier start the better</li>
-<li>Marketability in industry</li>
-</ul></li>
-</ul>
-</section>
-<section id="goals" class="slide level2">
-<h2>Goals</h2>
-<p>In addition to teaching good (and popular) data science workflows:</p>
+<section id="this-morning" class="slide level2">
+<h2>This morning…</h2>
 <div>
 <ul>
-<li class="fragment"><p>Centralize the distribution (and collection) of all student assignments</p></li>
-<li class="fragment"><p>Enable students to work collaboratively</p></li>
-<li class="fragment"><p>Make Git and GitHub part of student workflow</p></li>
-<li class="fragment"><p>Put students on a smooth path to open publishing of their project outputs</p></li>
+<li class="fragment">Module 1: Teaching data science with the tidyverse and Quarto</li>
+<li class="fragment">Module 2: Teaching data science with Git and GitHub</li>
+<li class="fragment">Everything we’ve discussed and recommended as good practice requires a ready-to-go computing environment, as opposed to one where students need to install various software before they can make their first data visualization</li>
 </ul>
 </div>
-</section></section>
-<section>
-<section id="github-as-your-learning-management-system" class="title-slide slide level1 center">
-<h1>GitHub as your Learning Management System</h1>
-
 </section>
-<section id="basic-structure" class="slide level2">
-<h2>Basic Structure</h2>
-
-<img data-src="images/github-org.png" width="800" class="r-stretch quarto-figure-center"></section>
-<section id="setting-up-a-course" class="slide level2 smaller">
-<h2>Setting up a course</h2>
-<ol type="1">
-<li>Create a free course organization on GitHub: <a href="https://github.com/organizations/new">github.com/organizations/new</a></li>
-<li>Get verified as a teacher: <a href="https://education.github.com/discount_requests/application" class="uri">https://education.github.com/discount_requests/application</a></li>
-<li>Once verified, upgrade your organization for free: <a href="https://education.github.com/globalcampus/teacher" class="uri">https://education.github.com/globalcampus/teacher</a></li>
-<li>Set member privileges in organization</li>
-<li>Invite students to organization</li>
-<li>Create assignment(s)</li>
-<li>Collect assignments(s)**</li>
-<li>Grade assignment(s)**</li>
-</ol>
-</section>
-<section id="create-course-organization" class="slide level2">
-<h2>1️⃣ Create course organization</h2>
-<p>Select the option for a free course organization.</p>
-
-<img data-src="images/org-create.png" alt="Screenshot of page to create GitHub organization." width="603" class="r-stretch quarto-figure-center"></section>
-<section id="get-verified-as-a-teacher" class="slide level2">
-<h2>2️⃣ Get verified as a teacher</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/teacher-benefits-2.png" alt="Screenshot of GitHub teacher benefits application." width="976"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/teacher-benefits-3.png" alt="Screenshot of ID requirement in GitHub teacher benefits application." width="1557"></p>
-</div>
-</div>
-</section>
-<section id="required-information" class="slide level2">
-<h2>Required information</h2>
-<p>You will need to provide the following to request teacher benefits:</p>
+<section id="why-rstudio-in-the-cloud" class="slide level2">
+<h2>Why RStudio in the cloud?</h2>
 <ul>
-<li><p>A brief description of how you plan to use GitHub</p></li>
-<li><p>Establishing connection to an academic institution by verifying with a school-issued email address + school ID or some other proof of academic affiliation</p></li>
-<li><p>Information about the school - link to website, address, etc.</p></li>
-</ul>
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Request verification early</strong></p>
-</div>
-<div class="callout-content">
-<p>Verification is manual and can take up to a few days, do it well before your semester begins!</p>
-</div>
-</div>
-</div>
-</section>
-<section id="upgrade-your-organization" class="slide level2">
-<h2>3️⃣ Upgrade your organization</h2>
-
-<img data-src="images/org-upgrade.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="set-member-privileges" class="slide level2">
-<h2>4️⃣ Set member privileges</h2>
-
-<img data-src="images/member-priv1.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="set-member-privileges-1" class="slide level2">
-<h2>4️⃣ Set member privileges</h2>
-
-<img data-src="images/member-priv2.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="set-member-privileges-2" class="slide level2">
-<h2>4️⃣ Set member privileges</h2>
-
-<img data-src="images/member-priv3.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="invite-students" class="slide level2">
-<h2>5️⃣ Invite students</h2>
-
-<img data-src="images/member-invite.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="working-with-the-github-ui-can-get-tedious" class="slide level2">
-<h2>Working with the GitHub UI can get tedious…</h2>
+<li>Reduce friction at first exposure to R</li>
+<li>Avoid local installation</li>
+<li>Install R and RStudio on a server and provide access to students:
 <ul>
-<li><p>Once you’ve set up your organization, automate redundant tasks by working directly with GitHub’s immensely rich API!</p></li>
-<li><p>And do so from the comfort of your own home, i.e., using R.</p></li>
-</ul>
-</section></section>
-<section>
-<section id="managing-your-github-organization-with-ghclass" class="title-slide slide level1 center">
-<h1>Managing your GitHub organization with 📦 ghclass</h1>
-
-</section>
-<section id="ghclass" class="slide level2">
-<h2>📦 <a href="https://rundel.github.io/ghclass/">ghclass</a></h2>
-<p><strong>Tools for managing github class organization accounts</strong></p>
-<ul>
-<li>Made for instructors who use GitHub for class management, e.g., assignments distributed via GitHub repositories</li>
-<li>The package assumes that you’re an R user, and you probably teach R as well, though that’s not a requirement since this package is all about setting up repositories with the right permissions, not what your students put in those repositories</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># devtools::install_github("rundel/ghclass") for dev version</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">install.packages</span>(<span class="st">"ghclass"</span>) </span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(ghclass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="collect-data-from-students" class="slide level2">
-<h2>Collect data from students</h2>
-<ul>
-<li><p>Need students’ GitHub <code>github_names</code> at a minimum</p></li>
-<li><p>Recommend also collecting their emails, as students tend to make typos in their GitHub <code>github_name</code></p></li>
-<li><p>You can also use the <code>user_exists()</code> function to check for validity of usernames your students provide</p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">user_exists</span>(<span class="st">"florence-nightingale"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">user_exists</span>(<span class="st">"florence-nightinWale"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
-</div>
-</div>
-</section>
-<section id="prior-to-collecting-data" class="slide level2">
-<h2>Prior to collecting data…</h2>
-<p>You need to instruct students to create GitHub accounts</p>
-<ul>
-<li><p>Consider data privacy rules of institution / country (e.g., you may need to enter a data protection agreement for GDPR compliance)</p></li>
-<li><p>Give some guidance for choosing a github_name</p>
-<ul>
-<li>See “github_name Advice” on <em>Happy Git with R</em>: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a></li>
+<li>Centralized RStudio server (*)</li>
+<li>Dockerized RStudio server (*)</li>
+<li>Posit Cloud</li>
 </ul></li>
-<li><p>Can have students choose and submit github_name as an in-class activity during the first week of classes</p></li>
 </ul>
-</section>
-<section id="behind-the-scenes-github-tokens" class="slide level2">
-<h2>Behind the scenes: GitHub tokens</h2>
-<p><code>ghclass</code> uses the GitHub API to interact with your course organization and repos - the API verifies your identity using a personal access token which must be created and saved in such a way that <code>ghclass</code> can find and use it.</p>
-<ul>
-<li>Create a token</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Once created, save the <code>GITHUB_PAT</code> using</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="behind-the-scenes-github-tokens-1" class="slide level2">
-<h2>Behind the scenes: GitHub tokens</h2>
-<ul>
-<li>If the token is found and works correctly the following code should run without error</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">github_test_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>✔ Your GitHub PAT authenticated correctly.</code></pre>
-</div>
-</div>
-<ul>
-<li>If instead the token is invalid or not found, you will see something like the following</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">github_test_token</span>(<span class="st">"MADE_UP_TOKEN"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>✖ Your GitHub PAT failed to authenticate.</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>└─GitHub API error (401):  Bad credentials</code></pre>
-</div>
-</div>
-</section></section>
+
+<aside><div>
+<p>(*) Çetinkaya-Rundel, Mine, and Rundel, Colin. “Infrastructure and tools for teaching computing throughout the statistical curriculum.” The American Statistician (2018). Part of the Practical Data Science for Stats collection.</p>
+</div></aside></section></section>
 <section>
-<section id="inviting-students" class="title-slide slide level1 center">
-<h1>Inviting students</h1>
+<section id="hello-posit-cloud" class="title-slide slide level1 center">
+<h1>Hello Posit Cloud!</h1>
 
 </section>
-<section id="invite-students-1" class="slide level2">
-<h2>Invite students</h2>
-<ul>
-<li>This will generate an email to students.</li>
-<li>Instruct students to check their email and follow the instructions.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>org <span class="ot">&lt;-</span> <span class="st">"data-sci-101"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="what-is-posit-cloud" class="slide level2">
+<h2>What is Posit Cloud?</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/cloud.png"></p>
+</div><div class="column" style="width:70%;">
+<p>We created <strong>Posit Cloud</strong> to make it easy for professionals, hobbyists, trainers, teachers, and students to do, share, teach, and learn data science using R.</p>
 </div>
-<p><br></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>roster <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"survey-responses.csv"</span>)</span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="fu">org_invite</span>(<span class="at">org =</span> org, <span class="at">user =</span> roster<span class="sc">$</span>github_name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<pre><code>## ✔ Invited user 'florence-nightingale' to org 'data-sci-101'.
-## ✔ Invited user 'web-dubois' to org 'data-sci-101'.</code></pre>
 </section>
-<section id="check-member-status" class="slide level2">
-<h2>Check member status</h2>
-<ul>
-<li>Who is already in?</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">org_members</span>(org)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "mine-cetinkaya-rundel" "web-dubois"           </code></pre>
-</div>
-</div>
-<ul>
-<li>Who still didn’t accept their invitations?</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">org_pending</span>(org)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "florence-nightingale"</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>All students should accept invites</strong></p>
-</div>
-<div class="callout-content">
-<p>It’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="creating-assignments" class="title-slide slide level1 center">
-<h1>Creating assignments</h1>
+<section id="an-rstudio-project" class="slide level2">
+<h2>An RStudio project</h2>
 
-</section>
-<section id="creating-assignments---big-picture" class="slide level2">
-<h2>Creating assignments - big picture</h2>
+<img data-src="images/rstudio-ide.png" width="1000" class="r-stretch quarto-figure-center"></section>
+<section id="a-posit-cloud-project" class="slide level2">
+<h2>A Posit Cloud project</h2>
+
+<img data-src="images/rstudio-cloud.png" width="1000" class="r-stretch quarto-figure-center"></section>
+<section id="why-posit-cloud" class="slide level2 small">
+<h2>Why Posit Cloud?</h2>
 <ul>
-<li>Create a starter repo, keep it private and make it a template</li>
-<li>Clone the repo and add any starter files (template qmd, data, instructions, etc.)</li>
-<li>Commit and push your changes to the repo</li>
-<li>Use the <code>org_create_assignment()</code> function to create copies of the starter repo with correct permissions for each of your students (or teams)</li>
+<li>Does not require IT support</li>
+<li>Features designed for instructors:
+<ul>
+<li>Classes can be organized in workspaces</li>
+<li>Members can be assigned different roles: instructor, TA, student</li>
+<li>Projects can be public or private</li>
+<li>Projects can be made into assignments</li>
+<li>Students can make copies of projects created by instructor</li>
+<li>Instructor can peek into student projects</li>
+<li>A default project template can ensure same packages in each new project created in the workspace</li>
+<li>Git works out of the box</li>
+</ul></li>
 </ul>
 </section>
-<section id="creating-your-starter-repo" class="slide level2">
-<h2>Creating your starter repo</h2>
-
-<img data-src="images/starter-repo-create.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="make-your-starter-repo-a-template" class="slide level2">
-<h2>Make your starter repo a template</h2>
-
-<img data-src="images/starter-repo-template.png" width="1000" class="r-stretch quarto-figure-center"></section>
-<section id="prepare-your-starter-repo" class="slide level2">
-<h2>Prepare your starter repo</h2>
-<div class="demo">
-<p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
+<section id="contexts" class="slide level2">
+<h2>Contexts</h2>
+<div>
 <ul>
-<li>Create a new repo: <code>hw-1</code></li>
-<li>Clone it locally</li>
-<li>Add any necessary files</li>
-<li>Commit and push</li>
+<li class="fragment">Semester long courses
+<ul>
+<li class="fragment">Intro data science / statistics: little to no background in stats, data science, programming</li>
+<li class="fragment">Upper level data science / statistics: Varied computing background and different computer setups</li>
+</ul></li>
+<li class="fragment">Shorter workshops: Likely no opportunity to communicate pre-workshop instructions, varied computing background and learning goals</li>
 </ul>
 </div>
 </section>
-<section id="create-assignments" class="slide level2">
-<h2>Create assignments</h2>
-<div class="demo">
-<p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
-<ul>
-<li>Create a copy of the starter repo for each student, appending the student’s <code>github_name</code> to the repo name</li>
-<li>Give write access to each student for their own repo</li>
-</ul>
+<section id="your-turn" class="slide level2">
+<h2>Your turn!</h2>
+<div class="task">
+<p>Log out of Posit Cloud and log back in.</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>assignment <span class="ot">&lt;-</span> <span class="st">"hw-1"</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a></span>
-<span id="cb20-3"><a href="#cb20-3"></a><span class="co"># to create repos like hw-1-florence-nightingale</span></span>
-<span id="cb20-4"><a href="#cb20-4"></a><span class="fu">org_create_assignment</span>(</span>
-<span id="cb20-5"><a href="#cb20-5"></a>  <span class="at">org =</span> org,</span>
-<span id="cb20-6"><a href="#cb20-6"></a>  <span class="at">repo =</span> <span class="fu">paste0</span>(assignment, <span class="st">"-"</span>, roster<span class="sc">$</span>github_name),</span>
-<span id="cb20-7"><a href="#cb20-7"></a>  <span class="at">user =</span> roster<span class="sc">$</span>github_name,</span>
-<span id="cb20-8"><a href="#cb20-8"></a>  <span class="at">source_repo =</span> <span class="fu">paste0</span>(org, <span class="st">"/"</span>, assignment)</span>
-<span id="cb20-9"><a href="#cb20-9"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_19ec4ca2" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
 </div>
 </section>
-<section id="no-seriously" class="slide level2">
-<h2>No, seriously…</h2>
+<section id="workspaces" class="slide level2">
+<h2>Workspaces</h2>
+<ul>
+<li><p>When you create an account on Posit Cloud you get a workspace of your own</p></li>
+<li><p>You can add a new workspace and control its permissions</p></li>
+<li><p>Projects in either workspace can be public or private</p></li>
+</ul>
+</section>
+<section id="projects" class="slide level2">
+<h2>Projects</h2>
+<ul>
+<li><p>A new project in Posit Cloud</p></li>
+<li><p>is basically a new project in the RStudio IDE</p></li>
+</ul>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Make your starter repo a template</strong></p>
+<p><strong>Say yes to projects</strong></p>
 </div>
 <div class="callout-content">
-<p>You will regularly forget to do this, but try not to. It makes the next step A LOT faster, which is important especially for larger courses.</p>
+<p>If you use RStudio, use projects! Trust me, you won’t regret it. Find out more at <a href="https://r4ds.had.co.nz/workflow-projects.html" class="uri">https://r4ds.had.co.nz/workflow-projects.html</a>.</p>
 </div>
 </div>
-</div>
-<ul>
-<li><p>If the starter repo is not a template, <code>org_create_assignment()</code> first clones the repo locally, than pushes to GitHub, which is slow.</p></li>
-<li><p>If the starter repo is a template, <code>org_create_assignment()</code>, copying happens on GitHub, which is a lot faster (and you can also use the GitHub UI to make copies on the fly)</p></li>
-</ul>
-</section>
-<section id="your-turn" class="slide level2 smaller">
-<h2>Your turn!</h2>
-<div class="task">
-<p><strong>Your role:</strong> Student</p>
-<p><strong>Set the scene:</strong> You’re a student in my class who is about to start working on their first assignment that requires the use of Git and GitHub. In this class, you access RStudio via Posit Cloud, which means your Posit Cloud account should be able to interact with your GitHub account.</p>
-<p><strong>Connect your Posit Cloud and GitHub accounts:</strong></p>
-<ul>
-<li>Go to <a href="https://posit.cloud/spaces/406325/">Posit Cloud</a> and log in.</li>
-<li>Click on your profile avatar (top right) and then click on “Authentication”.</li>
-<li>Under Login Options, check the box for “Enabled”. This will open another window where you should click on “Authorize rstudio”.</li>
-<li>Then, go back to the Posit Cloud authentication page, and check the box for “Private repo access also enabled”.</li>
-</ul>
 </div>
 </section>
-<section id="authorize-posit-cloud-for-your-github-organization" class="slide level2">
-<h2>Authorize Posit Cloud for your GitHub organization</h2>
+<section id="projects-from-git" class="slide level2">
+<h2>Projects from Git</h2>
+<ul>
+<li>A new project from Git Repository in Posit Cloud</li>
+<li>is creating (cloning) a project from a Git repository RStudio</li>
+</ul>
+</section></section>
+<section>
+<section id="teaching-a-short-workshop" class="title-slide slide level1 center">
+<h1>Teaching a short workshop</h1>
 
-<img data-src="images/‎authorize-cloud.png" class="r-stretch quarto-figure-center"></section>
-<section id="your-turn-1" class="slide level2 smaller">
-<h2>Your turn!</h2>
-<div class="task">
-<p><strong>Your role:</strong> Student</p>
-<ul>
-<li>Go to the course organization on GitHub: <a href="https://github.com/data-sci-101">github.com/data-sci-101</a>.</li>
-<li>Locate your HW 1, read through the <strong>Getting Started</strong> section, follow the instructions.
-<ul>
-<li>If there is no GitHub repo created for you for this assignment, let me know!</li>
-</ul></li>
-<li>Clone the repo using HTTPS.</li>
-<li>Then, go through the <strong>Hello Git</strong> and <strong>Warm up</strong> sections.</li>
-<li>Add your answer to Question 1, then commit and push again.</li>
-</ul>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_41a2df41" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
 </section>
-<section id="create-team-assignments" class="slide level2">
-<h2>Create team assignments</h2>
+<section id="setup-in-280-characters" class="slide level2">
+<h2>Setup in 280 characters</h2>
+
+<img data-src="images/cloud-setup-tweet.png" width="1000" class="r-stretch quarto-figure-center"></section>
+<section id="single-project-instructor-view" class="slide level2">
+<h2>Single project, instructor view</h2>
 <div class="demo">
 <p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
 <ul>
-<li><p>Create a copy of the starter repo for <strong>each team</strong>, appending the their <code>team_name</code> to the repo name</p></li>
-<li><p>Give write access to each student in a team for their own team repo</p></li>
+<li><p>Create a new project in <strong>your workspace</strong></p></li>
+<li><p>Install all required packages and add all required files</p></li>
+<li><p>Change permissions</p></li>
+<li><p>Share URL</p></li>
 </ul>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>assignment <span class="ot">&lt;-</span> <span class="st">"lab-1"</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="fu">org_create_assignment</span>(</span>
-<span id="cb21-4"><a href="#cb21-4"></a>  <span class="at">org =</span> org,</span>
-<span id="cb21-5"><a href="#cb21-5"></a>  <span class="at">repo =</span> <span class="fu">paste0</span>(<span class="st">"lab-1"</span>, <span class="st">"-"</span>, roster<span class="sc">$</span>team_name),</span>
-<span id="cb21-6"><a href="#cb21-6"></a>  <span class="at">user =</span> roster<span class="sc">$</span>github_name,</span>
-<span id="cb21-7"><a href="#cb21-7"></a>  <span class="at">team =</span> roster<span class="sc">$</span>team_name,</span>
-<span id="cb21-8"><a href="#cb21-8"></a>  <span class="at">source_repo =</span> <span class="fu">paste0</span>(org, <span class="st">"/"</span>, assignment)</span>
-<span id="cb21-9"><a href="#cb21-9"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
-<section id="your-turn-2" class="slide level2 smaller">
-<h2>Your turn!</h2>
-<div class="task">
-<p><strong>Your role:</strong> Student</p>
+<section id="single-project-student-view" class="slide level2">
+<h2>Single project, student view</h2>
+<div class="demo">
+<p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
 <ul>
-<li><p>Go to the course organization on GitHub: <a href="https://github.com/data-sci-101">github.com/data-sci-101</a>.</p></li>
-<li><p>Locate your Lab 1, read through the <strong>Getting Started</strong> section, follow the instructions with your team members.</p>
-<ul>
-<li>If there is no GitHub repo created for you/your team for this assignment, let me know!</li>
-</ul></li>
-<li><p>Clone the repo using HTTPS – each person in a team should do this.</p></li>
-<li><p>Discuss Question 1 as a team, identify one team member as the scribe, and have them write up the answer and commit and push.</p></li>
-<li><p>Then, have all other team members pull that change.</p></li>
+<li><p>Go to the URL shared with you</p></li>
+<li><p>Pick up the project where the instructor left off</p></li>
 </ul>
 </div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_df2b7c97" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="giving-feedback" class="title-slide slide level1 center">
-<h1>Giving feedback</h1>
-
 </section>
-<section id="options-for-giving-feedback-on-github" class="slide level2">
-<h2>Options for giving feedback on GitHub</h2>
+<section id="sharing-an-individual-project" class="slide level2 small">
+<h2>Sharing an individual project</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Good!</strong></p>
 <ul>
-<li><p>Use the GitHub UI to add issues to each student’s repo</p></li>
-<li><p>Instructors (and TAs) can view all repositories within the course organization with their <code>owner</code> role in a GitHub organization</p></li>
-<li><p>Make sure to <code>@</code> mention the student so that they are notified when an issue is opened</p></li>
-<li><p>Consider keeping points out of issues</p></li>
+<li>Students land directly in a project upon login</li>
+<li>Works well for workshops where all work will be completed in a single project</li>
+<li>Also great for sharing code in general, e.g.&nbsp;collaboration, reprexes, etc.</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Not so good…</strong></p>
+<ul>
+<li>Students need to remember to make a copy of the project (which means you need to remember to remind them!)</li>
+<li>Changes you make after student launches the project won’t propagate to their project</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="your-turn-3" class="slide level2 smaller">
-<h2>Your turn!</h2>
+<section id="your-turn-create-a-shareable-project" class="slide level2 small">
+<h2>Your turn: Create a shareable project</h2>
 <div class="task">
 <p><strong>Your role:</strong> Instructor</p>
 <ul>
-<li>First, I’ll change everyone’s permission level and make you <code>owner</code>s. (Please don’t delete any repos!)</li>
-<li>Go to the GitHub organization for our “class” and observe that now you can see all repos.</li>
-<li>Go into the individual repo (HW 1) for your neighbor. Open an issue and add some text to the issue. In the issue <code>@</code> mention their <code>github_name</code>. Submit your issue.</li>
+<li>Create a new project in <strong>your workspace</strong> and give it a name.</li>
+<li>Create a new Quarto document in the project – just the new document template is fine!</li>
+<li>Change the access level of the project so others can see it as well.</li>
+<li>Grab the project URL and share it with your neighbor.</li>
 </ul>
 </div>
 <p><br></p>
 <div class="task">
 <p><strong>Your role:</strong> Student</p>
-<p>Check your email to confirm that you got notified of an issue being filed by your neighbor in your repo, then review the issue in on GitHub.</p>
+<p>Access your neighbor’s project as if you’re the student and they’re the instructor.</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c3eb132d" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
+<div class="countdown" id="timer_045f7ff0" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-</section>
-<section id="other-ghclass-functionality" class="slide level2">
-<h2>Other ghclass functionality</h2>
-<div class="demo">
-<p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
-<p><strong>Clone</strong> student repos to review their work locally</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>hw1_repos <span class="ot">&lt;-</span> <span class="fu">org_repos</span>(org, <span class="st">"hw-1"</span>)</span>
-<span id="cb22-2"><a href="#cb22-2"></a><span class="fu">local_repo_clone</span>(</span>
-<span id="cb22-3"><a href="#cb22-3"></a>  hw01_repos, </span>
-<span id="cb22-4"><a href="#cb22-4"></a>  <span class="at">local_path =</span> <span class="st">"hw1-submissions"</span></span>
-<span id="cb22-5"><a href="#cb22-5"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><br></p>
-<p>Get big picture <strong>statistics</strong> for an assignment</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">org_repo_stats</span>(org, <span class="at">filter =</span> <span class="st">"hw-1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="git-github-lessons-learned" class="slide level2">
-<h2>Git + GitHub lessons learned</h2>
-<ul>
-<li>If you plan on using git in class, start on day one, don’t wait until the “right time”</li>
-<li>First few assignment should be individual, not team based, to avoid merge conflicts</li>
-<li>Students need to remember to pull before starting work</li>
-<li>Use GitHub through the RStudio IDE, not command line to keep scope narrow</li>
-<li>Remind students on that future projects should go on GitHub with PI approval</li>
-</ul>
-</section>
-<section id="leverage-the-ecosystem-even-further" class="slide level2">
-<h2>Leverage the ecosystem even further</h2>
-<ul>
-<li><p>Trigger a GitHub action every time a student pushes to their repo to render their document and provide high level “rendered / didn’t render” type feedback automatically</p></li>
-<li><p>Fetch artifacts from actions to obtain (and grade) an independently, automatically rendered version of students’ work for a high fidelity check on reproducibility</p></li>
-</ul>
 </section></section>
 <section>
-<section id="more-resources" class="title-slide slide level1 center">
-<h1>More resources</h1>
+<section id="teaching-a-longer-course" class="title-slide slide level1 center">
+<h1>Teaching a longer course</h1>
 
 </section>
-<section id="fa-cube-ghclass-documentation" class="slide level2 smaller">
-<h2><i class="fa-solid fa-cube" aria-label="cube"></i> ghclass documentation</h2>
-<iframe src="https://rundel.github.io/ghclass/reference/index.html" title="ghclass documentation" width="1000px" height="550px"></iframe>
+<section id="creating-a-workspace-instructor-view" class="slide level2">
+<h2>Creating a workspace, instructor view</h2>
+<div class="demo">
+<p><i class="fa-solid fa-keyboard" aria-label="keyboard"></i> <strong>Demo:</strong></p>
+<ul>
+<li><p>Create a new workspace and add a description</p></li>
+<li><p>Set permissions for various roles</p></li>
+<li><p>Set up a template, and make it the default</p></li>
+<li><p>Set up a new assignment</p></li>
+<li><p>Invite students via a sharing link</p></li>
+</ul>
+</div>
 </section>
-<section id="fa-file-implementing-version-control-with-git-and-github-as-a-learning-objective-in-statistics-and-data-science-courses" class="slide level2 smaller">
-<h2><i class="fa-solid fa-file" aria-label="file"></i> Implementing version control with Git and GitHub as a learning objective in statistics and data science courses</h2>
-<p><br></p>
-<p>Beckman, M. D. et. al.&nbsp;(2021). Implementing version control with Git and GitHub as a learning objective in statistics and data science courses. <em>Journal of Statistics and Data Science Education</em>, <em>29</em>(sup1), S132-S144. <a href="#/0">https://doi.org/10.1080/10691898.2020.1848485</a></p>
-<blockquote>
-<p>The various approaches described in the article span different implementation strategies to suit student background, course type, software choices, and assessment practices. By presenting a wide range of approaches to teaching Git, the article aims to serve as a resource for statistics and data science instructors teaching courses at any level within an undergraduate or graduate curriculum.</p>
-</blockquote>
+<section id="permission-levels" class="slide level2">
+<h2>Permission levels</h2>
+<table>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 58%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>role</th>
+<th>permission</th>
+<th>course role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>admin</td>
+<td>manage users, view, edit and manage all projects</td>
+<td>instructor</td>
+</tr>
+<tr class="even">
+<td>moderator</td>
+<td>view, edit and manage all projects</td>
+<td>TA</td>
+</tr>
+<tr class="odd">
+<td>contributor</td>
+<td>create, edit and manage their own projects</td>
+<td>student</td>
+</tr>
+<tr class="even">
+<td>viewer</td>
+<td>view projects shared with everyone</td>
+<td>auditor</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sharing-a-workspace" class="slide level2">
+<h2>Sharing a workspace</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Good!</strong></p>
+<ul>
+<li>Various permission levels</li>
+<li>Base projects with desired packages installed</li>
+<li>Assignments, which remove the need to remind students to make a copy of the project before starting work</li>
+<li>Ability to peek into students’ projects</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Not so good…</strong></p>
+<ul>
+<li>Students land in the workspace, may need to provide instructions for the next steps</li>
+<li>You can update the base project throughout the course, but it will only be applied to projects created going forward</li>
+</ul>
+</div>
+</div>
+</section></section>
+<section>
+<section id="cloud-miscellania" class="title-slide slide level1 center">
+<h1>Cloud miscellania</h1>
+
+</section>
+<section id="git-integration" class="slide level2">
+<h2>Git integration</h2>
+<p>Default project template can be used, so New Project from Git Repository also has the right packages installed!</p>
+
+<img data-src="images/git-integration.png" class="r-stretch"></section>
+<section id="institution-accounts" class="slide level2">
+<h2>Institution accounts</h2>
+
+<img data-src="images/institution-account.png" class="r-stretch quarto-figure-center"></section>
+<section id="dashboards" class="slide level2">
+<h2>Dashboards</h2>
+<p>Student usage / engagement metrics</p>
+
+<img data-src="images/dashboard.png" width="1000" class="r-stretch quarto-figure-center"></section>
+<section id="collaborative-editing" class="slide level2">
+<h2>Collaborative editing</h2>
+<p><strong>TO DO:</strong> Fill it in!</p>
+</section>
+<section id="collaborative-editing-1" class="slide level2">
+<h2>Collaborative editing</h2>
+<p><strong>TO DO:</strong> Fill it in!</p>
+</section></section>
+<section>
+<section id="parting-remarks" class="title-slide slide level1 center">
+<h1>Parting remarks</h1>
+
+</section>
+<section id="tips" class="slide level2">
+<h2>Tips</h2>
+<ul>
+<li>Each project is allocated 0.5 GB of RAM by default
+<ul>
+<li>Test things out before assignments involving large datasets</li>
+</ul></li>
+<li>What your students see is not always what you see
+<ul>
+<li>Create a secondary account and add as a student</li>
+</ul></li>
+</ul>
+</section>
+<section id="posit-cloud-and-your-course" class="slide level2 smaller">
+<h2>Posit Cloud and your course</h2>
+<ul>
+<li><p>If teaching without Git and GitHub, sufficiently rich functionality for fully supporting your course</p></li>
+<li><p>If teaching with Git and GitHub, there are some rough edges (that I hope will be ironed out soon):</p>
+<ul>
+<li><p>You need to set a PAT for each project, which is a setup that is not a realistic GitHub workflow and requires either that you have as many PATs as projects laying around or you have a good password manager where you can store the PAT and copy it and set it in each project. Thanks to the <strong>usethis</strong> package this can be done with 2 commands without going to the Terminal, which is good if that’s not part of the course learning goals.</p></li>
+<li><p>You need to run <code>git config credential.helper store</code> in the Terminal to make sure PAT is available in that project “forever”, or until the PAT itself expires.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<div class="question">
+<p>What models can you envision for collecting assignments and providing feedback when teaching with Posit Cloud?</p>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">3</span>, <span class="at">font_size =</span> <span class="st">"1.5em"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_78330867" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="to-be-or-not-to-be-in-the-ide" class="title-slide slide level1 center">
+<h1>To be or not to be, in the IDE</h1>
+
+</section>
+<section id="work-in-the-ide" class="slide level2">
+<h2>Work in the IDE</h2>
+<ul>
+<li><p>So far we’ve demonstrated and discussed computational infrastructure options where students are “in the IDE”, where they can <strong>do</strong> data science</p></li>
+<li><p>Another approach, with the opportunity for even more immediate hands-on interaction, is running code in the browser, to quickly <strong>experience</strong> data science</p></li>
+</ul>
 
 
 <img src="../images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -1008,7 +820,7 @@ Mine Çetinkaya-Rundel
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"7c11155f5774c33f","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"154320fbf382588c","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

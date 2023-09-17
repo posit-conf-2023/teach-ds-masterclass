@@ -33,6 +33,10 @@ library(ghclass)
 library(countdown)
 ```
 
+## If you haven't yet done so
+
+Please complete the survey collecting your GitHub user names!
+
 ## Reproducibility checklist
 
 -   Are the tables and figures reproducible from the code and data?

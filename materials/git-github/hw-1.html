@@ -175,6 +175,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting Started</a>
   <ul class="collapse">
+  <li><a href="#hello-github" id="toc-hello-github" class="nav-link" data-scroll-target="#hello-github">Hello GitHub</a></li>
+  <li><a href="#hello-git" id="toc-hello-git" class="nav-link" data-scroll-target="#hello-git">Hello Git</a></li>
+  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML</a></li>
+  <li><a href="#committing-changes" id="toc-committing-changes" class="nav-link" data-scroll-target="#committing-changes">Committing changes</a></li>
+  <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes">Push changes</a></li>
   <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
   <li><a href="#guidelines-tips" id="toc-guidelines-tips" class="nav-link" data-scroll-target="#guidelines-tips">Guidelines + tips</a></li>
   <li><a href="#workflow-formatting" id="toc-workflow-formatting" class="nav-link" data-scroll-target="#workflow-formatting">Workflow + formatting</a></li>
@@ -235,11 +240,74 @@ Important
 <li><p>Go to the <a href="https://github.com/data-sci-101">data-sci-101</a> organization on GitHub. Click on the repo with the prefix <code>hw-1</code>. It contains the starter documents you need to complete the homework assignment.</p></li>
 <li><p>Go to Posit Cloud and click on New Project &gt; New RStudio Project from Git. Make sure you’ve connected your Posit Cloud and GitHub accounts.</p></li>
 </ul>
+<section id="hello-github" class="level2">
+<h2 class="anchored" data-anchor-id="hello-github">Hello GitHub</h2>
+<ul>
+<li><p>Once you’re in the project, go to the Console and run</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>On the page that pops open in your browser, create a new GitHub Personal Access Token (i.e., sort of like a password you store):</p>
+<ul>
+<li><p>Describe the token’s use case under <em>Note</em>, e.g., <code>hw-1</code></p></li>
+<li><p>Extend expiration date to 90 days</p></li>
+<li><p>Scroll down and click on <strong>Generate Token</strong></p></li>
+</ul></li>
+<li><p>Copy the token by clicking on .</p></li>
+<li><p>Go back to Posit Cloud, to your Console, and run</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>and paste the token you just copied.</p></li>
+</ul>
+</section>
+<section id="hello-git" class="level2">
+<h2 class="anchored" data-anchor-id="hello-git">Hello Git</h2>
+<p>Introduce yourself to Git with</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.name =</span> <span class="st">"Mine Çetinkaya-Rundel"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.email =</span> <span class="st">"cetinkaya.mine@gmail.com"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>replacing your name and email (that you used to create your GitHub account) with mine.</p>
+</section>
+<section id="yaml" class="level2">
+<h2 class="anchored" data-anchor-id="yaml">YAML</h2>
+<p>The top portion of your R Markdown file (between the three dashed lines) is called <strong>YAML</strong>. It stands for "YAML Ain't Markup Language". It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Open the Quarto (<code>.qmd</code>) file in your project, change the author name to your name, and render the document. Examine the rendered document.</p>
+</div>
+</div>
+</section>
+<section id="committing-changes" class="level2">
+<h2 class="anchored" data-anchor-id="committing-changes">Committing changes</h2>
+<p>Now, go to the Git pane in your RStudio instance. This will be in the top right hand corner in a separate tab.</p>
+<p>If you have made changes to your Quarto (.qmd) file, you should see it listed here. Click on it to select it in this list and then click on <strong>Diff</strong>. This shows you the <em>diff</em>erence between the last committed state of the document and its current state including changes. You should see deletions in red and additions in green.</p>
+<p>If you're happy with these changes, we'll prepare the changes to be pushed to your remote repository. First, <strong>stage</strong> your changes by checking the appropriate box on the files you want to prepare. Next, write a meaningful commit message (for instance, "updated author name") in the <strong>Commit message</strong> box. Finally, click <strong>Commit</strong>. Note that every commit needs to have a commit message associated with it.</p>
+<p>You don't have to commit after every change, as this would get quite tedious. You should commit states that are <em>meaningful to you</em> for inspection, comparison, or restoration.</p>
+<p>In the first few assignments we will tell you exactly when to commit and in some cases, what commit message to use. As the semester progresses we will let you make these decisions.</p>
+<p>Now let's make sure all the changes went to GitHub. Go to your GitHub repo and refresh the page. You should see your commit message next to the updated files. If you see this, all your changes are on GitHub and you're good to go!</p>
+</section>
+<section id="push-changes" class="level2">
+<h2 class="anchored" data-anchor-id="push-changes">Push changes</h2>
+<p>Now that you have made an update and committed this change, it's time to push these changes to your repo on GitHub.</p>
+<p>In order to push your changes to GitHub, you must have <strong>staged</strong> your <strong>commit</strong> to be pushed. click on <strong>Push</strong>.</p>
+</section>
 <section id="packages" class="level2">
 <h2 class="anchored" data-anchor-id="packages">Packages</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openintro)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openintro)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="guidelines-tips" class="level2">
@@ -304,8 +372,8 @@ Note
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>duke_forest <span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">garage =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(parking, <span class="st">"Garage"</span>),   <span class="st">"Garage"</span>, <span class="st">"No garage"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>duke_forest <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">garage =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(parking, <span class="st">"Garage"</span>),   <span class="st">"Garage"</span>, <span class="st">"No garage"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Then, facet by <code>garage</code> and use different colors for the two facets.</li>
@@ -358,7 +426,7 @@ Note
 </blockquote>
 <p>In the following exercises we will work with data from the 2020 BRFSS survey. The originally come from <a href="https://michaelminn.net/tutorials/r-brfss/">here</a>, though we will work with a random sample of responses and a small number of variables from the data provided. These have already been sampled for you and the dataset you’ll use can be found in the <code>data</code> folder of your repo. It’s called <code>brfss.csv</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>brfss <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/brfss.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>brfss <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/brfss.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="exercise-3" class="level2">
@@ -383,11 +451,11 @@ Note
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>brfss <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">general_health =</span> <span class="fu">as.factor</span>(general_health),</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">general_health =</span> <span class="fu">fct_relevel</span>(general_health, <span class="st">"Excellent"</span>, <span class="st">"Very good"</span>, <span class="st">"Good"</span>, <span class="st">"Fair"</span>, <span class="st">"Poor"</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>brfss <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">general_health =</span> <span class="fu">as.factor</span>(general_health),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">general_health =</span> <span class="fu">fct_relevel</span>(general_health, <span class="st">"Excellent"</span>, <span class="st">"Very good"</span>, <span class="st">"Good"</span>, <span class="st">"Fair"</span>, <span class="st">"Poor"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Include informative title, axis, and legend labels.</li>
@@ -421,7 +489,7 @@ Note
 <li>Code style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the <a href="https://style.tidyverse.org/">Tidyverse style guide</a>.)</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>mpg,<span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>drv,<span class="at">fill=</span>class))<span class="sc">+</span><span class="fu">geom_bar</span>() <span class="sc">+</span><span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>mpg,<span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>drv,<span class="at">fill=</span>class))<span class="sc">+</span><span class="fu">geom_bar</span>() <span class="sc">+</span><span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="a">
 <li>Read <code>?facet_wrap</code>. What does <code>nrow</code> do? What does <code>ncol</code> do? What other options control the layout of the individual panels? Why doesn’t <code>facet_grid()</code> have <code>nrow</code> and <code>ncol</code> arguments?</li>

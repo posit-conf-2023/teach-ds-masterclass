@@ -66,7 +66,7 @@ Tracy Teal,<br>Open Source Program Director, Posit <br><br> Michele Peruzzi,<br>
 ::: {style="text-align: center;"}
 One link for all materials
 
-🔗 <https://rstd.io/teach-ds-conf23>
+🔗 <https://pos.it/teach-ds-conf23>
 :::
 
 ## Schedule {.smaller}

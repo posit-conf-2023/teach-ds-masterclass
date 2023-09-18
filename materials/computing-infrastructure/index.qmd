@@ -226,7 +226,7 @@ countdown(minutes = 10, font_size = "1.5em")
 ## Permission levels
 
 | role        | permission                                       | course role |
-|----------------|----------------------------------------|----------------|
+|-----------------|--------------------------------------|-----------------|
 | admin       | manage users, view, edit and manage all projects | instructor  |
 | moderator   | view, edit and manage all projects               | TA          |
 | contributor | create, edit and manage their own projects       | student     |
@@ -269,14 +269,6 @@ Default project template can be used, so New Project from Git Repository also ha
 Student usage / engagement metrics
 
 ![](images/dashboard.png){fig-align="center" width="1000"}
-
-## Collaborative editing
-
-**TO DO:** Fill it in!
-
-## Collaborative editing
-
-**TO DO:** Fill it in!
 
 # Parting remarks
 

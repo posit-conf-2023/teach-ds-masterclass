@@ -548,6 +548,7 @@ Mine Çetinkaya-Rundel
 <ul>
 <li><p>Overall structure</p></li>
 <li><p>Google sheet / schedule workflow</p></li>
+<li><p>Freeze</p></li>
 </ul>
 </div>
 </section>
@@ -558,6 +559,17 @@ Mine Çetinkaya-Rundel
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">quarto</span> publish quartopub</span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>More complex: Render on the cloud, via a GitHub action (e.g., <a href="https://github.com/data-sci-101/data-sci-101.github.io/blob/main/.github/workflows/build-site.yml">this one</a>), requires environment management with <strong>renv</strong> or similar.</p></li>
+</ul>
+</section>
+<section id="adding-webr-to-your-course-website" class="slide level2">
+<h2>Adding webR to your course website</h2>
+<ul>
+<li><p>Install the Quarto webR extension:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">quarto</span> add coatless/quarto-webr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>For each document, place the <code>webr</code> filter in the document’s header:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> webr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Then, place the R code for <code>webR</code> in a code block marked with <code>{webr-r}</code></p></li>
 </ul>
 </section>
 <section id="learn-more" class="slide level2">

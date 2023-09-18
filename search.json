@@ -63,6 +63,13 @@
     "text": "Publishing\n\nSimpler: Render locally, publish on QuartoPub or GitHub Pages (requires your project to be hosted on a GitHub repo)\nquarto publish quartopub\nquarto publish gh-pages\nMore complex: Render on the cloud, via a GitHub action (e.g., this one), requires environment management with renv or similar."
   },
   {
+    "objectID": "materials/course-materials/index.html#adding-webr-to-your-course-website",
+    "href": "materials/course-materials/index.html#adding-webr-to-your-course-website",
+    "title": "Organizing, publishing, and sharing of course materials",
+    "section": "Adding webR to your course website",
+    "text": "Adding webR to your course website\n\nInstall the Quarto webR extension:\nquarto add coatless/quarto-webr\nFor each document, place the webr filter in the document’s header:\nfilters:\n  - webr\nThen, place the R code for webR in a code block marked with {webr-r}"
+  },
+  {
     "objectID": "materials/course-materials/index.html#learn-more",
     "href": "materials/course-materials/index.html#learn-more",
     "title": "Organizing, publishing, and sharing of course materials",

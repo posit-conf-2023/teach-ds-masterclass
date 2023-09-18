@@ -205,7 +205,21 @@ execute:
 
 -   Publishing content: [quarto.org/docs/publishing](https://quarto.org/docs/publishing/)
 
-# Q&A / Wrap up
+# Wrap up
+
+## A curriculum in a box {.nostretch}
+
+::: {style="text-align: center; font-size: 60px;"}
+**🔗 [datasciencebox.org](https://datasciencebox.org/)**
+
+![](images/dsbox.png){width="500"}
+:::
+
+## Discussion
+
+-   Chat GPT / LLM-based tools in the context of education
+
+-   Any other topics?
 
 ## Workshop feedback
 

@@ -323,7 +323,7 @@ It's recommended that all students accept their invite before you start creating
 -   Commit and push
 :::
 
-## Create assignments
+## Create assignments {.smaller}
 
 ::: demo
 {{< fa keyboard >}} **Demo:**

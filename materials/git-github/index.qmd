@@ -383,12 +383,10 @@ You will regularly forget to do this, but try not to. It makes the next step A L
 ::: task
 **Your role:** Student
 
--   Go to the course organization on GitHub: [github.com/data-sci-101](https://github.com/data-sci-101).
--   Locate your HW 1, read through the **Getting Started** section, follow the instructions.
+-   Go to the course organization on GitHub: [github.com/data-sci-101](https://github.com/data-sci-101), locate your HW 1 repo, and copy the HTTPS url of your repo.
     -   If there is no GitHub repo created for you for this assignment, let me know!
--   Clone the repo using HTTPS.
--   Then, go through the **Hello Git** and **Warm up** sections.
--   Add your answer to Question 1, then commit and push again.
+-   Go to Posit Cloud, click on New Project from Git Repository, paste the URL.
+-   Work through the **Getting Started** section, follow the instructions.
 :::
 
 ```{r}
@@ -396,34 +394,6 @@ You will regularly forget to do this, but try not to. It makes the next step A L
 
 countdown(minutes = 15, font_size = "1.5em")
 ```
-
-## Your turn {.smaller}
-
-::: task
--   Once you\'re in the project, go to the Console and run
-
-    ```         
-    usethis::create_github_token()
-    ```
-
--   On the page that pops open in your browser, create a new GitHub Personal Access Token (i.e., sort of like a password you store):
-
-    -   Describe the token\'s use case under *Note*, e.g., `hw-1`
-
-    -   Extend expiration date to 90 days
-
-    -   Scroll down and click on **Generate Token**
-
--   Copy the token by clicking on .
-
--   Go back to Posit Cloud, to your Console, and run
-
-    ```         
-    gitcreds::gitcreds_set()
-    ```
-
-    and paste the token you just copied.
-:::
 
 ## Create team assignments
 

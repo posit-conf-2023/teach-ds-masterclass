@@ -354,7 +354,7 @@
     "href": "materials/git-github/index.html#behind-the-scenes-github-tokens-1",
     "title": "Teaching data science with Git and GitHub",
     "section": "Behind the scenes: GitHub tokens",
-    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
+    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✔ Your GitHub PAT authenticated correctly.\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
   },
   {
     "objectID": "materials/git-github/index.html#invite-students-1",
@@ -368,7 +368,7 @@
     "href": "materials/git-github/index.html#check-member-status",
     "title": "Teaching data science with Git and GitHub",
     "section": "Check member status",
-    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\ncharacter(0)\n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\ncharacter(0)\n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
+    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\n [1] \"aaronbaggett\"          \"abbicormier\"           \"alexCardazzi\"          \"ali-day\"               \"allissadillman\"        \"anaidech\"              \"andersolarsson\"        \"caalo\"                \n [9] \"catalamarti\"           \"cesBis\"                \"davonperson\"           \"deeprich\"              \"dkon1\"                 \"drtbibel\"              \"edward-burn\"           \"erinbugbee\"           \n[17] \"erwinlares\"            \"FulyaGokalp2\"          \"gcicc\"                 \"georgestagg\"           \"howarder\"              \"ibertchen\"             \"jakesauter\"            \"jeremymcwilliams\"     \n[25] \"jnese\"                 \"jns6eey\"               \"jonlinca\"              \"KenSaville\"            \"kriistiana\"            \"kyeager4\"              \"laylaguyot\"            \"lbozzone\"             \n[33] \"LibbyHeeren\"           \"math-mcshane\"          \"mccrea-cobb\"           \"mine-cetinkaya-rundel\" \"mkln\"                  \"murraylax\"             \"nickduran\"             \"norcalbiostat\"        \n[41] \"ritika-giri\"           \"sigurdurthorjonsson\"   \"tracykteal\"            \"web-dubois\"            \"wffadel\"              \n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n[1] \"florence-nightingale\" \"amason30\"            \n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
   },
   {
     "objectID": "materials/git-github/index.html#creating-assignments---big-picture",
@@ -1162,6 +1162,13 @@
     "text": "Exercise 6\n\nFill in the blanks:\n\nThe gg in the name of the package ggplot2 stands for ___.\nIf you map the same continuous variable to both x and y aesthetics in a scatterplot, you get a straight ___ line. (Choose between “vertical”, “horizontal”, or “diagonal”.)\n\nCode style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the Tidyverse style guide.)\n\n\nggplot(data=mpg,mapping=aes(x=drv,fill=class))+geom_bar() +scale_fill_viridis_d()\n\n\nRead ?facet_wrap. What does nrow do? What does ncol do? What other options control the layout of the individual panels? Why doesn’t facet_grid() have nrow and ncol arguments?\n\n\nRender, commit, and push one last time.\nMake sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   },
   {
+    "objectID": "materials/computing-infrastructure/index.html#your-turn",
+    "href": "materials/computing-infrastructure/index.html#your-turn",
+    "title": "Computing infrastructure for teaching data science",
+    "section": "Your turn!",
+    "text": "Your turn!\n\nLog out of Posit Cloud and log back in.\n\n\n\n\n−+\n02:00"
+  },
+  {
     "objectID": "materials/computing-infrastructure/index.html#this-morning",
     "href": "materials/computing-infrastructure/index.html#this-morning",
     "title": "Computing infrastructure for teaching data science",
@@ -1211,13 +1218,6 @@
     "text": "Contexts\n\n\nSemester long courses\n\nIntro data science / statistics: little to no background in stats, data science, programming\nUpper level data science / statistics: Varied computing background and different computer setups\n\nShorter workshops: Likely no opportunity to communicate pre-workshop instructions, varied computing background and learning goals"
   },
   {
-    "objectID": "materials/computing-infrastructure/index.html#your-turn",
-    "href": "materials/computing-infrastructure/index.html#your-turn",
-    "title": "Computing infrastructure for teaching data science",
-    "section": "Your turn!",
-    "text": "Your turn!\n\nLog out of Posit Cloud and log back in.\n\n\n\n\n−+\n03:00"
-  },
-  {
     "objectID": "materials/computing-infrastructure/index.html#workspaces",
     "href": "materials/computing-infrastructure/index.html#workspaces",
     "title": "Computing infrastructure for teaching data science",
@@ -1250,7 +1250,7 @@
     "href": "materials/computing-infrastructure/index.html#single-project-instructor-view",
     "title": "Computing infrastructure for teaching data science",
     "section": "Single project, instructor view",
-    "text": "Single project, instructor view\n\n Demo:\n\nCreate a new project in your workspace\nInstall all required packages and add all required files\nChange permissions\nShare URL"
+    "text": "Single project, instructor view\n\n Demo:\n\nCreate a new project in your workspace\nInstall all required packages and add all required files\nChange permissions\nShare URL – make a shortlink if you like!"
   },
   {
     "objectID": "materials/computing-infrastructure/index.html#single-project-student-view",
@@ -1271,7 +1271,7 @@
     "href": "materials/computing-infrastructure/index.html#your-turn-create-a-shareable-project",
     "title": "Computing infrastructure for teaching data science",
     "section": "Your turn: Create a shareable project",
-    "text": "Your turn: Create a shareable project\n\nYour role: Instructor\n\nCreate a new project in your workspace and give it a name.\nCreate a new Quarto document in the project – just the new document template is fine!\nChange the access level of the project so others can see it as well.\nGrab the project URL and share it with your neighbor.\n\n\n\n\nYour role: Student\nAccess your neighbor’s project as if you’re the student and they’re the instructor.\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: Create a shareable project\nYou may have already done some of the steps below during my demo!\n\nYour role: Instructor\n\nCreate a new project in your workspace and give it a name.\nCreate a new Quarto document in the project – just the new document template is fine!\nChange the access level of the project so others can see it as well.\nGrab the project URL and share it with your neighbor.\n\n\n\n\nYour role: Student\nAccess your neighbor’s project as if you’re the student and they’re the instructor.\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/computing-infrastructure/index.html#creating-a-workspace-instructor-view",
@@ -1334,7 +1334,7 @@
     "href": "materials/computing-infrastructure/index.html#discussion",
     "title": "Computing infrastructure for teaching data science",
     "section": "Discussion",
-    "text": "Discussion\n\nWhat models can you envision for collecting assignments and providing feedback when teaching with Posit Cloud?\n\n\ncountdown(minutes = 3, font_size = \"1.5em\")\n\n\n−+\n03:00"
+    "text": "Discussion\n\nWhat models can you envision for collecting assignments and providing feedback when teaching with Posit Cloud?\n\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "materials/computing-infrastructure/index.html#work-in-the-ide",

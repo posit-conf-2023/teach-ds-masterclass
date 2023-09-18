@@ -26,8 +26,6 @@ duke_forest |>
 
 Add narrative here...
 
-{{< pagebreak >}}
-
 ## Exercise 2
 
 ```{r}
@@ -37,8 +35,6 @@ Add narrative here...
 ```
 
 Add narrative here...
-
-{{< pagebreak >}}
 
 ## Exercise 3
 
@@ -57,8 +53,6 @@ brfss <- read_csv("data/brfss.csv")
 
 Add narrative here...
 
-{{< pagebreak >}}
-
 ## Exercise 4
 
 ```{r}
@@ -69,8 +63,6 @@ Add narrative here...
 
 Add narrative here...
 
-{{< pagebreak >}}
-
 ## Exercise 5
 
 ```{r}
@@ -80,8 +72,6 @@ Add narrative here...
 ```
 
 Add narrative here...
-
-{{< pagebreak >}}
 
 ## Exercise 6
 

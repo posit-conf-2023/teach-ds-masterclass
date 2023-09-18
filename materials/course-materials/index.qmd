@@ -163,6 +163,8 @@ execute:
 -   Overall structure
 
 -   Google sheet / schedule workflow
+
+-   Freeze
 :::
 
 ## Publishing

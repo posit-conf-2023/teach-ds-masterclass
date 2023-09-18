@@ -18,7 +18,7 @@
     "href": "materials/course-materials/index.html#why-use-quarto",
     "title": "Organizing, publishing, and sharing of course materials",
     "section": "Why use Quarto?",
-    "text": "Why use Quarto?\nBenefits for instructor\n\nIntegrate narrative, executable R code, images, and interactive elements\nCreate slides using Markdown syntax or visual editor\nReproducible slides that are easier to update\nAnnotation capabilities\n\nBenefits for students\n\nOption to export PDF of slides\nNavigation menu to find content\nRead slides on multiple devices"
+    "text": "Why use Quarto?\nBenefits for instructor\n\nIntegrate narrative, executable R code, images, and interactive elements\nCreate slides using Markdown syntax or visual editor\nReproducible slides that are easier to update\nAnnotation capabilities\n\n\nBenefits for students\n\nOption to export PDF of slides\nNavigation menu to find content\nRead slides on multiple devices"
   },
   {
     "objectID": "materials/course-materials/index.html#yaml",

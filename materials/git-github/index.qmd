@@ -397,6 +397,34 @@ You will regularly forget to do this, but try not to. It makes the next step A L
 countdown(minutes = 15, font_size = "1.5em")
 ```
 
+## Your turn {.smaller}
+
+::: task
+-   Once you\'re in the project, go to the Console and run
+
+    ```         
+    usethis::create_github_token()
+    ```
+
+-   On the page that pops open in your browser, create a new GitHub Personal Access Token (i.e., sort of like a password you store):
+
+    -   Describe the token\'s use case under *Note*, e.g., `hw-1`
+
+    -   Extend expiration date to 90 days
+
+    -   Scroll down and click on **Generate Token**
+
+-   Copy the token by clicking on .
+
+-   Go back to Posit Cloud, to your Console, and run
+
+    ```         
+    gitcreds::gitcreds_set()
+    ```
+
+    and paste the token you just copied.
+:::
+
 ## Create team assignments
 
 ::: demo

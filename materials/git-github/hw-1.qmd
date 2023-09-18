@@ -14,6 +14,81 @@ This homework is due *\[some date in the future\]*.
 
 -   Go to Posit Cloud and click on New Project \> New RStudio Project from Git. Make sure you've connected your Posit Cloud and GitHub accounts.
 
+## Hello GitHub
+
+-   Once you're in the project, go to the Console and run
+
+    ```{r}
+    #| eval: false
+
+    usethis::create_github_token()
+    ```
+
+-   On the page that pops open in your browser, create a new GitHub Personal Access Token (i.e., sort of like a password you store):
+
+    -   Describe the token's use case under *Note*, e.g., `hw-1`
+
+    -   Extend expiration date to 90 days
+
+    -   Scroll down and click on **Generate Token**
+
+-   Copy the token by clicking on .
+
+-   Go back to Posit Cloud, to your Console, and run
+
+    ```{r}
+    #| eval: false
+        
+    gitcreds::gitcreds_set()
+    ```
+
+    and paste the token you just copied.
+
+## Hello Git
+
+Introduce yourself to Git with
+
+```{r}
+#| eval: false
+
+usethis::use_git_config(
+  user.name = "Mine Çetinkaya-Rundel",
+  user.email = "cetinkaya.mine@gmail.com"
+)
+```
+
+replacing your name and email (that you used to create your GitHub account) with mine.
+
+## YAML
+
+The top portion of your R Markdown file (between the three dashed lines) is called **YAML**. It stands for \"YAML Ain\'t Markup Language\". It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.
+
+::: callout-important
+## Important
+
+Open the Quarto (`.qmd`) file in your project, change the author name to your name, and render the document. Examine the rendered document.
+:::
+
+## Committing changes
+
+Now, go to the Git pane in your RStudio instance. This will be in the top right hand corner in a separate tab.
+
+If you have made changes to your Quarto (.qmd) file, you should see it listed here. Click on it to select it in this list and then click on **Diff**. This shows you the *diff*erence between the last committed state of the document and its current state including changes. You should see deletions in red and additions in green.
+
+If you\'re happy with these changes, we\'ll prepare the changes to be pushed to your remote repository. First, **stage** your changes by checking the appropriate box on the files you want to prepare. Next, write a meaningful commit message (for instance, \"updated author name\") in the **Commit message** box. Finally, click **Commit**. Note that every commit needs to have a commit message associated with it.
+
+You don\'t have to commit after every change, as this would get quite tedious. You should commit states that are *meaningful to you* for inspection, comparison, or restoration.
+
+In the first few assignments we will tell you exactly when to commit and in some cases, what commit message to use. As the semester progresses we will let you make these decisions.
+
+Now let\'s make sure all the changes went to GitHub. Go to your GitHub repo and refresh the page. You should see your commit message next to the updated files. If you see this, all your changes are on GitHub and you\'re good to go!
+
+## Push changes
+
+Now that you have made an update and committed this change, it\'s time to push these changes to your repo on GitHub.
+
+In order to push your changes to GitHub, you must have **staged** your **commit** to be pushed. click on **Push**.
+
 ## Packages
 
 ```{r}

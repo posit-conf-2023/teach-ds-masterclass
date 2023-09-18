@@ -54,6 +54,8 @@ library(countdown)
 -   Reproducible slides that are easier to update
 -   Annotation capabilities
 
+. . .
+
 **Benefits for students**
 
 -   Option to export PDF of slides

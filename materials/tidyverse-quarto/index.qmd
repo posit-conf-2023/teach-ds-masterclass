@@ -122,7 +122,7 @@ I'm stuck
 :::
 
 ::: {style="text-align: center;"}
-::: {data-id="box3" style="background: #88e0e0; width: 200px; height: 200px; margin: 25px;"}
+::: {data-id="box3" style="background: #39ff14; width: 200px; height: 200px; margin: 25px;"}
 :::
 
 I'm done
@@ -266,6 +266,12 @@ Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [*R for Data Scienc
     -   Where you are in your teaching (or learning) journey
     -   Your favorite thing to teach
 :::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
 
 ## Rest of semester {background-image="images/rest-of-semester.png" background-size="contain"}
 
@@ -481,6 +487,7 @@ ggplot() +
 
 ## Why Quarto?
 
+::: incremental
 -   **Reproducibility:** Train new analysts whose only workflow is a reproducible one
 -   **Pedagogy:**
     -   Code + output + prose together
@@ -488,6 +495,7 @@ ggplot() +
     -   Familiar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax
 -   **Efficiency:** Consistent formatting -\> easier grading
 -   **Extendability:** Use with Python, and Julia, and Observable, and more
+:::
 
 ## Tips for starting with Quarto
 
@@ -590,6 +598,8 @@ ggplot() +
 ::: columns
 ::: {.column width="60%"}
 ```{r}
+#| warning: false
+
 robotstxt::paths_allowed("https://www.gov.scot")
 ```
 :::

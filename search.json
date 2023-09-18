@@ -354,7 +354,7 @@
     "href": "materials/git-github/index.html#behind-the-scenes-github-tokens-1",
     "title": "Teaching data science with Git and GitHub",
     "section": "Behind the scenes: GitHub tokens",
-    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✔ Your GitHub PAT authenticated correctly.\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
+    "text": "Behind the scenes: GitHub tokens\n\nIf the token is found and works correctly the following code should run without error\n\n\ngithub_test_token()\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\n\nIf instead the token is invalid or not found, you will see something like the following\n\n\ngithub_test_token(\"MADE_UP_TOKEN\")\n\n✖ Your GitHub PAT failed to authenticate.\n\n\n└─GitHub API error (401):  Bad credentials"
   },
   {
     "objectID": "materials/git-github/index.html#invite-students-1",
@@ -368,7 +368,7 @@
     "href": "materials/git-github/index.html#check-member-status",
     "title": "Teaching data science with Git and GitHub",
     "section": "Check member status",
-    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\n [1] \"aaronbaggett\"          \"abbicormier\"           \"alexCardazzi\"          \"ali-day\"               \"allissadillman\"        \"anaidech\"              \"andersolarsson\"        \"caalo\"                \n [9] \"catalamarti\"           \"cesBis\"                \"davonperson\"           \"deeprich\"              \"dkon1\"                 \"drtbibel\"              \"edward-burn\"           \"erinbugbee\"           \n[17] \"erwinlares\"            \"FulyaGokalp2\"          \"gcicc\"                 \"georgestagg\"           \"howarder\"              \"ibertchen\"             \"jakesauter\"            \"jeremymcwilliams\"     \n[25] \"jnese\"                 \"jns6eey\"               \"jonlinca\"              \"KenSaville\"            \"kriistiana\"            \"kyeager4\"              \"laylaguyot\"            \"lbozzone\"             \n[33] \"LibbyHeeren\"           \"math-mcshane\"          \"mccrea-cobb\"           \"mine-cetinkaya-rundel\" \"mkln\"                  \"murraylax\"             \"nickduran\"             \"norcalbiostat\"        \n[41] \"ritika-giri\"           \"sigurdurthorjonsson\"   \"tracykteal\"            \"web-dubois\"            \"wffadel\"              \n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n[1] \"florence-nightingale\" \"amason30\"            \n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
+    "text": "Check member status\n\nWho is already in?\n\n\norg_members(org)\n\ncharacter(0)\n\n\n\nWho still didn’t accept their invitations?\n\n\norg_pending(org)\n\n└─GitHub API error (403):  Resource not accessible by integration\n\n\ncharacter(0)\n\n\n\n\n\n\n\n\n\nAll students should accept invites\n\n\nIt’s recommended that all students accept their invite before you start creating repos for them so that they’re all “members” not “outside contributors” – will make book keeping easier for you as an instructor."
   },
   {
     "objectID": "materials/git-github/index.html#creating-assignments---big-picture",
@@ -431,14 +431,7 @@
     "href": "materials/git-github/index.html#your-turn-1",
     "title": "Teaching data science with Git and GitHub",
     "section": "Your turn!",
-    "text": "Your turn!\n\nYour role: Student\n\nGo to the course organization on GitHub: github.com/data-sci-101.\nLocate your HW 1, read through the Getting Started section, follow the instructions.\n\nIf there is no GitHub repo created for you for this assignment, let me know!\n\nClone the repo using HTTPS.\nThen, go through the Hello Git and Warm up sections.\nAdd your answer to Question 1, then commit and push again.\n\n\n\n\n\n−+\n15:00"
-  },
-  {
-    "objectID": "materials/git-github/index.html#your-turn-2",
-    "href": "materials/git-github/index.html#your-turn-2",
-    "title": "Teaching data science with Git and GitHub",
-    "section": "Your turn",
-    "text": "Your turn\n\n\nOnce you're in the project, go to the Console and run\nusethis::create_github_token()\nOn the page that pops open in your browser, create a new GitHub Personal Access Token (i.e., sort of like a password you store):\n\nDescribe the token's use case under Note, e.g., hw-1\nExtend expiration date to 90 days\nScroll down and click on Generate Token\n\nCopy the token by clicking on .\nGo back to Posit Cloud, to your Console, and run\ngitcreds::gitcreds_set()\nand paste the token you just copied."
+    "text": "Your turn!\n\nYour role: Student\n\nGo to the course organization on GitHub: github.com/data-sci-101, locate your HW 1 repo, and copy the HTTPS url of your repo.\n\nIf there is no GitHub repo created for you for this assignment, let me know!\n\nGo to Posit Cloud, click on New Project from Git Repository, paste the URL.\nWork through the Getting Started section, follow the instructions.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "materials/git-github/index.html#create-team-assignments",
@@ -448,8 +441,8 @@
     "text": "Create team assignments\n\n Demo:\n\nCreate a copy of the starter repo for each team, appending the their team_name to the repo name\nGive write access to each student in a team for their own team repo\n\n\n\nassignment &lt;- \"lab-1\"\n\norg_create_assignment(\n  org = org,\n  repo = paste0(\"lab-1\", \"-\", roster$team_name),\n  user = roster$github_name,\n  team = roster$team_name,\n  source_repo = paste0(org, \"/\", assignment)\n)"
   },
   {
-    "objectID": "materials/git-github/index.html#your-turn-3",
-    "href": "materials/git-github/index.html#your-turn-3",
+    "objectID": "materials/git-github/index.html#your-turn-2",
+    "href": "materials/git-github/index.html#your-turn-2",
     "title": "Teaching data science with Git and GitHub",
     "section": "Your turn!",
     "text": "Your turn!\n\nYour role: Student\n\nGo to the course organization on GitHub: github.com/data-sci-101.\nLocate your Lab 1, read through the Getting Started section, follow the instructions with your team members.\n\nIf there is no GitHub repo created for you/your team for this assignment, let me know!\n\nClone the repo using HTTPS – each person in a team should do this.\nDiscuss Question 1 as a team, identify one team member as the scribe, and have them write up the answer and commit and push.\nThen, have all other team members pull that change.\n\n\n\n\n\n−+\n10:00"
@@ -462,8 +455,8 @@
     "text": "Options for giving feedback on GitHub\n\nUse the GitHub UI to add issues to each student’s repo\nInstructors (and TAs) can view all repositories within the course organization with their owner role in a GitHub organization\nMake sure to @ mention the student so that they are notified when an issue is opened\nConsider keeping points out of issues"
   },
   {
-    "objectID": "materials/git-github/index.html#your-turn-4",
-    "href": "materials/git-github/index.html#your-turn-4",
+    "objectID": "materials/git-github/index.html#your-turn-3",
+    "href": "materials/git-github/index.html#your-turn-3",
     "title": "Teaching data science with Git and GitHub",
     "section": "Your turn!",
     "text": "Your turn!\n\nYour role: Instructor\n\nFirst, I’ll change everyone’s permission level and make you owners. (Please don’t delete any repos!)\nGo to the GitHub organization for our “class” and observe that now you can see all repos.\nGo into the individual repo (HW 1) for your neighbor. Open an issue and add some text to the issue. In the issue @ mention their github_name. Submit your issue.\n\n\n\n\nYour role: Student\nCheck your email to confirm that you got notified of an issue being filed by your neighbor in your repo, then review the issue in on GitHub.\n\n\n\n\n−+\n10:00"

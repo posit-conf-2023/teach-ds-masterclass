@@ -328,6 +328,7 @@ It's recommended that all students accept their invite before you start creating
 ::: demo
 {{< fa keyboard >}} **Demo:**
 
+-   Invite everyone to the course organization
 -   Create a copy of the starter repo for each student, appending the student's `github_name` to the repo name
 -   Give write access to each student for their own repo
 :::

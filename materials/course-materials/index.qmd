@@ -178,6 +178,23 @@ execute:
 
 -   More complex: Render on the cloud, via a GitHub action (e.g., [this one](https://github.com/data-sci-101/data-sci-101.github.io/blob/main/.github/workflows/build-site.yml)), requires environment management with **renv** or similar.
 
+## Adding webR to your course website
+
+-   Install the Quarto webR extension:
+
+    ``` yaml
+    quarto add coatless/quarto-webr
+    ```
+
+-   For each document, place the `webr` filter in the document's header:
+
+    ``` yaml
+    filters:
+      - webr
+    ```
+
+-   Then, place the R code for `webR` in a code block marked with `{webr-r}`
+
 ## Learn more!
 
 -   Making presentations in Quarto: [quarto.org/docs/presentations/revealjs](https://quarto.org/docs/presentations/revealjs/)

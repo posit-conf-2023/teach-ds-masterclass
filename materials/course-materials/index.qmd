@@ -1,0 +1,193 @@
+---
+title: "Organizing, publishing, and sharing of course materials"
+subtitle: "posit::conf(2023) <br> Teaching Data Science Masterclass"
+author: "Mine Çetinkaya-Rundel"
+footer: "[🔗 pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) / Module 4"
+logo: "../images/logo.png"
+format: 
+  revealjs:
+    theme: ../slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: c
+    incremental: false 
+    chalkboard: true
+execute:
+  freeze: auto
+  echo: true
+knitr:
+  opts_chunk: 
+    R.options:
+      width: 200
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+# Recap
+
+## So far
+
+::: incremental
+-   In the modules so far, you got a taste of both the student and the instructor experiences
+-   This module is primarily from the point of view of the instructor
+:::
+
+## This module
+
+-   Creating slides with Quarto
+-   Creating a course website with Quarto
+    -   File organization & storage
+    -   Deploying materials
+
+# Creating course slides with Quarto
+
+## Why use Quarto? {.smaller}
+
+**Benefits for instructor**
+
+-   Integrate narrative, executable R code, images, and interactive elements
+-   Create slides using Markdown syntax or visual editor
+-   Reproducible slides that are easier to update
+-   Annotation capabilities
+
+**Benefits for students**
+
+-   Option to export PDF of slides
+-   Navigation menu to find content
+-   Read slides on multiple devices
+
+# How?
+
+## YAML
+
+::: panel-tabset
+### Basic
+
+``` yaml
+---
+title: "Visualising data with ggplot2"
+subtitle: "Data Sci 101"
+author: "Dr. Mine Çetinkaya-Rundel"
+format: revealjs
+---
+```
+
+### Customized
+
+``` yaml
+---
+title: "Presentation title"
+subtitle: "Data Sci 101"
+author: "Dr. Mine Çetinkaya-Rundel"
+footer: "[🔗 data-sci-101.github.io](https://data-sci-101.github.io)"
+logo: "images/logo.png"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+execute:
+  freeze: auto
+  echo: true
+---
+```
+:::
+
+## Follow along! {.smaller}
+
+::: cloud
+{{< fa cloud >}} Posit Cloud \> Quarto presentation
+:::
+
+::: demo
+{{< fa keyboard >}} **Demo:**
+
+-   Make slides with `format: revealjs`
+
+-   Sidebar tools
+
+-   New sections and slides with H1 and H2 headings
+
+-   Chalkboard with `chalkboard: true` under `revealjs`
+
+-   Multiplex slides with `multiplex: true` under `revealjs`
+
+-   Show code with `echo: true` under `execute`
+
+-   Move output with `output-location` in chunk option
+
+-   Highlight lines of code with `code-line-numbers`
+
+-   Show fences with `echo: fenced` in chunk option
+
+-   Add code annotation
+:::
+
+# Creating course websites with Quarto
+
+## Why?
+
+-   Easily share course materials, particularly for online courses
+
+-   Search capabilities, so students can more easily find materials
+
+-   Reproducible website that is easier to update
+
+-   Learn by doing!
+
+## Course website
+
+::: {style="text-align: center;"}
+**🔗 [data-sci-101.github.io](https://data-sci-101.github.io/)**
+
+```{=html}
+<iframe src="https://data-sci-101.github.io/" title="Data Science 101 Course Website" width="1000" height="500"></iframe>
+```
+:::
+
+## Follow along! {.smaller}
+
+::: cloud
+{{< fa cloud >}} Posit Cloud \> Quarto website
+:::
+
+::: demo
+{{< fa keyboard >}} **Demo:**
+
+-   Overall structure
+
+-   Google sheet / schedule workflow
+:::
+
+## Publishing
+
+-   Simpler: Render locally, publish on QuartoPub or GitHub Pages (requires your project to be hosted on a GitHub repo)
+
+    ``` bash
+    quarto publish quartopub
+    quarto publish gh-pages
+    ```
+
+-   More complex: Render on the cloud, via a GitHub action (e.g., [this one](https://github.com/data-sci-101/data-sci-101.github.io/blob/main/.github/workflows/build-site.yml)), requires environment management with **renv** or similar.
+
+## Learn more!
+
+-   Making presentations in Quarto: [quarto.org/docs/presentations/revealjs](https://quarto.org/docs/presentations/revealjs/)
+
+-   Making websites in Quarto: [quarto.org/docs/websites](https://quarto.org/docs/websites/)
+
+-   Publishing content: [quarto.org/docs/publishing](https://quarto.org/docs/publishing/)
+
+# Q&A / Wrap up
+
+## Workshop feedback
+
+::: task
+Please go to [pos.it/conf-workshop-survey](http://pos.it/conf-workshop-survey) to fill out the workshop feedback survey. Your feedback is crucial! Data from the survey informs curriculum and format decisions for future conf workshops and we really appreciate you taking the time to provide it.
+:::

@@ -2,7 +2,7 @@
 title: "Computing infrastructure for teaching data science"
 subtitle: "posit::conf(2023) <br> Teaching Data Science Masterclass"
 author: "Mine Çetinkaya-Rundel"
-footer: "[🔗 pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) / Module 2"
+footer: "[🔗 pos.it/teach-ds-conf23](https://pos.it/teach-ds-conf23) / Module 3"
 logo: "../images/logo.png"
 format: 
   revealjs:
@@ -226,7 +226,7 @@ countdown(minutes = 10, font_size = "1.5em")
 ## Permission levels
 
 | role        | permission                                       | course role |
-|---------------|-------------------------------------------|---------------|
+|----------------|----------------------------------------|----------------|
 | admin       | manage users, view, edit and manage all projects | instructor  |
 | moderator   | view, edit and manage all projects               | TA          |
 | contributor | create, edit and manage their own projects       | student     |

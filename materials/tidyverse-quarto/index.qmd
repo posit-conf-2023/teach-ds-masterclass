@@ -250,6 +250,8 @@ Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [*R for Data Scienc
 ::: cloud
 {{< fa cloud >}} [**UN Votes**](https://pos.it/teach-ds-conf23-cloud)
 
+[pos.it/teach-ds-conf23-cloud](https://pos.it/teach-ds-conf23-cloud)
+
 ------------------------------------------------------------------------
 
 -   Change `Turkey` to a different country and render the document again

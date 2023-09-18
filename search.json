@@ -669,7 +669,7 @@
     "href": "materials/tidyverse-quarto/index.html#workshop-materials",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Workshop materials",
-    "text": "Workshop materials\n\n\n\n\n\n\nOne link for all materials\n🔗 https://rstd.io/teach-ds-conf23"
+    "text": "Workshop materials\n\n\n\n\n\n\nOne link for all materials\n🔗 https://pos.it/teach-ds-conf23"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#schedule",
@@ -809,7 +809,7 @@
     "href": "materials/tidyverse-quarto/index.html#data",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Data",
-    "text": "Data\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\n\nRows: 216 Columns: 4\n── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): country\ndbl (3): capture, aquaculture, total\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ncontinents &lt;- read_csv(\"data/continents.csv\")\n\nRows: 245 Columns: 2\n── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): country, continent\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+    "text": "Data\n\nfisheries &lt;- read_csv(\"data/fisheries.csv\")\ncontinents &lt;- read_csv(\"data/continents.csv\")"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#your-turn-1",
@@ -823,7 +823,7 @@
     "href": "materials/tidyverse-quarto/index.html#concepts",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Concepts",
-    "text": "Concepts\n\n\n\nfisheries |&gt;\n  select(country)\n\n# A tibble: 216 × 1\n   country            \n   &lt;chr&gt;              \n 1 Afghanistan        \n 2 Albania            \n 3 Algeria            \n 4 American Samoa     \n 5 Andorra            \n 6 Angola             \n 7 Antigua and Barbuda\n 8 Argentina          \n 9 Armenia            \n10 Aruba              \n# ℹ 206 more rows\n\n\n\n\ncontinents\n\n# A tibble: 245 × 2\n   country           continent\n   &lt;chr&gt;             &lt;chr&gt;    \n 1 Afghanistan       Asia     \n 2 Åland Islands     Europe   \n 3 Albania           Europe   \n 4 Algeria           Africa   \n 5 American Samoa    Oceania  \n 6 Andorra           Europe   \n 7 Angola            Africa   \n 8 Anguilla          Americas \n 9 Antigua & Barbuda Americas \n10 Argentina         Americas \n# ℹ 235 more rows\n\n\n\n\ndata joins\n\n\n\n\nfisheries &lt;- left_join(fisheries, continents)\n\nJoining with `by = join_by(country)`"
+    "text": "Concepts\n\n\n\nfisheries |&gt;\n  select(country)\n\n# A tibble: 216 × 1\n   country            \n   &lt;chr&gt;              \n 1 Afghanistan        \n 2 Albania            \n 3 Algeria            \n 4 American Samoa     \n 5 Andorra            \n 6 Angola             \n 7 Antigua and Barbuda\n 8 Argentina          \n 9 Armenia            \n10 Aruba              \n# ℹ 206 more rows\n\n\n\n\ncontinents\n\n# A tibble: 245 × 2\n   country           continent\n   &lt;chr&gt;             &lt;chr&gt;    \n 1 Afghanistan       Asia     \n 2 Åland Islands     Europe   \n 3 Albania           Europe   \n 4 Algeria           Africa   \n 5 American Samoa    Oceania  \n 6 Andorra           Europe   \n 7 Angola            Africa   \n 8 Anguilla          Americas \n 9 Antigua & Barbuda Americas \n10 Argentina         Americas \n# ℹ 235 more rows\n\n\n\n\ndata joins\n\n\n\n\nfisheries &lt;- left_join(fisheries, continents)"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#concepts-1",
@@ -914,7 +914,7 @@
     "href": "materials/tidyverse-quarto/index.html#concepts-8",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Concepts",
-    "text": "Concepts\n\n\n\nrobotstxt::paths_allowed(\"https://www.gov.scot\")\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*#' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*( )*([^\\[\\] ,;&lt;&gt;()@/?=\\{\\} \\\\])+( )*:' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*$' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*#' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*( )*([^\\[\\] ,;&lt;&gt;()@/?=\\{\\} \\\\])+( )*:' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\nWarning in get(name, envir = env, inherits = FALSE): input string '^(﻿)*(\\s)*$' cannot be translated from 'ANSI_X3.4-1968' to UTF-8, but is valid UTF-8\n\n\n\n www.gov.scot                      \n\n\n[1] TRUE\n\n\n\n\nweb scraping\ntext parsing\ndata types\nregular expressions\nfunctions\niteration\ndata visualization\ninterpretation\ntext analysis\ndata science ethics"
+    "text": "Concepts\n\n\n\nrobotstxt::paths_allowed(\"https://www.gov.scot\")\n\n[1] TRUE\n\n\n\n\nweb scraping\ntext parsing\ndata types\nregular expressions\nfunctions\niteration\ndata visualization\ninterpretation\ntext analysis\ndata science ethics"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#student-work-1",

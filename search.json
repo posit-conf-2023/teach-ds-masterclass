@@ -781,7 +781,7 @@
     "href": "materials/tidyverse-quarto/index.html#your-turn",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Your turn!",
-    "text": "Your turn!\n\n UN Votes\npos.it/teach-ds-conf23-cloud\n\n\nChange Turkey to a different country and render the document again\nReview how the voting patterns of the country you picked compare to the United States and the United Kingdom\nThen, introduce yourself to your neighbor and discuss why you chose your country and what, if anything, surprising or expected you saw in the visualization you produced\nIn the remaining time, continue the introduction:\n\nAffiliation and/or where you’re joining from (geographically)\nWhere you are in your teaching (or learning) journey\nYour favorite thing to teach"
+    "text": "Your turn!\n\n UN Votes\npos.it/teach-ds-conf23-cloud\n\n\nChange Turkey to a different country and render the document again\nReview how the voting patterns of the country you picked compare to the United States and the United Kingdom\nThen, introduce yourself to your neighbor and discuss why you chose your country and what, if anything, surprising or expected you saw in the visualization you produced\nIn the remaining time, continue the introduction:\n\nAffiliation and/or where you’re joining from (geographically)\nWhere you are in your teaching (or learning) journey\nYour favorite thing to teach\n\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#rest-of-semester",
@@ -858,7 +858,7 @@
     "href": "materials/tidyverse-quarto/index.html#why-quarto",
     "title": "Teaching data science with the tidyverse and Quarto",
     "section": "Why Quarto?",
-    "text": "Why Quarto?\n\nReproducibility: Train new analysts whose only workflow is a reproducible one\nPedagogy:\n\nCode + output + prose together\nSyntax highlighting FTW!\nFamiliar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax\n\nEfficiency: Consistent formatting -&gt; easier grading\nExtendability: Use with Python, and Julia, and Observable, and more"
+    "text": "Why Quarto?\n\n\nReproducibility: Train new analysts whose only workflow is a reproducible one\nPedagogy:\n\nCode + output + prose together\nSyntax highlighting FTW!\nFamiliar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax\n\nEfficiency: Consistent formatting -&gt; easier grading\nExtendability: Use with Python, and Julia, and Observable, and more"
   },
   {
     "objectID": "materials/tidyverse-quarto/index.html#tips-for-starting-with-quarto",

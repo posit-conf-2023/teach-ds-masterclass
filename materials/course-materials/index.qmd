@@ -182,7 +182,7 @@ execute:
 
 -   Install the Quarto webR extension:
 
-    ``` yaml
+    ``` bash
     quarto add coatless/quarto-webr
     ```
 

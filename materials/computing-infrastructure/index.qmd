@@ -29,6 +29,18 @@ library(countdown)
 
 # Recap
 
+## Your turn!
+
+::: task
+Log out of Posit Cloud and log back in.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 2, font_size = "1.5em")
+```
+
 ## This morning...
 
 ::: incremental
@@ -94,18 +106,6 @@ We created **Posit Cloud** to make it easy for professionals, hobbyists, trainer
 -   Shorter workshops: Likely no opportunity to communicate pre-workshop instructions, varied computing background and learning goals
 :::
 
-## Your turn!
-
-::: task
-Log out of Posit Cloud and log back in.
-:::
-
-```{r}
-#| echo: false
-
-countdown(minutes = 3, font_size = "1.5em")
-```
-
 ## Workspaces
 
 -   When you create an account on Posit Cloud you get a workspace of your own
@@ -148,7 +148,7 @@ If you use RStudio, use projects! Trust me, you won't regret it. Find out more a
 
 -   Change permissions
 
--   Share URL
+-   Share URL -- make a shortlink if you like!
 :::
 
 ## Single project, student view
@@ -172,7 +172,7 @@ If you use RStudio, use projects! Trust me, you won't regret it. Find out more a
 -   Also great for sharing code in general, e.g. collaboration, reprexes, etc.
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 **Not so good...**
 
 -   Students need to remember to make a copy of the project (which means you need to remember to remind them!)
@@ -181,6 +181,8 @@ If you use RStudio, use projects! Trust me, you won't regret it. Find out more a
 :::
 
 ## Your turn: Create a shareable project {.small}
+
+You may have already done some of the steps below during my demo!
 
 ::: task
 **Your role:** Instructor
@@ -202,7 +204,7 @@ Access your neighbor's project as if you're the student and they're the instruct
 ```{r}
 #| echo: false
 
-countdown(minutes = 10, font_size = "1.5em")
+countdown(minutes = 5, font_size = "1.5em")
 ```
 
 # Teaching a longer course
@@ -226,7 +228,7 @@ countdown(minutes = 10, font_size = "1.5em")
 ## Permission levels
 
 | role        | permission                                       | course role |
-|-----------------|--------------------------------------|-----------------|
+|------------------|-------------------------------------|------------------|
 | admin       | manage users, view, edit and manage all projects | instructor  |
 | moderator   | view, edit and manage all projects               | TA          |
 | contributor | create, edit and manage their own projects       | student     |
@@ -244,7 +246,7 @@ countdown(minutes = 10, font_size = "1.5em")
 -   Ability to peek into students' projects
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 **Not so good...**
 
 -   Students land in the workspace, may need to provide instructions for the next steps
@@ -291,11 +293,13 @@ Student usage / engagement metrics
 
 ## Discussion
 
-::: question
+::: task
 What models can you envision for collecting assignments and providing feedback when teaching with Posit Cloud?
 :::
 
 ```{r}
+#| echo: false
+
 countdown(minutes = 3, font_size = "1.5em")
 ```
 

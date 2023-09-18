@@ -115,14 +115,14 @@ If you have any difficulty with your connection please let us (myself and or the
 
 ::: r-hstack
 ::: {style="text-align: center;"}
-::: {data-id="box1" style="background: #FFA500; width: 200px; height: 200px; margin: 25px;"}
+::: {data-id="box1" style="background: #FFC0CB; width: 200px; height: 200px; margin: 25px;"}
 :::
 
 I'm stuck
 :::
 
 ::: {style="text-align: center;"}
-::: {data-id="box3" style="background: #BF40BF; width: 200px; height: 200px; margin: 25px;"}
+::: {data-id="box3" style="background: #88e0e0; width: 200px; height: 200px; margin: 25px;"}
 :::
 
 I'm done

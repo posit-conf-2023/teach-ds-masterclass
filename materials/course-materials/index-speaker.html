@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.366">
+  <meta name="generator" content="quarto-1.4.376">
 
   <meta name="author" content="Mine Çetinkaya-Rundel">
   <title>Teaching Data Science Masterclass - Organizing, publishing, and sharing of course materials</title>
@@ -563,7 +563,7 @@ Mine Çetinkaya-Rundel
 <li><p>More complex: Render on the cloud, via a GitHub action (e.g., <a href="https://github.com/data-sci-101/data-sci-101.github.io/blob/main/.github/workflows/build-site.yml">this one</a>), requires environment management with <strong>renv</strong> or similar.</p></li>
 </ul>
 </section>
-<section id="adding-webr-to-your-course-website" class="slide level2">
+<section id="adding-webr-to-your-course-website" class="slide level2 smaller">
 <h2>Adding webR to your course website</h2>
 <ul>
 <li><p>Install the Quarto webR extension:</p>
@@ -571,6 +571,10 @@ Mine Çetinkaya-Rundel
 <li><p>For each document, place the <code>webr</code> filter in the document’s header:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> webr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>In addition, add the following, listing all packages to be loaded in the page:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">webr</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="at">  </span><span class="fu">channel-type</span><span class="kw">:</span><span class="at"> </span><span class="st">"post-message"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="at">  </span><span class="fu">packages</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">'tidyverse'</span><span class="kw">,</span><span class="at"> </span><span class="st">'scales'</span><span class="kw">,</span><span class="at"> </span><span class="st">'unvotes'</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Then, place the R code for <code>webR</code> in a code block marked with <code>{webr-r}</code></p></li>
 </ul>
 </section>
@@ -591,7 +595,13 @@ Mine Çetinkaya-Rundel
 <h2>A curriculum in a box</h2>
 <div style="text-align: center; font-size: 60px;">
 <p><strong>🔗 <a href="https://datasciencebox.org/">datasciencebox.org</a></strong></p>
-<p><img data-src="images/dsbox.png" width="500"></p>
+<div id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="quarto-figure quarto-figure-center" width="500">
+<figure class="quarto-float quarto-float-fig">
+<div>
+<img data-src="images/dsbox.png" id="fig-539a35d47e664c97a50115a146a7f1bd-1" width="500">
+</div>
+</figure>
+</div>
 </div>
 </section>
 <section id="discussion" class="slide level2">

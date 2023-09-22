@@ -180,7 +180,7 @@ execute:
 
 -   More complex: Render on the cloud, via a GitHub action (e.g., [this one](https://github.com/data-sci-101/data-sci-101.github.io/blob/main/.github/workflows/build-site.yml)), requires environment management with **renv** or similar.
 
-## Adding webR to your course website
+## Adding webR to your course website {.smaller}
 
 -   Install the Quarto webR extension:
 
@@ -193,6 +193,14 @@ execute:
     ``` yaml
     filters:
       - webr
+    ```
+
+-   In addition, add the following, listing all packages to be loaded in the page:
+
+    ``` yaml
+    webr:
+      channel-type: "post-message"
+      packages: ['tidyverse', 'scales', 'unvotes']
     ```
 
 -   Then, place the R code for `webR` in a code block marked with `{webr-r}`

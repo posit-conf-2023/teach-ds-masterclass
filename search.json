@@ -67,7 +67,7 @@
     "href": "materials/course-materials/index.html#adding-webr-to-your-course-website",
     "title": "Organizing, publishing, and sharing of course materials",
     "section": "Adding webR to your course website",
-    "text": "Adding webR to your course website\n\nInstall the Quarto webR extension:\nquarto add coatless/quarto-webr\nFor each document, place the webr filter in the document’s header:\nfilters:\n  - webr\nThen, place the R code for webR in a code block marked with {webr-r}"
+    "text": "Adding webR to your course website\n\nInstall the Quarto webR extension:\nquarto add coatless/quarto-webr\nFor each document, place the webr filter in the document’s header:\nfilters:\n  - webr\nIn addition, add the following, listing all packages to be loaded in the page:\nwebr:\n  channel-type: \"post-message\"\n  packages: ['tidyverse', 'scales', 'unvotes']\nThen, place the R code for webR in a code block marked with {webr-r}"
   },
   {
     "objectID": "materials/course-materials/index.html#learn-more",
